@@ -50,7 +50,8 @@
         let _ = this;
 
         _.topLevelMenuItems.forEach(function(menuItem) {
-            menuItem.addEventListener('click', _.toggleSubMenu.bind(_, menuItem));            
+            menuItem.addEventListener('click', _.toggleSubMenu.bind(_, menuItem));
+            menuItem.addEventListener('click', _.toggleMobileSubMenu.bind(_, menuItem));
         });
     };
 
@@ -366,6 +367,16 @@
         } else {
             _.closeAllSubMenus();
             _.openSubMenu(menuItem);
+        }
+    };
+
+    GreenstepMenuPrototype.toggleMobileSubMenu = function(menuItem, event) {
+        let _ = this;
+
+        let isMobileMenu = parseInt(getComputedStyle(_.el).getPropertyValue("--mobile-menu")) == 1;
+
+        if (isMobileMenu) {
+            menuItem.scrollIntoView();
         }
     };
 

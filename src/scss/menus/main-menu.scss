@@ -353,6 +353,7 @@
         background: var(--clr-white);
         padding: 1rem max((100% - var(--wrap-max-width)) / 2, var(--wrap-gutter-x));
         overflow-y: auto;
+        scroll-behavior: smooth;
 
         > ul {
             flex-direction: column;
@@ -365,6 +366,7 @@
                 &-has-children {
                     > a {
                         justify-content: space-between;
+                        scroll-margin-block: 1rem;
                     }
                 }
 
@@ -445,6 +447,7 @@
                                     .menu-item-card {
                                         > a {
                                             padding: 0;
+                                            transition: color 150ms ease-out;
 
                                             .card-image {
                                                 padding-bottom: 56.25%;
@@ -461,6 +464,12 @@
 
                                             .card-read-more {
                                                 display: none;
+                                            }
+
+                                            &:hover,
+                                            &:focus-visible {
+                                                background-color: transparent;
+                                                color: var(--clr-accent-dark);
                                             }
                                         }
                                     }
