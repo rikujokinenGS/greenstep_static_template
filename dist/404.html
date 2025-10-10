@@ -63,7 +63,8 @@
                     </select>
                 </div>
                 <div class="site-header__theme-toggle">
-                    Dark mode <button type="button" id="theme-toggle" aria-label="Toggle dark/light mode" data-theme-toggle></button>
+                    <input type="checkbox" id="theme-toggle" aria-label="Toggle dark/light mode" data-theme-toggle>
+                    <label for="theme-toggle">Dark mode</label>
                 </div>
                 <button type="button" id="search-toggle" class="site-header__search-toggle" data-search-toggle data-label-closed="Open search" data-label-open="Close search" aria-label="Open search" aria-expanded="false" aria-controls="search-form">Search</button>
                 <a href="https://hub.greenstep.com/login" class="site-header__login" target="_blank">Log in</a>
@@ -418,12 +419,19 @@
                             <select name="language" aria-label="Select language" onchange="window.location = this.value;">
                                 <option value="#" selected>Global (EN)</option>
                                 <option value="#">Suomi</option>
+                                <option value="#">Svenska (Finland)</option>
+                                <option value="#">Eesti</option>
+                                <option value="#">Svenska (Sverige)</option>
+                                <option value="#">Norsk</option>
+                                <option value="#">Nederlands</option>
                             </select>
                         </div>
                         <button type="button" class="mobile-eyebrow-links__search-toggle" data-mobile-search-toggle data-label-closed="Open search" data-label-open="Close search" aria-label="Open search" aria-expanded="false" aria-controls="search-form">Search</button>
                         <a href="https://hub.greenstep.com/login" class="mobile-eyebrow-links__login" target="_blank">Log in</a>
-                        <div class="mobile-eyebrow-links__theme-toggle">
-                            <button type="button" data-mobile-theme-toggle></button> Dark mode
+                        <hr>
+                        <div class="mobile-eyebrow-links__mobile-theme-toggle">
+                            <input type="checkbox" id="mobile-theme-toggle" aria-label="Toggle dark/light mode" data-mobile-theme-toggle>
+                            <label for="mobile-theme-toggle">Dark mode</label>
                         </div>
                     </div>
                 </nav>
