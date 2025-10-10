@@ -3,7 +3,7 @@
     --header-eyebrow-height: 2.5rem;
     --header-main-height: clamp(4rem, 8.25vw, 5rem);
 
-    --wrap-max-width: 1376px;
+    --wrap-max-width: 1380px;
     --wrap-gutter-x: clamp(1.25rem, 3vw, 3rem);
 
     --section-spacing: clamp(4rem, 7vw, 7.5rem);
@@ -23,40 +23,48 @@
     --fs-small: 0.875rem;
     --fs-regular: 1rem;
     --fs-medium: 1.125rem;
-    --fs-large: 1.25rem;
+    --fs-large: clamp(1.125rem, 1.25vw + 0.25rem, 1.25rem);
+
+    --fs-big-hero-heading: clamp(2.5rem, 5.5vw + 0.25rem, 5.5rem);
 
     // Colors
     --clr-white: #fff;
-    --clr-neutral-darkest: #121926;
-    --clr-neutral: #5f697c;
-    --clr-neutral-light: #f2f2f2;
-    --clr-neutral-lightest: #fafafa;
 
-    --clr-accent-dark: #00b07d;
-    --clr-accent: #03eaac;
-    --clr-accent-lighter: #12febc;
-    --clr-accent-light: #e0f0ec;
-    --clr-accent-lightest: #eff7f5;
+    --clr-neutral-800: #121926;
+    --clr-neutral-700: #202a3d;
+    --clr-neutral-600: #27334b;
+    --clr-neutral-500: #5f697c;
+    --clr-neutral-400: #8a93a5;
+    --clr-neutral-200: #f2f2f2;
+    --clr-neutral-100: #fafafa;
+
+    --clr-accent-500: #00b07d;
+    --clr-accent-400: #03eaac;
+    --clr-accent-300: #12febc;
+    --clr-accent-200: #e0f0ec;
+    --clr-accent-100: #eff7f5;
+
+    --clr-error: #d33141;
 
     // Border radii
-    --br-large: 1rem;
-    --br-medium: 0.5rem;
     --br-small: 0.25rem;
+    --br-medium: 0.5rem;
+    --br-large: 1rem;
 
     // Choices.js
-    --choices-darken: var(--clr-neutral-darkest);
+    --choices-darken: var(--clr-neutral-800);
     --choices-lighten: var(--clr-white);
     --choices-bg-color: var(--clr-white);
-    --choices-bg-color-disabled: var(--clr-accent-lightest);
+    --choices-bg-color-disabled: var(--clr-accent-100);
     --choices-bg-color-dropdown: var(--clr-white);
-    --choices-text-color: var(--clr-neutral-darkest);
-    --choices-keyline-color: color-mix(in srgb, var(--clr-neutral-darkest) 15%, transparent);
-    --choices-primary-color: var(--clr-accent);
-    --choices-disabled-color: var(--clr-neutral);
-    --choices-item-disabled-color: var(--clr-neutral-lightest);
-    --choices-invalid-color: #d33141;
-    --choices-highlighted-color: var(--clr-accent);
-    --choices-highlight-color: var(--clr-neutral-darkest);
+    --choices-text-color: var(--clr-neutral-800);
+    --choices-keyline-color: color-mix(in srgb, var(--clr-neutral-800) 15%, transparent);
+    --choices-primary-color: var(--clr-accent-400);
+    --choices-disabled-color: var(--clr-neutral-500);
+    --choices-item-disabled-color: var(--clr-neutral-100);
+    --choices-invalid-color: var(--clr-error);
+    --choices-highlighted-color: var(--clr-accent-400);
+    --choices-highlight-color: var(--clr-neutral-800);
     --choices-font-size-lg: var(--fs-regular);
     --choices-font-size-md: var(--fs-regular);
     --choices-font-size-sm: var(--fs-small);
@@ -90,19 +98,21 @@
 
 html[data-theme="dark"] {
     &:root {
-        --clr-white: #121926;
-        --clr-neutral-darkest: #fff;
-        --clr-neutral: #909aac;
-        --clr-neutral-light: #202a3d;
-        --clr-neutral-lightest: #27334b;
-
-        --clr-accent-dark: #05be8a;
+        --clr-accent-500: #05be8a;
         --clr-accent: #03eaac;
-        --clr-accent-lighter: #12febc;
-        --clr-accent-light: color-mix(in srgb, #fff 4%, var(--clr-neutral-lightest));
-        --clr-accent-lightest: color-mix(in srgb, #fff 8%, var(--clr-neutral-lightest));
-
-        --choices-primary-color: var(--clr-accent-dark);
-        --choices-highlighted-color: var(--clr-accent-dark);
+        --clr-accent-300: #12febc;
+        
+        --choices-darken: var(--clr-white);
+        --choices-lighten: var(--clr-neutral-800);
+        --choices-bg-color: var(--clr-neutral-800);
+        --choices-bg-color-disabled: var(--clr-accent-100);
+        --choices-bg-color-dropdown: var(--clr-neutral-800);
+        --choices-text-color: var(--clr-white);
+        --choices-keyline-color: color-mix(in srgb, var(--clr-white) 15%, transparent);
+        --choices-primary-color: var(--clr-accent-400);
+        --choices-disabled-color: var(--clr-neutral-500);
+        --choices-item-disabled-color: var(--clr-neutral-100);
+        --choices-highlighted-color: var(--clr-accent-500);
+        --choices-highlight-color: var(--clr-white);
     }
 }

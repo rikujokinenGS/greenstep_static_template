@@ -9,16 +9,18 @@ Author URI: https://www.greenstep.com/
 
 @use './scss/inc/choices';
 
-@use './scss/_forms';
 @use './scss/_reset';
 @use './scss/_typography';
 @use './scss/_variables';
 
+@use './scss/buttons';
+@use './scss/forms';
+@use './scss/header';
+
 @use './scss/menus/header-buttons';
 @use './scss/menus/main-menu';
 
-@use './scss/buttons';
-@use './scss/header';
+@use './scss/content/big-hero.scss';
 
 html {
     font-size: 100%;
@@ -41,7 +43,7 @@ body {
     font-family: var(--ff);
     font-weight: 400;
     font-optical-sizing: auto;
-    color: var(--clr-neutral-darkest);
+    color: var(--clr-neutral-800);
     background-color: var(--clr-white);
     overscroll-behavior: none;
 
@@ -64,7 +66,7 @@ body {
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    background-color: var(--clr-neutral-darkest);
+    background-color: var(--clr-neutral-800);
     border: 2px solid var(--clr-white);
     border-radius: var(--br-medium);
     padding: 0.5em 1em 0.5em 1.25em;
@@ -75,7 +77,7 @@ body {
     transform: translateX(calc(-100% - 1rem - 1rem));
     transition: transform 150ms ease-in-out;
     z-index: 10000;
-    outline: 1px solid var(--clr-neutral-darkest);
+    outline: 1px solid var(--clr-neutral-800);
 
     &:focus-visible {
         color: var(--clr-white);
@@ -96,7 +98,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 1.25rem;
-    color: var(--clr-neutral-darkest);
+    color: var(--clr-neutral-800);
     text-align: center;
 }
 
@@ -117,6 +119,12 @@ body {
     margin-bottom: var(--section-spacing);
 }
 
+.section-bg {
+    &--accent-lightest {
+        background-color: var(--clr-accent-100);
+    }
+}
+
 .visually-hidden {
     position: absolute !important;
     width: 1px !important;
@@ -133,7 +141,7 @@ body {
     width: 0.375rem;
     height: 0.375rem;
     border-radius: 100vw;
-    background-color: color-mix(in srgb, var(--clr-neutral-darkest) 30%, transparent);
+    background-color: color-mix(in srgb, var(--clr-neutral-800) 30%, transparent);
     border: none;
 }
 
@@ -147,8 +155,30 @@ body {
 ::-webkit-scrollbar {
     width: 0.375rem;
     height: 0.375rem;
-    background-color: var(--clr-neutral-light);
+    background-color: var(--clr-neutral-200);
     border-radius: 100vw;
+}
+
+html[data-theme="dark"] {
+    body {
+        color: var(--clr-white);
+        background-color: var(--clr-neutral-800);
+    }
+
+    .section-bg {
+        &--accent-lightest {
+            background-color: var(--clr-neutral-800);
+            color: var(--clr-white);
+        }
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: color-mix(in srgb, var(--clr-neutral-600), var(--clr-white) 8%);
+    }
+
+    ::-webkit-scrollbar {
+        background-color: var(--clr-neutral-700);
+    }
 }
 
 @media only screen and (max-width: 992px) {

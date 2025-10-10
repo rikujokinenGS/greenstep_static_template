@@ -39,7 +39,7 @@
         _.setEscKeyListener();
 
         _.outsideClickListener = function(event) {
-            if (!_.el.contains(event.target) && !document.querySelector('[data-theme-toggle]').contains(event.target)) {
+            if (!_.el.contains(event.target) && !document.querySelector('[data-theme-toggle]').parentElement.contains(event.target)) {
                 _.closeAllSubMenus();
                 _window.removeEventListener("mousedown", _.outsideClickListener);
             }

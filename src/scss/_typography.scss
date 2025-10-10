@@ -42,45 +42,53 @@ h1 {
     font-size: var(--fs-heading-1);
     font-weight: 500;
     line-height: 120%;
+    letter-spacing: 0.022em;
+    margin-bottom: 0.5em;
 }
 
 h2 {
     font-size: var(--fs-heading-2);
     font-weight: 500;
     line-height: 120%;
+    margin-bottom: 0.5em;
 }
 
 h3 {
     font-size: var(--fs-heading-3);
     font-weight: 500;
     line-height: 120%;
+    margin-bottom: 0.75em;
 }
 
 h4 {
     font-size: var(--fs-heading-4);
     font-weight: 500;
     line-height: 130%;
+    margin-bottom: 0.75em;
 }
 
 h5 {
     font-size: var(--fs-heading-5);
     font-weight: 500;
     line-height: 140%;
+    margin-bottom: 1em;
 }
 
 h6 {
     font-size: var(--fs-heading-6);
     font-weight: 600;
     line-height: 140%;
+    margin-bottom: 1em;
 }
 
 p {
     font-size: var(--fs-regular);
     font-weight: 400;
     line-height: 150%;
+    margin-bottom: 0.75em;
 
     &.tagline {
-        color: var(--clr-neutral);
+        color: var(--clr-neutral-500);
         font-size: var(--fs-tiny);
         font-weight: 700;
         line-height: 150%;
@@ -123,7 +131,7 @@ kbd {
     font-size: var(--fs-tiny);
     font-family: var(--ff);
     background-color: var(--clr-white);
-    color: var(--clr-neutral-darkest);
+    color: var(--clr-neutral-800);
     border-radius: var(--br-small);
-    box-shadow: 0.0625rem 0.125rem 0.125rem color-mix(in srgb, var(--clr-neutral-darkest) 25%, transparent);
+    box-shadow: 0.0625rem 0.125rem 0.125rem color-mix(in srgb, var(--clr-neutral-800) 25%, transparent);
 }

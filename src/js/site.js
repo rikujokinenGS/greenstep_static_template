@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (!searchForm.contains(event.target) && 
                     !searchToggle.contains(event.target) && 
                     !mobileSearchToggle.contains(event.target) &&
-                    !themeToggle.contains(event.target)) {
+                    !themeToggle.parentElement.contains(event.target)) {
                     closeSearchForm();
                 }
             }
