@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+    <meta name="format-detection" content="telephone=no,email=no,address=no,date=no,url=no">
+
+    <meta name="description" content="Site description">
+    <title>Greenstep</title>
+
+    <link rel="icon" type="image/png" sizes="36x36"  href="assets/favicon/android-icon-36x36.png">
+    <link rel="icon" type="image/png" sizes="48x48"  href="assets/favicon/android-icon-48x48.png">
+    <link rel="icon" type="image/png" sizes="72x72"  href="assets/favicon/android-icon-72x72.png">
+    <link rel="icon" type="image/png" sizes="96x96"  href="assets/favicon/android-icon-96x96.png">
+    <link rel="icon" type="image/png" sizes="144x144"  href="assets/favicon/android-icon-144x144.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicon/android-icon-192x192.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+    <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="./style.css">    
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <a href="#main-content" class="skip-to-content" data-skip-to-content>Skip to content <kbd>Enter</kbd></a>
+
+    <noscript>
+        <style>
+            body { overflow: hidden; }
+        </style>
+        <div class="no-js-warning">
+            <p>JavaScript is disabled in your browser. Please enable it to use this site.</p>
+        </div>
+    </noscript>
+
+    <header class="site-header">
+        <div class="site-header__eyebrow">
+            <div class="wrap">
+                <div class="site-header__language-menu">
+                    <label for="language" class="visually-hidden">Select language</label>
+                    <select id="language" name="language" data-language-menu onchange="window.location = this.value;">
+                        <option value="#" selected>Global (EN)</option>
+                        <option value="#">Suomi</option>
+                        <option value="#">Svenska (Finland)</option>
+                        <option value="#">Eesti</option>
+                        <option value="#">Svenska (Sverige)</option>
+                        <option value="#">Norsk</option>
+                        <option value="#">Nederlands</option>
+                    </select>
+                </div>
+                <div class="site-header__theme-toggle">
+                    Dark mode <button type="button" id="theme-toggle" aria-label="Toggle dark/light mode" data-theme-toggle></button>
+                </div>
+                <button type="button" id="search-toggle" class="site-header__search-toggle" data-search-toggle data-label-closed="Open search" data-label-open="Close search" aria-label="Open search" aria-expanded="false" aria-controls="search-form">Search</button>
+                <a href="https://hub.greenstep.com/login" class="site-header__login" target="_blank">Log in</a>
+            </div>
+        </div>
+        <div class="site-header__main">
+            <div class="wrap">
+                <a href="/" class="site-header__logo" aria-label="Greenstep homepage">
+                    <div class="logo" style="-webkit-mask-image: url(assets/images/logo-greenstep.svg); mask-image: url(assets/images/logo-greenstep.svg);"></div>
+                </a>
+                <nav id="main-menu" class="main-menu" aria-label="Main menu" data-main-menu>
+                    <ul id="main-menu-list" class="menu" role="menubar">
+                        <li class="menu-item menu-item-has-children" role="presentation">
+                            <a href="#" role="menuitem" aria-expanded="false" aria-haspopup="true">Services</a>
+                            <ul class="sub-menu" role="menu" aria-hidden="true" aria-label="Services submenu">
+                                <li class="menu-item menu-item-has-children" role="presentation">
+                                    <a href="#" role="menuitem">Financial Services</a>
+                                    <ul class="sub-menu" role="menu" aria-label="Financial Services submenu">
+                                        <li class="menu-item menu-item-with-icon menu-item-with-description" role="presentation">
+                                            <a href="/test" role="menuitem">
+                                                <div class="link-icon" style="-webkit-mask-image: url(assets/images/icon-accounting-reporting.svg); mask-image: url(assets/images/icon-accounting-reporting.svg);"></div>
+                                                <div class="link-text">Accounting & reporting <span class="link-description">Clear books and reports.</span></div>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item menu-item-with-icon menu-item-with-description" role="presentation">
+                                            <a href="#" role="menuitem">
+                                                <div class="link-icon" style="-webkit-mask-image: url(assets/images/icon-cfo-as-a-service.svg); mask-image: url(assets/images/icon-cfo-as-a-service.svg);"></div>
+                                                <div class="link-text">CFO as a service <span class="link-description">Strategic financial support.</span></div>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item menu-item-with-icon menu-item-with-description" role="presentation">
+                                            <a href="#" role="menuitem">
+                                                <div class="link-icon" style="-webkit-mask-image: url(assets/images/icon-group-consolidation.svg); mask-image: url(assets/images/icon-group-consolidation.svg);"></div>
+                                                <div class="link-text">Group consolidation <span class="link-description">Group-level reporting help.</span></div>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item menu-item-with-icon menu-item-with-description" role="presentation">
+                                            <a href="#" role="menuitem">
+                                                <div class="link-icon" style="-webkit-mask-image: url(assets/images/icon-financial-advisory.svg); mask-image: url(assets/images/icon-financial-advisory.svg);"></div>
+                                                <div class="link-text">Financial advisory <span class="link-description">Advice for better finances.</span></div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item menu-item-has-children" role="presentation">
+                                    <a href="#" role="menuitem">Payroll & HR</a>
+                                    <ul class="sub-menu" role="menu" aria-label="Payroll & HR submenu">
+                                        <li class="menu-item menu-item-with-icon menu-item-with-description" role="presentation">
+                                            <a href="#" role="menuitem">
+                                                <div class="link-icon" style="-webkit-mask-image: url(assets/images/icon-international-payroll.svg); mask-image: url(assets/images/icon-international-payroll.svg);"></div>
+                                                <div class="link-text">International payroll <span class="link-description">Payroll across borders.</span></div>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item menu-item-with-icon menu-item-with-description" role="presentation">
+                                            <a href="#" role="menuitem">
+                                                <div class="link-icon" style="-webkit-mask-image: url(assets/images/icon-hr-services.svg); mask-image: url(assets/images/icon-hr-services.svg);"></div>
+                                                <div class="link-text">HR Services <span class="link-description">Support for your people.</span></div>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item menu-item-with-icon menu-item-with-description" role="presentation">
+                                            <a href="#" role="menuitem">
+                                                <div class="link-icon" style="-webkit-mask-image: url(assets/images/icon-learning-development.svg); mask-image: url(assets/images/icon-learning-development.svg);"></div>
+                                                <div class="link-text">Learning & development <span class="link-description">Upskill your workforce.</span></div>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item menu-item-with-icon menu-item-with-description" role="presentation">
+                                            <a href="#" role="menuitem">
+                                                <div class="link-icon" style="-webkit-mask-image: url(assets/images/icon-payroll-quality-assurance.svg); mask-image: url(assets/images/icon-payroll-quality-assurance.svg);"></div>
+                                                <div class="link-text">Payroll quality assurance <span class="link-description">Audit your payroll process.</span></div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item menu-item-has-children" role="presentation">
+                                    <a href="#" role="menuitem">Technology & ERP</a>
+                                    <ul class="sub-menu" role="menu" aria-label="Technology & ERP submenu">
+                                        <li class="menu-item menu-item-with-icon menu-item-with-description" role="presentation">
+                                            <a href="#" role="menuitem">
+                                                <div class="link-icon" style="-webkit-mask-image: url(assets/images/icon-netsuite.svg); mask-image: url(assets/images/icon-netsuite.svg);"></div>
+                                                <div class="link-text">NetSuite <span class="link-description">Full ERP support.</span></div>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item menu-item-with-icon menu-item-with-description" role="presentation">
+                                            <a href="#" role="menuitem">
+                                                <div class="link-icon" style="-webkit-mask-image: url(assets/images/icon-salesforce.svg); mask-image: url(assets/images/icon-salesforce.svg);"></div>
+                                                <div class="link-text">Salesforce <span class="link-description">CRM tailored to you.</span></div>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item menu-item-with-icon menu-item-with-description" role="presentation">
+                                            <a href="#" role="menuitem">
+                                                <div class="link-icon" style="-webkit-mask-image: url(assets/images/icon-bi-analytics.svg); mask-image: url(assets/images/icon-bi-analytics.svg);"></div>
+                                                <div class="link-text">BI & analytics <span class="link-description">Insights from data.</span></div>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item menu-item-with-icon menu-item-with-description" role="presentation">
+                                            <a href="#" role="menuitem">
+                                                <div class="link-icon" style="-webkit-mask-image: url(assets/images/icon-ai-automation.svg); mask-image: url(assets/images/icon-ai-automation.svg);"></div>
+                                                <div class="link-text">AI & automation <span class="link-description">Boost efficiency with tech.</span></div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item menu-item-has-children" role="presentation">
+                                    <a href="#" role="menuitem">Sustainability & ESG</a>
+                                    <ul class="sub-menu" role="menu" aria-label="Sustainability & ESG submenu">
+                                        <li class="menu-item menu-item-with-icon menu-item-with-description" role="presentation">
+                                            <a href="#" role="menuitem">
+                                                <div class="link-icon" style="-webkit-mask-image: url(assets/images/icon-esg-strategy.svg); mask-image: url(assets/images/icon-esg-strategy.svg);"></div>
+                                                <div class="link-text">ESG strategy <span class="link-description">Build your ESG roadmap.</span></div>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item menu-item-with-icon menu-item-with-description" role="presentation">
+                                            <a href="#" role="menuitem">
+                                                <div class="link-icon" style="-webkit-mask-image: url(assets/images/icon-regulatory-reporting.svg); mask-image: url(assets/images/icon-regulatory-reporting.svg);"></div>
+                                                <div class="link-text">Regulatory reporting <span class="link-description">Stay compliant.</span></div>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item menu-item-with-icon menu-item-with-description" role="presentation">
+                                            <a href="#" role="menuitem">
+                                                <div class="link-icon" style="-webkit-mask-image: url(assets/images/icon-carbon-footprint-calculations.svg); mask-image: url(assets/images/icon-carbon-footprint-calculations.svg);"></div>
+                                                <div class="link-text">Carbon footprint calculations <span class="link-description">Measure your emissions.</span></div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item menu-item-textbox" role="presentation">
+                                    <p>Explore our expert services across finance, HR, tech and sustainability. <a href="#" class="button button-arrow">See all services</a></p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item menu-item-has-children" role="presentation">
+                            <a href="#" role="menuitem" aria-expanded="false" aria-haspopup="true">Solutions</a>
+                            <ul class="sub-menu" role="menu" aria-hidden="true" aria-label="Solutions submenu">
+                                <li class="menu-item menu-item-has-children" role="presentation">
+                                    <a href="#" role="menuitem">Tailored Solutions for Different Industries and Business Models</a>
+                                    <ul class="sub-menu" role="menu" aria-label="Tailored Solutions for Different Industries and Business Models submenu">
+                                        <li class="menu-item menu-item-with-icon menu-item-with-description" role="presentation">
+                                            <a href="#" role="menuitem">
+                                                <div class="link-icon" style="-webkit-mask-image: url(assets/images/icon-startups-scaleups.svg); mask-image: url(assets/images/icon-startups-scaleups.svg);"></div>
+                                                <div class="link-text">Startups & Scaleups <span class="link-description">Clear books and reports.</span></div>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item menu-item-with-icon menu-item-with-description" role="presentation">
+                                            <a href="#" role="menuitem">
+                                                <div class="link-icon" style="-webkit-mask-image: url(assets/images/icon-saas-tech-companies.svg); mask-image: url(assets/images/icon-saas-tech-companies.svg);"></div>
+                                                <div class="link-text">SaaS & Tech Companies <span class="link-description">Support for your people.</span></div>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item menu-item-with-icon menu-item-with-description" role="presentation">
+                                            <a href="#" role="menuitem">
+                                                <div class="link-icon" style="-webkit-mask-image: url(assets/images/icon-listed-pre-ipo-companies.svg); mask-image: url(assets/images/icon-listed-pre-ipo-companies.svg);"></div>
+                                                <div class="link-text">Listed & Pre-IPO Companies <span class="link-description">Strategic financial support.</span></div>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item menu-item-with-icon menu-item-with-description" role="presentation">
+                                            <a href="#" role="menuitem">
+                                                <div class="link-icon" style="-webkit-mask-image: url(assets/images/icon-international-companies.svg); mask-image: url(assets/images/icon-international-companies.svg);"></div>
+                                                <div class="link-text">International Companies <span class="link-description">Full ERP support.</span></div>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item menu-item-with-icon menu-item-with-description" role="presentation">
+                                            <a href="#" role="menuitem">
+                                                <div class="link-icon" style="-webkit-mask-image: url(assets/images/icon-investors-private-equity.svg); mask-image: url(assets/images/icon-investors-private-equity.svg);"></div>
+                                                <div class="link-text">Investors & Private Equity <span class="link-description">Payroll across borders.</span></div>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item menu-item-with-icon menu-item-with-description" role="presentation">
+                                            <a href="#" role="menuitem">
+                                                <div class="link-icon" style="-webkit-mask-image: url(assets/images/icon-expert-organizations.svg); mask-image: url(assets/images/icon-expert-organizations.svg);"></div>
+                                                <div class="link-text">Expert Organizations <span class="link-description">CRM tailored to you.</span></div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item menu-item-has-children menu-item-aside" role="presentation">
+                                    <a href="#" role="menuitem">Interim Solutions</a>
+                                    <ul class="sub-menu" role="menu" aria-label="Interim Solutions submenu">
+                                        <li class="menu-item menu-item-with-icon" role="presentation">
+                                            <a href="#" role="menuitem">
+                                                <div class="link-icon" style="-webkit-mask-image: url(assets/images/icon-interim-cfo-controller.svg); mask-image: url(assets/images/icon-interim-cfo-controller.svg);"></div>
+                                                <div class="link-text">Interim CFO / Controller</div>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item menu-item-with-icon" role="presentation">
+                                            <a href="#" role="menuitem">
+                                                <div class="link-icon" style="-webkit-mask-image: url(assets/images/icon-interim-hr-ld.svg); mask-image: url(assets/images/icon-interim-hr-ld.svg);"></div>
+                                                <div class="link-text">Interim HR / L&D</div>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item menu-item-with-icon" role="presentation">
+                                            <a href="#" role="menuitem">
+                                                <div class="link-icon" style="-webkit-mask-image: url(assets/images/icon-interim-cio-cdo.svg); mask-image: url(assets/images/icon-interim-cio-cdo.svg);"></div>
+                                                <div class="link-text">Interim CIO / CDO</div>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item menu-item-with-icon" role="presentation">
+                                            <a href="#" role="menuitem">
+                                                <div class="link-icon" style="-webkit-mask-image: url(assets/images/icon-interim-sustainability-expert.svg); mask-image: url(assets/images/icon-interim-sustainability-expert.svg);"></div>
+                                                <div class="link-text">Interim Sustainability Expert</div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item menu-item-has-children" role="presentation">
+                            <a href="#" role="menuitem" aria-expanded="false" aria-haspopup="true">About us</a>
+                            <ul class="sub-menu" role="menu" aria-hidden="true" aria-label="About us submenu">
+                                <li class="menu-item menu-item-has-children" role="presentation">
+                                    <a href="#" role="menuitem">Meet Greenstep</a>
+                                    <ul class="sub-menu" role="menu" aria-label="Meet Greenstep submenu">
+                                        <li class="menu-item menu-item-with-description" role="presentation">
+                                            <a href="#" role="menuitem">
+                                                <div class="link-text">About us <span class="link-description">A trusted partner for businesses.</span></div>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item menu-item-with-description" role="presentation">
+                                            <a href="#" role="menuitem">
+                                                <div class="link-text">Offices & Global Reach <span class="link-description">Find us across the Nordics and Europe.</span></div>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item menu-item-with-description" role="presentation">
+                                            <a href="#" role="menuitem">
+                                                <div class="link-text">Contact us <span class="link-description">Meet the people and find all contacts.</span></div>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item menu-item-with-description" role="presentation">
+                                            <a href="#" role="menuitem">
+                                                <div class="link-text">Systems <span class="link-description">Explore the software and platforms we use to power your success.</span></div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item menu-item-has-children" role="presentation">
+                                    <a href="#" role="menuitem">Culture & Careers</a>
+                                    <ul class="sub-menu" role="menu" aria-label="Culture & Careers submenu">
+                                        <li class="menu-item menu-item-with-description" role="presentation">
+                                            <a href="#" role="menuitem">
+                                                <div class="link-text">Working at Greenstep <span class="link-description">Explore our work culture.</span></div>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item menu-item-with-description" role="presentation">
+                                            <a href="#" role="menuitem">
+                                                <div class="link-text">Career Opportunities <span class="link-description">Life at Greenstep and open roles.</span></div>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item menu-item-with-description" role="presentation">
+                                            <a href="#" role="menuitem">
+                                                <div class="link-text">Open Positions <span class="link-description">Find your next role on our team.</span></div>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item menu-item-with-description" role="presentation">
+                                            <a href="#" role="menuitem">
+                                                <div class="link-text">Greenstep Academy <span class="link-description">Lifelong learning and continuous development for all employees.</span></div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item menu-item-cards" role="presentation">
+                                    <ul class="sub-menu" role="menu">
+                                        <li class="menu-item menu-item-card" role="presentation">
+                                            <a href="#" role="menuitem">
+                                                <div class="card-image"><img src="assets/images/menu-sustainability.jpg" alt="" loading="lazy"></div>
+                                                <div class="card-text">Sustainability <span class="card-description">10% of profits shared. Responsibility woven into daily actions.</span></div>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item menu-item-card" role="presentation">
+                                            <a href="#" role="menuitem">
+                                                <div class="card-image"><img src="assets/images/menu-security-compliance.jpg" alt="" loading="lazy"></div>
+                                                <div class="card-text">Security & Compliance <span class="card-description">ISO27001 certified. GDPR, AML, KYC & NIS2 compliant.</span></div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item menu-item-has-children" role="presentation">
+                            <a href="#" role="menuitem" aria-expanded="false" aria-haspopup="true">Insights</a>
+                            <ul class="sub-menu" role="menu" aria-hidden="true" aria-label="Insights submenu">
+                                <li class="menu-item menu-item-has-children" role="presentation">
+                                    <a href="#" role="menuitem">News & Insights</a>
+                                    <ul class="sub-menu" role="menu" aria-label="News & Insights submenu">
+                                        <li class="menu-item menu-item-with-icon menu-item-with-description" role="presentation">
+                                            <a href="#" role="menuitem">
+                                                <div class="link-icon" style="-webkit-mask-image: url(assets/images/icon-blog.svg); mask-image: url(assets/images/icon-blog.svg);"></div>
+                                                <div class="link-text">Blog <span class="link-description">Insights on finance, tech, HR and sustainability.</span></div>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item menu-item-with-icon menu-item-with-description" role="presentation">
+                                            <a href="#" role="menuitem">
+                                                <div class="link-icon" style="-webkit-mask-image: url(assets/images/icon-customer-stories.svg); mask-image: url(assets/images/icon-customer-stories.svg);"></div>
+                                                <div class="link-text">Customer Stories <span class="link-description">Trusted by thousands of companies worldwide.</span></div>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item menu-item-with-icon menu-item-with-description" role="presentation">
+                                            <a href="#" role="menuitem">
+                                                <div class="link-icon" style="-webkit-mask-image: url(assets/images/icon-events-webinars.svg); mask-image: url(assets/images/icon-events-webinars.svg);"></div>
+                                                <div class="link-text">Events & Webinars <span class="link-description">Join live or on-demand expert sessions.</span></div>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item menu-item-with-icon menu-item-with-description" role="presentation">
+                                            <a href="#" role="menuitem">
+                                                <div class="link-icon" style="-webkit-mask-image: url(assets/images/icon-news-announcements.svg); mask-image: url(assets/images/icon-news-announcements.svg);"></div>
+                                                <div class="link-text">News & Announcements <span class="link-description">Latest updates from Greenstep.</span></div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item menu-item-has-children" role="presentation">
+                                    <a href="#" role="menuitem">Resources</a>
+                                    <ul class="sub-menu" role="menu" aria-label="Resources submenu">
+                                        <li class="menu-item menu-item-with-icon menu-item-with-description" role="presentation">
+                                            <a href="#" role="menuitem">
+                                                <div class="link-icon" style="-webkit-mask-image: url(assets/images/icon-guides-whitepapers.svg); mask-image: url(assets/images/icon-guides-whitepapers.svg);"></div>
+                                                <div class="link-text">Guides & Whitepapers <span class="link-description">In-depth content to support decision-making.</span></div>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item menu-item-with-icon menu-item-with-description" role="presentation">
+                                            <a href="#" role="menuitem">
+                                                <div class="link-icon" style="-webkit-mask-image: url(assets/images/icon-press.svg); mask-image: url(assets/images/icon-press.svg);"></div>
+                                                <div class="link-text">Press <span class="link-description">News and writings, and press resources.</span></div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item menu-item-cards" role="presentation">
+                                    <ul class="sub-menu" role="menu">
+                                        <li class="menu-item menu-item-card" role="presentation">
+                                            <a href="#" role="menuitem">
+                                                <div class="card-image"><img src="assets/images/menu-news-1.jpg" alt="" loading="lazy"></div>
+                                                <div class="card-text">120+ hours per month freed for core business <span class="card-description">Greenstep took over daily accounting and reporting so the CFO could focus on growth.</span></div>
+                                                <div class="card-read-more">Read Customer Story</div>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item menu-item-card" role="presentation">
+                                            <a href="#" role="menuitem">
+                                                <div class="card-image"><img src="assets/images/menu-news-2.jpg" alt="" loading="lazy"></div>
+                                                <div class="card-text">120+ hours per month freed for core business <span class="card-description">Greenstep took over daily accounting and reporting so the CFO could focus on growth.</span></div>
+                                                <div class="card-read-more">Read Customer Story</div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item" role="presentation">
+                            <a href="#" role="menuitem">Random link</a>
+                        </li>
+                    </ul>
+                    <div class="mobile-eyebrow-links">
+                        <div class="mobile-eyebrow-links__language-menu">
+                            <select name="language" aria-label="Select language" onchange="window.location = this.value;">
+                                <option value="#" selected>Global (EN)</option>
+                                <option value="#">Suomi</option>
+                            </select>
+                        </div>
+                        <button type="button" class="mobile-eyebrow-links__search-toggle" data-mobile-search-toggle data-label-closed="Open search" data-label-open="Close search" aria-label="Open search" aria-expanded="false" aria-controls="search-form">Search</button>
+                        <a href="https://hub.greenstep.com/login" class="mobile-eyebrow-links__login" target="_blank">Log in</a>
+                        <div class="mobile-eyebrow-links__theme-toggle">
+                            <button type="button" data-mobile-theme-toggle></button> Dark mode
+                        </div>
+                    </div>
+                </nav>
+                <nav id="header-buttons" class="header-buttons" aria-label="Header buttons">
+                    <ul id="header-buttons-list" class="menu" role="menubar">
+                        <li class="menu-item" role="presentation">
+                            <a href="#" class="button" role="menuitem">Contact us</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button type="button" id="main-menu-toggle" class="main-menu-toggle" data-main-menu-toggle data-label-closed="Open main menu" data-label-open="Close main menu" aria-label="Open main menu" aria-expanded="false" aria-controls="main-menu-list">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <search id="search-form" class="site-header__search-form" data-search-form aria-hidden="true">
+            <div class="wrap">
+                <form action="#" method="get" role="search" aria-label="Site search">
+                    <label for="search-input" class="visually-hidden">Search the site</label>
+                    <input type="search" id="search-input" name="s" placeholder="Start typing a keyword" autocomplete="off" />
+                    <div class="search-loading"></div>
+                </form>
+
+                <div class="search-results">
+                    <p class="search-results-count">
+                        <strong data-search-results-count>62</strong> results found with keyword <strong data-search-results-keyword>palkanlaskenta</strong>
+                    </p>
+                    <ol data-search-results>
+                        <li class="search-result">
+                            <article>
+                                <a href="#">
+                                    <p class="tagline">Page</p>
+                                    <h1>Greenstep tarjoaa Leppäkoskelle sujuvaa <span class="highlight">palkanlaskenta</span>a sekä palkkayhteyspalvelua</h1>
+                                    <p class="url">https://greenstep.fi/artikkelit/tarjoamme-leppakoski-groupille-luotettavaa-palkkayhteyshenkilo-ja-palkanlaskennan-palvelua</p>
+                                </a>
+                            </article>
+                        </li>
+                        <li class="search-result">
+                            <article>
+                                <a href="#">
+                                    <p class="tagline">Page</p>
+                                    <h1>The Switch vähensi manuaalista työtä ulkoistamalla palkanlaskennan Greenstepille</h1>
+                                    <p class="url">https://greenstep.fi/artikkelit/tarjoamme-leppakoski-groupille-luotettavaa-palkkayhteyshenkilo-ja-palkanlaskennan-palvelua</p>
+                                </a>
+                            </article>
+                        </li>
+                        <li class="search-result">
+                            <article>
+                                <a href="#">
+                                    <p class="tagline">Post</p>
+                                    <h1>Kauppakamariaamiainen: Datalla johtaminen käytännöksi, Joensuu</h1>
+                                    <p class="url">https://greenstep.fi/artikkelit/tarjoamme-leppakoski-groupille-luotettavaa-palkkayhteyshenkilo-ja-palkanlaskennan-palvelua</p>
+                                </a>
+                            </article>
+                        </li>
+                        <li class="search-result">
+                            <article>
+                                <a href="#">
+                                    <p class="tagline">Page</p>
+                                    <h1>Kauppakamariaamiainen: Datalla johtaminen käytännöksi, Joensuu</h1>
+                                    <p class="url">https://greenstep.fi/artikkelit/tarjoamme-leppakoski-groupille-luotettavaa-palkkayhteyshenkilo-ja-palkanlaskennan-palvelua</p>
+                                </a>
+                            </article>
+                        </li>
+                        <li class="search-result">
+                            <article>
+                                <a href="#">
+                                    <p class="tagline">Page</p>
+                                    <h1>Greenstep tarjoaa Leppäkoskelle sujuvaa <span class="highlight">palkanlaskenta</span>a sekä palkkayhteyspalvelua</h1>
+                                    <p class="url">https://greenstep.fi/artikkelit/tarjoamme-leppakoski-groupille-luotettavaa-palkkayhteyshenkilo-ja-palkanlaskennan-palvelua</p>
+                                </a>
+                            </article>
+                        </li>
+                        <li class="search-result">
+                            <article>
+                                <a href="#">
+                                    <p class="tagline">Page</p>
+                                    <h1>The Switch vähensi manuaalista työtä ulkoistamalla palkanlaskennan Greenstepille</h1>
+                                    <p class="url">https://greenstep.fi/artikkelit/tarjoamme-leppakoski-groupille-luotettavaa-palkkayhteyshenkilo-ja-palkanlaskennan-palvelua</p>
+                                </a>
+                            </article>
+                        </li>
+                        <li class="search-result">
+                            <article>
+                                <a href="#">
+                                    <p class="tagline">Post</p>
+                                    <h1>Kauppakamariaamiainen: Datalla johtaminen käytännöksi, Joensuu</h1>
+                                    <p class="url">https://greenstep.fi/artikkelit/tarjoamme-leppakoski-groupille-luotettavaa-palkkayhteyshenkilo-ja-palkanlaskennan-palvelua</p>
+                                </a>
+                            </article>
+                        </li>
+                        <li class="search-result">
+                            <article>
+                                <a href="#">
+                                    <p class="tagline">Page</p>
+                                    <h1>Kauppakamariaamiainen: Datalla johtaminen käytännöksi, Joensuu</h1>
+                                    <p class="url">https://greenstep.fi/artikkelit/tarjoamme-leppakoski-groupille-luotettavaa-palkkayhteyshenkilo-ja-palkanlaskennan-palvelua</p>
+                                </a>
+                            </article>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </search>
+    </header>
+    <main id="main-content">
+<section class="section-margin" style="height: 200vh;">
+    <div class="wrap">
+        <h1>Kontsaa</h1>
+    </div>
+</section>
+    </main>
+    <footer class="site-footer">
+        
+    </footer>
+</body>
+</html>

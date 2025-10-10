@@ -1,0 +1,32 @@
+{
+    "name": "template",
+    "version": "1.0.0",
+    "description": "Template",
+    "main": "dist",
+    "author": "Riku Jokinen",
+    "scripts": {
+        "copy": "npm-run-all --parallel copy:*",
+        "copy:assets": "del-cli --force ./dist/assets/**/* && copyfiles -u 2 ./src/assets/**/* ./dist/assets",
+        "watch": "npm-run-all --parallel watch:*",
+        "watch:assets": "onchange './src/assets/**/*' -- npm-run-all copy:assets",
+        "watch:js": "onchange './src/js/**/*' -- node ./create-static-files.js",
+        "watch:pages": "onchange './src/pages/*.php' -- node ./create-static-files.js",
+        "watch:php": "onchange './src/*.php' -- node ./create-static-files.js",
+        "watch:sass": "sass --no-source-map --watch --style=compressed --update ./src/style.scss:./dist/style.css",
+        "serve": "gulp",
+        "start": "npm-run-all --parallel copy watch serve"
+    },
+    "dependencies": {
+        "browser-sync": "^3.0.4",
+        "compression": "^1.8.1",
+        "copyfiles": "^2.4.1",
+        "del-cli": "^7.0.0",
+        "gulp": "^5.0.1",
+        "gulp-cache": "^1.1.3",
+        "gulp-connect-php": "^1.0.3",
+        "npm-run-all": "^4.1.5",
+        "onchange": "^7.1.0",
+        "sass": "^1.93.2",
+        "uglify-js": "^3.19.3"
+    }
+}

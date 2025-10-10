@@ -1,0 +1,129 @@
+/* latin-ext */
+@font-face {
+    font-family: 'DM Sans';
+    font-style: italic;
+    font-weight: 100 1000;
+    font-display: swap;
+    src: url(assets/fonts/dm-sans-italic-latin-ext.woff2) format('woff2');
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+    font-family: 'DM Sans';
+    font-style: italic;
+    font-weight: 100 1000;
+    font-display: swap;
+    src: url(assets/fonts/dm-sans-italic-latin.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+@font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 100 1000;
+    font-display: swap;
+    src: url(assets/fonts/dm-sans-normal-latin-ext.woff2) format('woff2');
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 100 1000;
+    font-display: swap;
+    src: url(assets/fonts/dm-sans-normal-latin.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+h1 {
+    font-size: var(--fs-heading-1);
+    font-weight: 500;
+    line-height: 120%;
+}
+
+h2 {
+    font-size: var(--fs-heading-2);
+    font-weight: 500;
+    line-height: 120%;
+}
+
+h3 {
+    font-size: var(--fs-heading-3);
+    font-weight: 500;
+    line-height: 120%;
+}
+
+h4 {
+    font-size: var(--fs-heading-4);
+    font-weight: 500;
+    line-height: 130%;
+}
+
+h5 {
+    font-size: var(--fs-heading-5);
+    font-weight: 500;
+    line-height: 140%;
+}
+
+h6 {
+    font-size: var(--fs-heading-6);
+    font-weight: 600;
+    line-height: 140%;
+}
+
+p {
+    font-size: var(--fs-regular);
+    font-weight: 400;
+    line-height: 150%;
+
+    &.tagline {
+        color: var(--clr-neutral);
+        font-size: var(--fs-tiny);
+        font-weight: 700;
+        line-height: 150%;
+        margin: 0 0 0.25rem 0;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+    }
+}
+
+ul, ol {
+    font-size: var(--fs-regular);
+    font-weight: 400;
+    line-height: 150%;
+
+    li {
+        padding-left: 0.5em;
+
+        &::marker {
+            font-size: 1em;
+        }
+
+        ul, ol {
+            margin-top: 1em;
+        }
+    }
+}
+
+a {
+    color: inherit;
+}
+
+b, strong {
+    font-weight: 700;
+}
+
+kbd {
+    display: inline-block;
+    margin: 0;
+    padding: 0.25em 0.5em;
+    font-size: var(--fs-tiny);
+    font-family: var(--ff);
+    background-color: var(--clr-white);
+    color: var(--clr-neutral-darkest);
+    border-radius: var(--br-small);
+    box-shadow: 0.0625rem 0.125rem 0.125rem color-mix(in srgb, var(--clr-neutral-darkest) 25%, transparent);
+}
