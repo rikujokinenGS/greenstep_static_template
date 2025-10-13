@@ -120,6 +120,8 @@
                     background-color: #000;
                     opacity: 0.2;
                     z-index: 3;
+                    -webkit-transform: translate3d(0, 0, 0) !important;
+                    transform: translate3d(0, 0, 0) !important;
                 }
 
                 > * {
@@ -154,8 +156,8 @@
                 padding: clamp(1rem, 2vw, 1.5rem);
                 color: #fff;
                 z-index: 5;
-                -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0);
+                -webkit-transform: translate3d(0, 0, 0) !important;
+                transform: translate3d(0, 0, 0) !important;
             }
 
             &__logo {
