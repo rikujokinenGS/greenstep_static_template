@@ -20,7 +20,7 @@
                             </video>
                         </div>
                         <div class="case-story__content">
-                            <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo" class="case-story__logo">
+                            <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo" class="case-story__logo" loading="lazy">
                             <p class="case-story__text">
                                 We help you scale with confidence. From financial clarity to stronger teams, we enable your sustainable growth.
                             </p>
@@ -38,7 +38,7 @@
                             </video>
                         </div>
                         <div class="case-story__content">
-                            <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo" class="case-story__logo">
+                            <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo" class="case-story__logo" loading="lazy">
                             <p class="case-story__text">
                                 We help you scale with confidence. From financial clarity to stronger teams, we enable your sustainable growth.
                             </p>
@@ -56,7 +56,7 @@
                             </video>
                         </div>
                         <div class="case-story__content">
-                            <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo" class="case-story__logo">
+                            <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo" class="case-story__logo" loading="lazy">
                             <p class="case-story__text">
                                 We help you scale with confidence. From financial clarity to stronger teams, we enable your sustainable growth.
                             </p>
@@ -74,7 +74,7 @@
                             </video>
                         </div>
                         <div class="case-story__content">
-                            <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo" class="case-story__logo">
+                            <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo" class="case-story__logo" loading="lazy">
                             <p class="case-story__text">
                                 We help you scale with confidence. From financial clarity to stronger teams, we enable your sustainable growth.
                             </p>
@@ -92,7 +92,7 @@
                             </video>
                         </div>
                         <div class="case-story__content">
-                            <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo" class="case-story__logo">
+                            <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo" class="case-story__logo" loading="lazy">
                             <p class="case-story__text">
                                 We help you scale with confidence. From financial clarity to stronger teams, we enable your sustainable growth.
                             </p>
@@ -111,7 +111,7 @@
                             </video>
                         </div>
                         <div class="case-story__content">
-                            <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo" class="case-story__logo">
+                            <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo" class="case-story__logo" loading="lazy">
                             <p class="case-story__text">
                                 We help you scale with confidence. From financial clarity to stronger teams, we enable your sustainable growth.
                             </p>
@@ -129,7 +129,7 @@
                             </video>
                         </div>
                         <div class="case-story__content">
-                            <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo" class="case-story__logo">
+                            <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo" class="case-story__logo" loading="lazy">
                             <p class="case-story__text">
                                 We help you scale with confidence. From financial clarity to stronger teams, we enable your sustainable growth.
                             </p>
@@ -147,7 +147,7 @@
                             </video>
                         </div>
                         <div class="case-story__content">
-                            <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo" class="case-story__logo">
+                            <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo" class="case-story__logo" loading="lazy">
                             <p class="case-story__text">
                                 We help you scale with confidence. From financial clarity to stronger teams, we enable your sustainable growth.
                             </p>
@@ -165,7 +165,7 @@
                             </video>
                         </div>
                         <div class="case-story__content">
-                            <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo" class="case-story__logo">
+                            <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo" class="case-story__logo" loading="lazy">
                             <p class="case-story__text">
                                 We help you scale with confidence. From financial clarity to stronger teams, we enable your sustainable growth.
                             </p>
@@ -183,7 +183,7 @@
                             </video>
                         </div>
                         <div class="case-story__content">
-                            <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo" class="case-story__logo">
+                            <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo" class="case-story__logo" loading="lazy">
                             <p class="case-story__text">
                                 We help you scale with confidence. From financial clarity to stronger teams, we enable your sustainable growth.
                             </p>
@@ -202,7 +202,7 @@
                             </video>
                         </div>
                         <div class="case-story__content">
-                            <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo" class="case-story__logo">
+                            <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo" class="case-story__logo" loading="lazy">
                             <p class="case-story__text">
                                 We help you scale with confidence. From financial clarity to stronger teams, we enable your sustainable growth.
                             </p>
@@ -220,7 +220,7 @@
                             </video>
                         </div>
                         <div class="case-story__content">
-                            <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo" class="case-story__logo">
+                            <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo" class="case-story__logo" loading="lazy">
                             <p class="case-story__text">
                                 We help you scale with confidence. From financial clarity to stronger teams, we enable your sustainable growth.
                             </p>
@@ -238,7 +238,7 @@
                             </video>
                         </div>
                         <div class="case-story__content">
-                            <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo" class="case-story__logo">
+                            <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo" class="case-story__logo" loading="lazy">
                             <p class="case-story__text">
                                 We help you scale with confidence. From financial clarity to stronger teams, we enable your sustainable growth.
                             </p>
@@ -256,7 +256,7 @@
                             </video>
                         </div>
                         <div class="case-story__content">
-                            <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo" class="case-story__logo">
+                            <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo" class="case-story__logo" loading="lazy">
                             <p class="case-story__text">
                                 We help you scale with confidence. From financial clarity to stronger teams, we enable your sustainable growth.
                             </p>
@@ -274,7 +274,7 @@
                             </video>
                         </div>
                         <div class="case-story__content">
-                            <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo" class="case-story__logo">
+                            <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo" class="case-story__logo" loading="lazy">
                             <p class="case-story__text">
                                 We help you scale with confidence. From financial clarity to stronger teams, we enable your sustainable growth.
                             </p>
@@ -293,30 +293,30 @@
             <li class="big-hero__logos-item">
                 <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo">
             </li>
-            <li class="big-hero__logos-item">
+      loading="lazy"       <li class="big-hero__logos-item">
                 <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo">
             </li>
-            <li class="big-hero__logos-item">
+      loading="lazy"       <li class="big-hero__logos-item">
                 <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo">
             </li>
-            <li class="big-hero__logos-item">
+      loading="lazy"       <li class="big-hero__logos-item">
                 <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo">
             </li>
-            <li class="big-hero__logos-item">
+      loading="lazy"       <li class="big-hero__logos-item">
                 <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo">
             </li>
-            <li class="big-hero__logos-item">
+      loading="lazy"       <li class="big-hero__logos-item">
                 <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo">
             </li>
-            <li class="big-hero__logos-item">
+      loading="lazy"       <li class="big-hero__logos-item">
                 <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo">
             </li>
-            <li class="big-hero__logos-item">
+      loading="lazy"       <li class="big-hero__logos-item">
                 <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo">
             </li>
-            <li class="big-hero__logos-item">
+      loading="lazy"       <li class="big-hero__logos-item">
                 <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo">
             </li>
-        </ul>
+      loading="lazy"   </ul>
     </div>
 </section>

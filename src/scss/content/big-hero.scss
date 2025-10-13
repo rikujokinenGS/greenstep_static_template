@@ -62,6 +62,7 @@
             }
 
             &__item {
+                position: relative;
                 list-style-type: none;
                 margin: 0;
                 padding: 0;
@@ -106,6 +107,7 @@
                 height: 100%;
                 border-radius: var(--br-medium);
                 overflow: hidden;
+                isolation: isolate;
 
                 &::after {
                     content: "";
