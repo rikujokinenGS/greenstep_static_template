@@ -53,8 +53,6 @@
                 padding: 0;
                 height: clamp(220px, 40vw, 435px);
                 animation: caseStoryScroll 60s linear infinite;
-                -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0);
             }
 
             @keyframes caseStoryScroll {
@@ -68,6 +66,8 @@
                 list-style-type: none;
                 margin: 0;
                 padding: 0;
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
             }
 
             &__link {
