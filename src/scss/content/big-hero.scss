@@ -109,8 +109,6 @@
                 overflow: hidden;
                 isolation: isolate;
                 z-index: 1;
-                -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0);
 
                 &::after {
                     content: "";
@@ -156,6 +154,8 @@
                 padding: clamp(1rem, 2vw, 1.5rem);
                 color: #fff;
                 z-index: 5;
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
             }
 
             &__logo {
