@@ -76,6 +76,7 @@
                 height: 100%;
                 text-decoration: none;
                 border-radius: var(--br-medium);
+                isolation: isolate;
 
                 &:hover,
                 &:focus-visible {
@@ -106,8 +107,7 @@
                 width: 100%;
                 height: 100%;
                 border-radius: var(--br-medium);
-                overflow: hidden;
-                isolation: isolate;
+                overflow: hidden;                
 
                 &::after {
                     content: "";
@@ -162,6 +162,7 @@
                 object-fit: contain;
                 object-position: left center;
                 filter: brightness(0) invert(1);
+                z-index: 5;
             }
 
             &__text {
