@@ -1,8 +1,3 @@
-/* @preserve
-  Version: 1.0
-  Author: Riku Jokinen
-*/
-
 (function (factory) {
     typeof define === 'function' && define.amd ? define(factory) : typeof exports === 'object' ? (module.exports = factory()) : factory()
 })(function () {

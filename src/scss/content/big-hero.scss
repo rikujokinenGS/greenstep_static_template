@@ -229,6 +229,14 @@
                 }
             }
         }
+
+        &:hover {
+            .case-story {
+                &__list {
+                    animation-play-state: paused;
+                }
+            }
+        }
     }
 
     &__logos {
@@ -323,6 +331,24 @@ html[data-theme="dark"] {
             }
         }
     }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .big-hero {
+        &__case-stories {
+            .case-story {
+                &__slider {
+                    overflow-x: auto;
+                    padding-bottom: 1rem;
+                }
+
+                &__list {
+                    animation: none;
+                }
+            }
+        }
+    }
+
 }
 
 @media only screen and (max-width: 992px) {

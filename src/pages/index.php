@@ -322,22 +322,22 @@
 </section>
 <section class="text-media section-bg--white section-padding">
     <div class="wrap">
-        <div class="text-media__content">
+        <div class="text-media__content" data-animation="bottom">
             <h2>Flexible interim solutions</h2>
             <p>Get the expert support you need quickly in CFO, HR, IT or sustainability roles.</p>
             <a href="#" class="button button-primary">Explore our partnership model</a>
         </div>
-        <div class="text-media__media">
+        <div class="text-media__media" data-animation="bottom">
             <img src="assets/images/tmp.jpg" alt="">
         </div>
     </div>
 </section>
 <section class="text-media section-bg--neutral-100 section-padding">
     <div class="wrap">
-        <div class="text-media__media">
+        <div class="text-media__media" data-animation="bottom">
             <img src="assets/images/tmp.jpg" alt="">
         </div>
-        <div class="text-media__content">
+        <div class="text-media__content" data-animation="bottom">
             <h2>Greenstep as your technology partner</h2>
             <p>Our 100+ tech experts help implement and optimize ERP, BI and automation.</p>
             <ul>
@@ -352,7 +352,7 @@
 </section>
 <section class="text-media section-bg--white section-padding">
     <div class="wrap">       
-        <div class="text-media__content">
+        <div class="text-media__content" data-animation="bottom">
             <h2>Your financial backbone</h2>
             <p>From accounting and payroll to CFO support and strategic financial planning, we provide world-class financial services to help your business thrive.</p>
             <ul>
@@ -364,7 +364,7 @@
 
             <a href="#" class="button button-arrow">Book a meeting</a>
         </div>
-        <div class="text-media__media">
+        <div class="text-media__media" data-animation="bottom">
             <img src="assets/images/tmp.jpg" alt="">
         </div>     
     </div>
@@ -372,7 +372,7 @@
 <section class="cards section-bg--white section-padding">
     <div class="wrap">
         <h2 class="cards__title">Tailored solutions for every business</h2>
-        <div class="cards__grid">
+        <div class="cards__grid" data-animation="bottom">
             <a href="#" class="card-item">
                 <h3 class="card-item__title">Startup and growth companies</h3>
                 <div class="card-item__icon" style="-webkit-mask-image: url(assets/images/icon-startup-growth-companies.svg); mask-image: url(assets/images/icon-startup-growth-companies.svg);"></div>
@@ -407,22 +407,115 @@
     </div>
 </section>
 <section class="people-cta section-bg--accent-100 section-padding">
-    <div class="people-cta__bg" data-parallax>
-        <img src="assets/images/person-1.jpg" data-plane="1" width="300" height="346" alt="">
-        <img src="assets/images/person-5.jpg" data-plane="1" width="300" height="384" alt="">
-        <img src="assets/images/person-4.jpg" data-plane="2" width="300" height="264" alt="">
-        <img src="assets/images/person-2.jpg" data-plane="4" width="300" height="332" alt="">
-        <img src="assets/images/person-3.jpg" data-plane="3" width="299" height="306" alt="">
-        <img src="assets/images/person-6.jpg" data-plane="3" width="300" height="381" alt="">
-        <img src="assets/images/person-7.jpg" data-plane="4" width="300" height="326" alt="">
-        <img src="assets/images/person-4.jpg" data-plane="2" width="300" height="264" alt="">
+    <div class="people-cta__bg" data-greenstep-parallax>
+        <img src="assets/images/person-1.jpg" data-parallax-plane="1" width="300" height="346" alt="">
+        <img src="assets/images/person-5.jpg" data-parallax-plane="1" width="300" height="384" alt="">
+        <img src="assets/images/person-4.jpg" data-parallax-plane="2" width="300" height="264" alt="">
+        <img src="assets/images/person-2.jpg" data-parallax-plane="4" width="300" height="332" alt="">
+        <img src="assets/images/person-3.jpg" data-parallax-plane="3" width="299" height="306" alt="">
+        <img src="assets/images/person-6.jpg" data-parallax-plane="3" width="300" height="381" alt="">
+        <img src="assets/images/person-7.jpg" data-parallax-plane="4" width="300" height="326" alt="">
+        <img src="assets/images/person-4.jpg" data-parallax-plane="2" width="300" height="264" alt="">
     </div>
     <div class="wrap">
-        <div class="people-cta__content">
+        <div class="people-cta__content" data-animation="bottom">
             <h2><strong>Your growth journey</strong>, supported every step</h2>
             <p>Whether local or international, our experts and digital tools ensure your finances and people thrive together.</p>
             <a href="#" class="button button-primary">Book a meeting</a>
         </div>
     </div>
 </section>
-<section style="height: 100vh;"></section>
+<section class="stats section-bg--white section-padding" data-greenstep-stats data-greenstep-stats-duration="2000" data-greenstep-stats-locale="en-US">
+    <div class="wrap">
+        <div class="stats__text">
+            <h2>Why <strong>growth businesses</strong> choose us</h2>
+        </div>
+        <div class="stats__items">
+            <div class="stats-item" data-animation="bottom">
+                <div class="stats-item__number" data-start="0" data-end="700" data-prefix="" data-suffix="+">700+</div>
+                <div class="stats-item__text">
+                    <p><strong>700+ experts, 5 countries</strong></p>
+                    <p>Local expertise, Nordic scale — our cross-border teams work closely with you.</p>
+                </div>
+            </div>
+            <div class="stats-item" data-animation="bottom">
+                <div class="stats-item__number" data-start="0" data-end="10" data-prefix="" data-suffix="%">10%</div>
+                <div class="stats-item__text">
+                    <p><strong>of profits distributed to employees</strong></p>
+                    <p>We invest in our people, because happy teams build better partnerships.</p>
+                </div>
+            </div>
+            <div class="stats-item" data-animation="bottom">
+                <div class="stats-item__number" data-start="0" data-end="3000" data-prefix="" data-suffix="+">3,000+</div>
+                <div class="stats-item__text">
+                    <p><strong>ISO27001-certified and GDPR-compliant</strong></p>
+                    <p>Trusted by over 3,000 organizations worldwide to keep data secure and operations compliant.</p>
+                </div>
+            </div>
+            <div class="stats-item" data-animation="bottom">
+                <div class="stats-item__number" data-start="0" data-end="100" data-prefix="" data-suffix="+">100+</div>
+                <div class="stats-item__text">
+                    <p><strong>More than 100 technology experts</strong></p>
+                    <p>Our in-house team helps you make the most of ERP, data, and automation tools.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        new GreenstepStats(document.querySelector('[data-greenstep-stats]'), {
+            duration: document.querySelector('[data-greenstep-stats]').getAttribute('data-greenstep-stats-duration'),
+            locale: document.querySelector('[data-greenstep-stats]').getAttribute('data-greenstep-stats-locale')
+        });
+    });
+</script>
+<section class="logo-masonry section-bg--white section-padding">
+    <div class="wrap">
+        <div class="logo-masonry__content logo-masonry__content-bg--accent-200" data-animation>
+            <div class="text">
+                <h2>Grow without the guesswork</h2>
+                <p>With the right partner for finance, HR and systems, your business can focus on what matters most — growth. Our world-class team combined with cutting edge software will give you the clarity you need.</p>
+                <a href="#" class="button button-outline">Explore our services</a>
+            </div>
+            <div class="logos" style="--_masonry-duration: 55s;">
+                <?php
+                    $logos = [
+                        'assets/images/logo-oura.svg',
+                        'assets/images/logo-oura.svg',
+                        'assets/images/logo-oura.svg',
+                        'assets/images/logo-oura.svg',
+                        'assets/images/logo-oura.svg',
+                        'assets/images/logo-oura.svg',
+                        'assets/images/logo-oura.svg',
+                        'assets/images/logo-oura.svg',
+                        'assets/images/logo-oura.svg',
+                    ];
+
+                    $columns[0] = $logos;
+                    $columns[1] = array_merge( array_slice( $logos, 4 ), array_slice( $logos, 0, 4 ) );
+                    $columns[2] = array_merge( array_slice( $logos, 7 ), array_slice( $logos, 0, 7 ) );
+                ?>
+                
+                <?php foreach ( $columns as $index => $logos ): ?>
+
+                    <div class="column">
+                        <?php foreach ( $logos as $logo ): ?>
+
+                            <div class="logo">
+                                <img src="<?php echo $logo; ?>" alt="">
+                            </div>
+
+                        <?php endforeach; ?>
+
+                        <div class="logo duplicate"><img src="<?php echo $logos[0]; ?>" alt=""></div>
+                        <div class="logo duplicate"><img src="<?php echo $logos[1]; ?>" alt=""></div>
+                        <div class="logo duplicate"><img src="<?php echo $logos[2]; ?>" alt=""></div>
+                        <div class="logo duplicate absolute"><img src="<?php echo ( $index % 2 ) ? $logos[ array_key_last($logos) ] : $logos[3]; ?>" alt=""></div>
+                    </div>
+
+                <?php endforeach; ?>                
+            </div>
+        </div>
+    </div>
+</section>

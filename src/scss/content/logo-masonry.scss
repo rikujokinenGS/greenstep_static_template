@@ -1,0 +1,217 @@
+.logo-masonry {
+    &__content {
+        display: flex;
+        border-radius: var(--br-large);
+        background-color: var(--clr-white);
+
+        &-bg {
+            &--accent-200 {
+                background-color: var(--clr-accent-200);
+            }
+        }
+
+        .text {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: clamp(2rem, 4.375vw, 4.375rem);
+
+            :is(h1, h2, h3) {
+                font-size: var(--fs-heading-4);
+                font-weight: 500;
+                line-height: 130%;
+                margin-bottom: 0.75em;
+            }
+
+            :is(p, ol, ul) {
+                font-size: var(--fs-medium);
+                max-width: 40ch;
+            }
+
+            > *:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        .logos {
+            --_masonry-logo-size: clamp(7rem, 12vw, 11rem);
+            --_masonry-logo-gap: 0.875rem;
+            --_masonry-size: calc(3 * (var(--_masonry-logo-size) + var(--_masonry-logo-gap)) + var(--_masonry-logo-gap));
+
+            display: flex;
+            gap: var(--_masonry-logo-gap);
+            padding-right: var(--_masonry-logo-gap);
+            height: var(--_masonry-size);
+            overflow: hidden;
+
+            .column {
+                display: flex;
+                flex-direction: column;
+                gap: var(--_masonry-logo-gap);
+                flex: 1;
+                height: fit-content;
+                padding-top: var(--_masonry-logo-gap);
+                transform: translateY(var(--_masonry-column-offset));
+                will-change: transform;
+                animation: logoMasonryColumnVertical var(--_masonry-duration, 45s) linear forwards infinite;
+
+                &:nth-child(1) {
+                    --_masonry-column-offset: -4rem;
+                }
+
+                &:nth-child(2) {
+                    --_masonry-column-offset: -8rem;
+                    animation-direction: reverse;
+                    flex-direction: column-reverse;
+                }
+
+                &:nth-child(3) {
+                    --_masonry-column-offset: -2rem;
+                }
+            }
+
+            @keyframes logoMasonryColumnVertical {
+                to {
+                    transform: translateY(calc(-100% + var(--_masonry-size) - var(--_masonry-logo-gap) + var(--_masonry-column-offset)));
+                }
+            }
+
+            .logo {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: var(--clr-white);
+                width: var(--_masonry-logo-size);
+                aspect-ratio: 1;
+                border-radius: var(--br-medium);
+
+                &.duplicate.absolute {
+                    position: absolute;
+                    bottom: calc(-1 * var(--_masonry-logo-size) - var(--_masonry-logo-gap));
+                }
+
+                img {
+                    max-width: clamp(50px, 7vw, 80px);
+                    height: auto;
+                    filter: grayscale(1) brightness(0) invert(1) brightness(0.35);
+                }
+            }
+        }
+    }
+}
+
+html[data-theme="dark"] {
+    .logo-masonry {
+        &__content {
+            &-bg {
+                &--accent-200 {
+                    background-color: var(--clr-neutral-700);
+                }
+            }
+
+            .text {
+                color: var(--clr-white);
+            }
+
+            .logos {
+                .logo {
+                    background-color: var(--clr-neutral-600);
+
+                    img {
+                        filter: grayscale(1) brightness(0) invert(1) brightness(0.75);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .logo-masonry {
+        &__content {
+            .logos {
+                .column {
+                    animation-play-state: paused;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .logo-masonry {
+        &__content {
+            flex-direction: column;
+            border-radius: var(--br-medium);
+
+            .text {
+                padding: clamp(2rem, 3vw, 3rem);
+            }
+
+            .logos {
+                --_masonry-logo-size: calc((100vw - (3 * var(--wrap-gutter-x))) / 4 - var(--_masonry-logo-gap));
+                
+                flex-direction: column;
+                width: 100%;
+                height: auto;
+                padding-right: 0;
+                padding-bottom: 2rem;
+
+                .column {
+                    flex-direction: row;
+                    height: auto;
+                    width: fit-content;
+                    padding-top: 0;
+                    transform: translateY(0);
+                    animation: logoMasonryColumnHorizontal var(--_masonry-duration, 45s) linear forwards infinite;
+
+                    &:nth-child(2) {
+                        flex-direction: row-reverse;
+                    }
+
+                    &:nth-child(3) {
+                        display: none;
+                    }
+                }
+
+                @keyframes logoMasonryColumnHorizontal {
+                    to {
+                        transform: translateX(calc(-100% + (4 * var(--_masonry-logo-size) + (3 * var(--_masonry-logo-gap)))));
+                    }
+                }
+
+                .logo {
+                    &.duplicate.absolute {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .logo-masonry {
+        &__content {
+            .text {
+                .button:not(.button-arrow) {
+                    display: block;
+                    width: 100%;
+                }
+            }
+
+            .logos {
+                --_masonry-logo-size: calc((100vw - var(--wrap-gutter-x)) / 2 - var(--_masonry-logo-gap));
+
+                @keyframes logoMasonryColumnHorizontal {
+                    to {
+                        transform: translateX(calc(-100% + (2 * var(--_masonry-logo-size) + var(--_masonry-logo-gap))));
+                    }
+                }
+            }
+        }
+    }
+}

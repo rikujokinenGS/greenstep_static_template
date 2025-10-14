@@ -9,6 +9,7 @@ Author URI: https://www.greenstep.com/
 
 @use './scss/inc/choices';
 
+@use './scss/_animations';
 @use './scss/_reset';
 @use './scss/_typography';
 @use './scss/_variables';
@@ -22,7 +23,9 @@ Author URI: https://www.greenstep.com/
 
 @use './scss/content/big-hero';
 @use './scss/content/cards';
+@use './scss/content/logo-masonry';
 @use './scss/content/people-cta';
+@use './scss/content/stats';
 @use './scss/content/text-media';
 
 html {
@@ -131,6 +134,10 @@ body {
 
     &--accent-100 {
         background-color: var(--clr-accent-100);
+    }
+
+    &--accent-200 {
+        background-color: var(--clr-accent-200);
     }
 
     &--neutral-100 {

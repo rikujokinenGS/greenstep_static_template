@@ -53,11 +53,10 @@
                 <div class="site-header__language-menu">
                     <label for="language" class="visually-hidden">Select language</label>
                     <select id="language" name="language" data-language-menu onchange="window.location = this.value;">
-                        <option value="#" selected>Global (EN)</option>
+                        <option value="#" selected>English</option>
                         <option value="#">Suomi</option>
-                        <option value="#">Svenska (Finland)</option>
+                        <option value="#">Svenska</option>
                         <option value="#">Eesti</option>
-                        <option value="#">Svenska (Sverige)</option>
                         <option value="#">Norsk</option>
                         <option value="#">Nederlands</option>
                     </select>

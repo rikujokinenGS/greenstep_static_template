@@ -8,7 +8,7 @@ if (savedTheme !== null) {
 
 document.documentElement.setAttribute('data-theme', theme);
 
-window.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     let themeToggle = document.querySelector('[data-theme-toggle]');
     let mobileThemeToggle = document.querySelector('[data-mobile-theme-toggle]');
 

@@ -1,25 +1,27 @@
 document.addEventListener('DOMContentLoaded', function() {
     const MAX_OFFSET = 75;
-    let sections = document.querySelectorAll('[data-parallax]');
-    let planes = [1, 1.375, 1.75, 2.125];
+    let parallaxContainers = document.querySelectorAll('[data-greenstep-parallax]');
+    let planes = [1, 1.25, 1.5, 1.75];
 
     function parallaxScroll() {
-        sections.forEach(section => {
-            let images = section.querySelectorAll('[data-plane]');
-            let rect = section.getBoundingClientRect();
-            let windowHeight = window.innerHeight;
-            let sectionHeight = rect.height;
-            let progress = (windowHeight - rect.top) / (windowHeight + sectionHeight);
+        if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+            parallaxContainers.forEach(parallaxContainer => {
+                let images = parallaxContainer.querySelectorAll('img');
+                let rect = parallaxContainer.getBoundingClientRect();
+                let windowHeight = window.innerHeight;
+                let containerHeight = rect.height;
+                let progress = (windowHeight - rect.top) / (windowHeight + containerHeight);
 
-            progress = Math.max(0, Math.min(1, progress));
+                progress = Math.max(0, Math.min(1, progress));
 
-            images.forEach(img => {
-                let planeAttr = img.getAttribute('data-plane');
-                let plane = planes[parseInt(planeAttr) - 1] || 0;
-                let translateY = (1 - 2 * progress) * MAX_OFFSET * plane;
-                img.style.transform = `translateY(${translateY}px)`;
+                images.forEach(image => {
+                    let planeAttr = image.getAttribute('data-parallax-plane');
+                    let plane = planes[parseInt(planeAttr) - 1] || 1;
+                    let translateY = (1 - 2 * progress) * MAX_OFFSET * plane;
+                    image.style.transform = `translateY(${translateY}px)`;
+                });
             });
-        });
+        }
     }
 
     window.addEventListener('scroll', parallaxScroll, { passive: true });

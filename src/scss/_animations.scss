@@ -1,0 +1,31 @@
+@media (prefers-reduced-motion: no-preference) {
+    body:not(.no-js) {
+        [data-animation] {
+            opacity: 0;
+
+            &.animate {
+                opacity: 1;
+                transition: opacity 600ms ease-out, transform 500ms ease-out;
+
+                &.animation-over {
+                    transition-duration: initial;
+                }
+            }
+        }
+
+        [data-animation="top"] {
+            transform: translateY(-2.5rem);
+        }
+
+        [data-animation="bottom"] {
+            transform: translateY(2.5rem);
+        }
+
+        [data-animation="top"],
+        [data-animation="bottom"] {
+            &.animate {
+                transform: translateY(0);
+            }
+        }
+    }
+}
