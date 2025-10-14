@@ -4,6 +4,7 @@
     font-size: 1rem;
     font-weight: 500;
     line-height: 150%;
+    text-align: center;
     padding: 1em 2em;
     color: var(--clr-white);
     background: var(--clr-neutral-800);
@@ -59,7 +60,9 @@
         background: none;
         border: none;
         color: var(--clr-neutral-800);
+        text-align: left;
         font-weight: 700;
+        transform: translateX(-0.5em);
         transition: color 150ms ease-out;
 
         &::after {

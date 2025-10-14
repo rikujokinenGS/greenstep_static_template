@@ -20,7 +20,10 @@ Author URI: https://www.greenstep.com/
 @use './scss/menus/header-buttons';
 @use './scss/menus/main-menu';
 
-@use './scss/content/big-hero.scss';
+@use './scss/content/big-hero';
+@use './scss/content/cards';
+@use './scss/content/people-cta';
+@use './scss/content/text-media';
 
 html {
     font-size: 100%;
@@ -56,6 +59,7 @@ body {
     > main {
         flex-grow: 1;
         margin-top: calc(var(--header-main-height) + var(--header-eyebrow-height));
+        scroll-margin-block: var(--section-spacing);
     }
 }
 
@@ -82,6 +86,7 @@ body {
     &:focus-visible {
         color: var(--clr-white);
         transform: translateX(0);
+        outline-offset: 0px;
     }
 }
 
@@ -120,8 +125,16 @@ body {
 }
 
 .section-bg {
-    &--accent-lightest {
+    &--white {
+        background-color: var(--clr-white);
+    }
+
+    &--accent-100 {
         background-color: var(--clr-accent-100);
+    }
+
+    &--neutral-100 {
+        background-color: var(--clr-neutral-100);
     }
 }
 
@@ -165,9 +178,31 @@ html[data-theme="dark"] {
         background-color: var(--clr-neutral-800);
     }
 
+    .skip-to-content {
+        background-color: var(--clr-white);
+        border-color: var(--clr-neutral-800);
+        color: var(--clr-neutral-800);
+        outline-color: var(--clr-white);
+
+        &:focus-visible {
+            color: var(--clr-neutral-800);
+            transform: translateX(0);
+        }
+    }
+
     .section-bg {
-        &--accent-lightest {
+        &--white {
             background-color: var(--clr-neutral-800);
+            color: var(--clr-white);
+        }
+
+        &--accent-100 {
+            background-color: color-mix(in srgb, var(--clr-neutral-800), var(--clr-white) 2%);
+            color: var(--clr-white);
+        }
+
+        &--neutral-100 {
+            background-color: color-mix(in srgb, var(--clr-neutral-800), var(--clr-white) 2%);
             color: var(--clr-white);
         }
     }

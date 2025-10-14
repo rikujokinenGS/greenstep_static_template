@@ -6,9 +6,14 @@
         padding: 0;
 
         .menu-item {
+            position: static;
             margin: 0;
             padding: 0;
             list-style-type: none;
+
+            &::before {
+                display: none;
+            }
 
             a {
                 text-decoration: none;
@@ -234,6 +239,11 @@
                                             background-color: var(--clr-accent-100);
                                         }
 
+                                        &:focus-visible {
+                                            outline: 1px solid var(--clr-accent-500);
+                                            outline-offset: 2px;
+                                        }
+
                                         .card-image {
                                             position: relative;
                                             width: 100%;
@@ -306,7 +316,8 @@
 
             > span {
                 width: 100%;
-                flex: 0 0 2px;
+                flex: 0 0 0.125rem;
+                height: 0.125rem;
                 background-color: var(--clr-neutral-800);
                 border-radius: 100vw;
                 transition: transform 200ms ease-out, opacity 100ms ease-out;

@@ -66,6 +66,10 @@
                 list-style-type: none;
                 margin: 0;
                 padding: 0;
+
+                &::before {
+                    display: none;
+                }
             }
 
             &__link {
@@ -206,7 +210,6 @@
 
             &__read-more {
                 margin-bottom: 1.5rem;
-                padding: 0;
                 color: #fff;
                 opacity: 0;
                 transition: opacity 300ms ease-out, color 150ms ease-out;
@@ -257,6 +260,10 @@
             padding: 0;
             list-style-type: none;
 
+            &::before {
+                display: none;
+            }
+
             img {
                 display: block;
                 width: clamp(4rem, 5.5vw, 5.5rem);
@@ -271,6 +278,14 @@
 
 html[data-theme="dark"] {
     .big-hero {
+        &__text {
+            :is(h1, h2, h3) {
+                background-image: linear-gradient(135deg, color-mix(in srgb, var(--clr-accent-500) 25%, var(--clr-white)), var(--clr-white));
+                color: transparent;
+                background-clip: text;
+            }
+        }
+
         &__case-stories {
             .case-story {
                 &__read-more {
@@ -281,6 +296,12 @@ html[data-theme="dark"] {
                         &::after {
                             background-color: #fff;
                         }
+                    }
+                }
+
+                &__link {
+                    &:focus-visible {
+                        outline-color: var(--clr-white);
                     }
                 }
             }

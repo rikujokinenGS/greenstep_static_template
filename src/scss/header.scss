@@ -737,7 +737,7 @@ html[data-theme="dark"] {
                     }
 
                     &::after {
-                        background-color: var(--clr-white);
+                        background-color: var(--clr-accent-500);
                         transform: translateX(calc(100% + 0.625rem + var(--theme-toggle-width) - var(--theme-toggle-height) + var(--theme-toggle-gap))) translateY(-50%);
                     }
                 }
@@ -748,7 +748,7 @@ html[data-theme="dark"] {
                         color: var(--clr-accent-500);
 
                         &::after {
-                            background-color: var(--clr-accent-500);
+                            background-color: var(--clr-accent-400);
                         }
                     }
                 }
@@ -791,7 +791,7 @@ html[data-theme="dark"] {
                                     color: var(--clr-accent-500);
 
                                     &::after {
-                                        background-color: var(--clr-accent-500);
+                                        background-color: var(--clr-accent-400);
                                     }
                                 }
                             }
