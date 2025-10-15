@@ -90,7 +90,7 @@ p {
     margin-bottom: 0.75em;
 
     &.tagline {
-        color: var(--clr-neutral-500);
+        color: var(--clr-neutral-600);
         font-size: var(--fs-tiny);
         font-weight: 700;
         line-height: 150%;
@@ -161,15 +161,15 @@ kbd {
     font-size: var(--fs-tiny);
     font-family: var(--ff);
     background-color: var(--clr-white);
-    color: var(--clr-neutral-800);
+    color: var(--clr-neutral-900);
     border-radius: var(--br-small);
-    box-shadow: 0.0625rem 0.125rem 0.125rem color-mix(in srgb, var(--clr-neutral-800) 25%, transparent);
+    box-shadow: 0.0625rem 0.125rem 0.125rem color-mix(in srgb, var(--clr-neutral-900) 25%, transparent);
 }
 
 html[data-theme="dark"] {
     kbd {
-        background-color: var(--clr-neutral-800);
+        background-color: var(--clr-neutral-900);
         color: var(--clr-white);
-        box-shadow: 0.0625rem 0.125rem 0.125rem color-mix(in srgb, var(--clr-neutral-800) 10%, transparent);
+        box-shadow: 0.0625rem 0.125rem 0.125rem color-mix(in srgb, var(--clr-neutral-900) 10%, transparent);
     }
 }

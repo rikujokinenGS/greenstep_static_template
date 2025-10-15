@@ -14,10 +14,32 @@
                 display: none;
             }
 
-            a {
+            .button {
                 margin: 0;
                 padding: 0.6875em 1.5em;
                 white-space: nowrap;
+
+                &:hover,
+                &:focus-visible {
+                    background-color: var(--clr-accent-300);
+                    color: var(--clr-neutral-900);
+                }
+            }
+        }
+    }
+}
+
+html[data-theme="dark"] {
+    .header-buttons {
+        ul {
+            li {
+                .button {
+                    &:hover,
+                    &:focus-visible {
+                        background-color: var(--clr-accent-300);
+                        color: var(--clr-neutral-900);
+                    }
+                }
             }
         }
     }
@@ -27,7 +49,7 @@
     .header-buttons {
         ul {
             li {
-                a {
+                .button {
                     font-size: var(--fs-small);
                     padding: 0.5em clamp(0.75em, 3vw, 1.5em);
                 }

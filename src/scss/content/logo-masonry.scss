@@ -108,7 +108,7 @@ html[data-theme="dark"] {
         &__content {
             &-bg {
                 &--accent-200 {
-                    background-color: var(--clr-neutral-700);
+                    background-color: var(--clr-neutral-800);
                 }
             }
 
@@ -118,7 +118,7 @@ html[data-theme="dark"] {
 
             .logos {
                 .logo {
-                    background-color: var(--clr-neutral-600);
+                    background-color: var(--clr-neutral-700);
 
                     img {
                         filter: grayscale(1) brightness(0) invert(1) brightness(0.75);

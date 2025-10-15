@@ -42,7 +42,7 @@
             right: var(--card-item-padding);
             width: 1.25rem;
             height: 1.25rem;
-            background-color: var(--clr-neutral-500);
+            background-color: var(--clr-neutral-600);
             -webkit-mask-size: contain;
             mask-size: contain;
             -webkit-mask-position: center;
@@ -57,7 +57,7 @@
             background-color: var(--clr-accent-400);
 
             .card-item__icon {
-                background-color: var(--clr-neutral-800);
+                background-color: var(--clr-neutral-900);
                 transform: scale(1.2);
             }
         }
@@ -66,18 +66,19 @@
 
 html[data-theme="dark"] {
     .card-item {
-        background-color: var(--clr-neutral-700);
+        background-color: var(--clr-neutral-800);
 
         &__icon {
-            background-color: var(--clr-neutral-300);
+            background-color: var(--clr-neutral-400);
         }
 
         &:hover,
         &:focus-visible {
-            background-color: var(--clr-accent-500);
+            background-color: var(--clr-accent-400);
+            color: var(--clr-neutral-900);
 
             .card-item__icon {
-                background-color: var(--clr-neutral-100);
+                background-color: var(--clr-neutral-900);
             }
         }
     }

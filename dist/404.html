@@ -409,9 +409,6 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="menu-item" role="presentation">
-                            <a href="#" role="menuitem">Random link</a>
-                        </li>
                     </ul>
                     <div class="mobile-eyebrow-links">
                         <div class="mobile-eyebrow-links__language-menu">

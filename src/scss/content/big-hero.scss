@@ -98,7 +98,7 @@
                 }
 
                 &:focus-visible {
-                    outline: 1px solid var(--clr-neutral-800);
+                    outline: 1px solid var(--clr-neutral-900);
                     outline-offset: 2px;
                 }
             }
@@ -245,12 +245,12 @@
 
         &-tagline {
             font-size: var(--fs-large);
-            color: var(--clr-neutral-500);
+            color: var(--clr-neutral-600);
             margin: 0 0 3rem 0;
 
             strong {
                 font-weight: 400;
-                color: var(--clr-neutral-800);
+                color: var(--clr-neutral-900);
             }
         }
 
@@ -286,14 +286,6 @@
 
 html[data-theme="dark"] {
     .big-hero {
-        &__text {
-            :is(h1, h2, h3) {
-                background-image: linear-gradient(135deg, color-mix(in srgb, var(--clr-accent-500) 25%, var(--clr-white)), var(--clr-white));
-                color: transparent;
-                background-clip: text;
-            }
-        }
-
         &__case-stories {
             .case-story {
                 &__read-more {
@@ -317,7 +309,7 @@ html[data-theme="dark"] {
 
         &__logos {
             &-tagline {
-                color: var(--clr-neutral-300);
+                color: var(--clr-neutral-400);
 
                 strong {
                     color: var(--clr-white);

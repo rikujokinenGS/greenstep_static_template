@@ -30,20 +30,21 @@
     // Colors
     --clr-white: #fff;
 
-    --clr-neutral-800: #121926;
-    --clr-neutral-700: #202a3d;
-    --clr-neutral-600: #27334b;
-    --clr-neutral-500: #5f697c;
-    --clr-neutral-400: #8a93a5;
-    --clr-neutral-300: #afb6c4;
+    --clr-neutral-900: #121926;
+    --clr-neutral-800: #202a3d;
+    --clr-neutral-700: #27334b;
+    --clr-neutral-600: #5f697c;
+    --clr-neutral-500: #8a93a5;
+    --clr-neutral-400: #afb6c4;
+    --clr-neutral-300: #ededed;
     --clr-neutral-200: #f2f2f2;
     --clr-neutral-100: #fafafa;
 
     --clr-accent-500: #00b07d;
     --clr-accent-400: #03eaac;
-    --clr-accent-300: #12febc;
+    --clr-accent-300: #00ffbb;
     --clr-accent-200: #e0f0ec;
-    --clr-accent-100: #eff7f5;
+    --clr-accent-100: #f2fcf9;
 
     --clr-error: #d33141;
 
@@ -53,19 +54,19 @@
     --br-large: 1rem;
 
     // Choices.js
-    --choices-darken: var(--clr-neutral-800);
+    --choices-darken: var(--clr-neutral-900);
     --choices-lighten: var(--clr-white);
     --choices-bg-color: var(--clr-white);
     --choices-bg-color-disabled: var(--clr-accent-100);
     --choices-bg-color-dropdown: var(--clr-white);
-    --choices-text-color: var(--clr-neutral-800);
-    --choices-keyline-color: color-mix(in srgb, var(--clr-neutral-800) 15%, transparent);
+    --choices-text-color: var(--clr-neutral-900);
+    --choices-keyline-color: color-mix(in srgb, var(--clr-neutral-900) 15%, transparent);
     --choices-primary-color: var(--clr-accent-400);
-    --choices-disabled-color: var(--clr-neutral-500);
+    --choices-disabled-color: var(--clr-neutral-600);
     --choices-item-disabled-color: var(--clr-neutral-100);
     --choices-invalid-color: var(--clr-error);
     --choices-highlighted-color: var(--clr-accent-400);
-    --choices-highlight-color: var(--clr-neutral-800);
+    --choices-highlight-color: var(--clr-neutral-900);
     --choices-font-size-lg: var(--fs-regular);
     --choices-font-size-md: var(--fs-regular);
     --choices-font-size-sm: var(--fs-small);
@@ -104,14 +105,14 @@ html[data-theme="dark"] {
         --clr-accent-300: #12febc;
         
         --choices-darken: var(--clr-white);
-        --choices-lighten: var(--clr-neutral-800);
-        --choices-bg-color: var(--clr-neutral-800);
+        --choices-lighten: var(--clr-neutral-900);
+        --choices-bg-color: var(--clr-neutral-900);
         --choices-bg-color-disabled: var(--clr-accent-100);
-        --choices-bg-color-dropdown: var(--clr-neutral-800);
+        --choices-bg-color-dropdown: var(--clr-neutral-900);
         --choices-text-color: var(--clr-white);
         --choices-keyline-color: color-mix(in srgb, var(--clr-white) 15%, transparent);
         --choices-primary-color: var(--clr-accent-400);
-        --choices-disabled-color: var(--clr-neutral-500);
+        --choices-disabled-color: var(--clr-neutral-600);
         --choices-item-disabled-color: var(--clr-neutral-100);
         --choices-highlighted-color: var(--clr-accent-500);
         --choices-highlight-color: var(--clr-white);

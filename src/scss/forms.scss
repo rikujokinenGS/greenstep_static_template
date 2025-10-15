@@ -18,34 +18,34 @@ textarea {
     font-weight: 400;
     line-height: 150%;
     background: var(--clr-white);
-    color: var(--clr-neutral-800);
-    border: 1px solid color-mix(in srgb, var(--clr-neutral-800) 15%, transparent);
+    color: var(--clr-neutral-900);
+    border: 1px solid color-mix(in srgb, var(--clr-neutral-900) 15%, transparent);
     padding: 0.75em;
     border-radius: var(--br-small);
 
     &:focus {
-        border-color: var(--clr-neutral-800);
+        border-color: var(--clr-neutral-900);
         outline: none;
     }
 
     &::-webkit-input-placeholder {
-        color: color-mix(in srgb, var(--clr-neutral-800) 75%, transparent);
+        color: color-mix(in srgb, var(--clr-neutral-900) 75%, transparent);
     }
 
     &::-moz-placeholder {
-        color: color-mix(in srgb, var(--clr-neutral-800) 75%, transparent);
+        color: color-mix(in srgb, var(--clr-neutral-900) 75%, transparent);
     }
 
     &:-ms-placeholder {
-        color: color-mix(in srgb, var(--clr-neutral-800) 75%, transparent);
+        color: color-mix(in srgb, var(--clr-neutral-900) 75%, transparent);
     }
 
     &:-moz-placeholder {
-        color: color-mix(in srgb, var(--clr-neutral-800) 75%, transparent);
+        color: color-mix(in srgb, var(--clr-neutral-900) 75%, transparent);
     }
 
     &::placeholder {
-        color: color-mix(in srgb, var(--clr-neutral-800) 75%, transparent);
+        color: color-mix(in srgb, var(--clr-neutral-900) 75%, transparent);
     }
 }
 
@@ -65,7 +65,7 @@ textarea {
             width: 0.5em;
             height: 1em;
             transform: translateY(-50%);
-            background-color: var(--clr-neutral-500);
+            background-color: var(--clr-neutral-600);
             -webkit-mask-image: url(./assets/images/icon-chevron-selector-vertical.svg);
             mask-image: url(./assets/images/icon-chevron-selector-vertical.svg);
             -webkit-mask-repeat: no-repeat;
@@ -88,7 +88,7 @@ textarea {
             left: 0.5rem;
             width: calc(100% - 1rem) !important;
             background-color: transparent !important;
-            border-color: color-mix(in srgb, var(--clr-neutral-800) 15%, transparent) !important;
+            border-color: color-mix(in srgb, var(--clr-neutral-900) 15%, transparent) !important;
             border-radius: var(--choices-border-radius) !important;
             padding: 1rem;
             isolation: isolate;
@@ -115,7 +115,7 @@ textarea {
 
     &.is-open {
         .choices__inner {
-            border-color: var(--clr-neutral-800) !important;
+            border-color: var(--clr-neutral-900) !important;
             border-bottom-left-radius: var(--choices-border-radius) !important;
             border-bottom-right-radius: var(--choices-border-radius) !important;
         }
@@ -137,7 +137,7 @@ html[data-theme="dark"] {
     [type="week"],
     select,
     textarea {
-        background: var(--clr-neutral-800);
+        background: var(--clr-neutral-900);
         color: var(--clr-white);
         border: 1px solid color-mix(in srgb, var(--clr-white) 15%, transparent);
         padding: 0.75em;

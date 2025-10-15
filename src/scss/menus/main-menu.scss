@@ -35,7 +35,7 @@
                         content: "";
                         width: 0.625em;
                         height: 0.5em;
-                        background-color: var(--clr-neutral-800);
+                        background-color: var(--clr-neutral-900);
                         -webkit-mask-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' viewBox='0 0 10 6'%3E%3Cpath d='M5,6c-.26,0-.51-.1-.71-.29L.29,1.71C-.1,1.32-.1.68.29.29S1.32-.1,1.71.29l3.29,3.29L8.29.29c.39-.39,1.02-.39,1.41,0s.39,1.02,0,1.41l-4,4c-.2.2-.45.29-.71.29Z'/%3E%3C/svg%3E");
                         mask-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' viewBox='0 0 10 6'%3E%3Cpath d='M5,6c-.26,0-.51-.1-.71-.29L.29,1.71C-.1,1.32-.1.68.29.29S1.32-.1,1.71.29l3.29,3.29L8.29.29c.39-.39,1.02-.39,1.41,0s.39,1.02,0,1.41l-4,4c-.2.2-.45.29-.71.29Z'/%3E%3C/svg%3E");
                         -webkit-mask-size: contain;
@@ -45,13 +45,6 @@
                         -webkit-mask-repeat: no-repeat;
                         mask-repeat: no-repeat;
                         transition: background-color 150ms ease-out;
-                    }
-
-                    &:hover,
-                    &:focus-visible {
-                        &::after {
-                            background-color: var(--clr-accent-500);
-                        }
                     }
                 }
             }
@@ -69,7 +62,7 @@
 
                 &:hover,
                 &:focus-visible {
-                    color: var(--clr-accent-500);
+                    color: var(--clr-neutral-600);
                 }
 
                 &:focus-visible {
@@ -96,8 +89,8 @@
                         background: var(--clr-white);
                         border-top: 1px solid var(--clr-neutral-200);
                         box-shadow:
-                            0 0.125rem 0.125rem -0.0625rem color-mix(in srgb, var(--clr-neutral-800) 4%, transparent),
-                            0 0.25rem 0.375rem -0.25rem color-mix(in srgb, var(--clr-neutral-800) 3%, transparent);
+                            0 0.125rem 0.125rem -0.0625rem color-mix(in srgb, var(--clr-neutral-900) 4%, transparent),
+                            0 0.25rem 0.375rem -0.25rem color-mix(in srgb, var(--clr-neutral-900) 3%, transparent);
                         
                         &[aria-hidden="true"] {
                             display: none;
@@ -108,7 +101,7 @@
 
                             > a {
                                 display: block;
-                                color: var(--clr-neutral-500);
+                                color: var(--clr-neutral-600);
                                 font-size: var(--fs-tiny);
                                 font-weight: 700;
                                 line-height: 150%;
@@ -318,7 +311,7 @@
                 width: 100%;
                 flex: 0 0 0.125rem;
                 height: 0.125rem;
-                background-color: var(--clr-neutral-800);
+                background-color: var(--clr-neutral-900);
                 border-radius: 100vw;
                 transition: transform 200ms ease-out, opacity 100ms ease-out;
 
@@ -391,32 +384,32 @@ html[data-theme="dark"] {
                         }
 
                         & + ul {
-                            background-color: var(--clr-neutral-800);
-                            border-top-color: var(--clr-neutral-700);
+                            background-color: var(--clr-neutral-900);
+                            border-top-color: var(--clr-neutral-800);
                             box-shadow:
                                 0 0.125rem 0.125rem -0.0625rem color-mix(in srgb, var(--clr-white) 4%, transparent),
                                 0 0.25rem 0.375rem -0.25rem color-mix(in srgb, var(--clr-white) 3%, transparent);
 
                             > .menu-item {
                                 &-cards {
-                                    border-left-color: var(--clr-neutral-600);
+                                    border-left-color: var(--clr-neutral-700);
 
                                     .menu-item-card {
                                         > a {
                                             &:hover,
                                             &:focus-visible {
-                                                background-color: var(--clr-neutral-600);
+                                                background-color: var(--clr-neutral-700);
                                             }
                                         }
                                     }
                                 }
 
                                 &-textbox {
-                                    background-color: var(--clr-neutral-600);
+                                    background-color: var(--clr-neutral-700);
                                 }
 
                                 > a {
-                                    color: var(--clr-neutral-400);
+                                    color: var(--clr-neutral-500);
                                 }
 
                                 > ul {
@@ -426,7 +419,7 @@ html[data-theme="dark"] {
                                             > a {
                                                 &:hover,
                                                 &:focus-visible {
-                                                    background-color: var(--clr-neutral-600);
+                                                    background-color: var(--clr-neutral-700);
                                                 }
 
                                                 &:focus-visible {
@@ -613,10 +606,10 @@ html[data-theme="dark"] {
 
     html[data-theme="dark"] {
         .main-menu {
-            background: var(--clr-neutral-800);
+            background: var(--clr-neutral-900);
 
             > ul {
-                border-bottom-color: var(--clr-neutral-600);
+                border-bottom-color: var(--clr-neutral-700);
             }
         }
     }
