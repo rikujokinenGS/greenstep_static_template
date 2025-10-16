@@ -282,11 +282,11 @@
                 &:hover,
                 &:focus-visible {
                     .choices__list--single {
-                        color: var(--clr-neutral-500);
+                        color: var(--clr-neutral-600);
                     }
 
                     &::after {
-                        background-color: var(--clr-neutral-500);
+                        background-color: var(--clr-neutral-600);
                     }
                 }
             }
@@ -358,10 +358,10 @@
 
             &:hover,
             &:focus-visible {
-                color: var(--clr-neutral-500);
+                color: var(--clr-neutral-600);
 
                 &::before {
-                    background-color: var(--clr-neutral-500);
+                    background-color: var(--clr-neutral-600);
                 }
             }
         }
@@ -520,10 +520,10 @@
 
         &:hover,
         &:focus-visible {
-            color: var(--clr-neutral-500);
+            color: var(--clr-neutral-600);
 
             &::after {
-                background-color: var(--clr-neutral-500);
+                background-color: var(--clr-neutral-600);
             }
         }
     }
@@ -590,7 +590,7 @@
             &:hover,
             &:focus-visible {
                 & + label {
-                    color: var(--clr-neutral-500);
+                    color: var(--clr-neutral-600);
 
                     &::before {
                         background-color: color-mix(in srgb, var(--clr-neutral-300), #000 5%);

@@ -48,7 +48,7 @@
         &:focus-visible {
             background-color: transparent;
             border-color: var(--clr-accent-300);
-            color: var(--clr-neutral-500);
+            color: var(--clr-neutral-600);
         }
     }
 
@@ -83,11 +83,11 @@
 
         &:hover,
         &:focus-visible {
-            color: var(--clr-neutral-500);
+            color: var(--clr-neutral-600);
             background: none;
 
             &::after {
-                background-color: var(--clr-neutral-500);
+                background-color: var(--clr-neutral-600);
                 transform: translateX(0.25em);
             }
         }

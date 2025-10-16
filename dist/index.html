@@ -946,8 +946,8 @@
         </div>
     </div>
 </section>
-<section class="people-cta section-bg--accent-100 section-padding">
-    <div class="people-cta__bg" data-greenstep-parallax>
+<section class="people-cta section-bg--accent-100 section-padding" data-greenstep-people-cta>
+    <div class="people-cta__bg">
         <img src="assets/images/person-1.jpg" data-parallax-plane="1" width="300" height="346" alt="">
         <img src="assets/images/person-5.jpg" data-parallax-plane="1" width="300" height="384" alt="">
         <img src="assets/images/person-4.jpg" data-parallax-plane="2" width="300" height="264" alt="">
@@ -965,6 +965,11 @@
         </div>
     </div>
 </section>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        new GreenstepPeopleCTA(document.querySelector('[data-greenstep-people-cta]'));
+    });
+</script>
 <section class="stats section-bg--white section-padding" data-greenstep-stats data-greenstep-stats-duration="2000" data-greenstep-stats-locale="en-US">
     <div class="wrap">
         <div class="stats__text">
@@ -1184,6 +1189,40 @@
 
                                 
             </div>
+        </div>
+    </div>
+</section>
+<section class="image-cards section-bg--white section-padding">
+    <div class="wrap">
+        <div class="image-cards__text">
+            <h2>Finance made simple, <strong>growth made possible</strong></h2>
+            <p>Greenstep takes care of the complex stuff — you get insights, confidence and time back.</p>
+        </div>
+        <div class="image-cards__items">
+            <a href="#" class="image-card" data-animation="bottom">
+                <img class="image-card__image"src="assets/images/tmp.jpg" width="640" height="528" alt="">
+                <h3 class="image-card__title">Flexible interim solutions</h3>
+                <p class="image-card__text">
+                    <strong>Get the expert support you need quickly</strong> in CFO, HR, IT or sustainability roles.
+                    <span class="image-card__read-more">Find your interim expert</span>
+                </p>
+            </a>
+            <a href="#" class="image-card" data-animation="bottom">
+                <img class="image-card__image"src="assets/images/tmp.jpg" width="640" height="528" alt="">
+                <h3 class="image-card__title">Your trusted technology partner</h3>
+                <p class="image-card__text">
+                    <strong>Our 100+ tech experts help implement and optimize</strong> ERP, BI and automation.
+                    <span class="image-card__read-more">Explore our tech services</span>
+                </p>
+            </a>
+            <a href="#" class="image-card" data-animation="bottom">
+                <img class="image-card__image"src="assets/images/tmp.jpg" width="640" height="528" alt="">
+                <h3 class="image-card__title">Financial services</h3>
+                <p class="image-card__text">
+                    <strong>Comprehensive accounting, payroll and CFO services</strong> to support your growth.
+                    <span class="image-card__read-more">View financial services</span>
+                </p>
+            </a>
         </div>
     </div>
 </section>

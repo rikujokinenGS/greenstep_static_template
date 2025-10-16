@@ -145,7 +145,6 @@ html[data-theme="dark"] {
     .logo-masonry {
         &__content {
             flex-direction: column;
-            border-radius: var(--br-medium);
 
             .text {
                 padding: clamp(2rem, 3vw, 3rem);
