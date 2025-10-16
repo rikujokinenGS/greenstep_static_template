@@ -43,7 +43,7 @@ function connectSync() {
                 (req, res, next) => {
                     const ext = path.extname(req.url);
 
-                    if (['.png', '.jpg', '.jpeg', '.gif', '.svg', '.webp', '.eot', '.ttf', '.otf', '.woff', '.woff2'].includes(ext)) {
+                    if (['.png', '.jpg', '.jpeg', '.gif', '.svg', '.webp', '.eot', '.ttf', '.otf', '.woff', '.woff2', '.mp4', '.webm'].includes(ext)) {
                         res.setHeader('Cache-Control', 'public, max-age=31536000');
                     }
 

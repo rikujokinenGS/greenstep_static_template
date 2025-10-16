@@ -1,4 +1,4 @@
-<section class="big-hero section-bg--accent-100 section-padding">
+<section class="big-hero section-bg--accent-100 section-padding" data-greenstep-hero>
     <div class="wrap">
         <div class="big-hero__text">
             <h1><strong>What's your next big challenge?</strong> We'll make sure you're ready for it.</h1>
@@ -11,278 +11,26 @@
     <div class="big-hero__case-stories">
         <div class="case-story__slider">
             <ul class="case-story__list">
-                <li class="case-story__item">
-                    <a href="#" class="case-story__link">
-                        <div class="case-story__background">
-                            <img src="assets/images/case-story.jpg" alt="">
-                            <video autoplay loop muted playsinline disablepictureinpicture background width="365" height="435">
-                                <source src="assets/videos/case-story.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="case-story__content">
-                            <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo" class="case-story__logo" loading="lazy">
-                            <p class="case-story__text">
-                                We help you scale with confidence. From financial clarity to stronger teams, we enable your sustainable growth.
-                            </p>
-                            <p class="case-story__read-more button-arrow">Read the case story</p>
-                            <span class="case-story__category">Ensuring sustainability</span>
-                        </div>
-                    </a>
-                </li>
-                <li class="case-story__item">
-                    <a href="#" class="case-story__link">
-                        <div class="case-story__background">
-                            <img src="assets/images/case-story-2.jpg" alt="">
-                            <video autoplay loop muted playsinline disablepictureinpicture background width="365" height="435">
-                                <source src="assets/videos/case-story.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="case-story__content">
-                            <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo" class="case-story__logo" loading="lazy">
-                            <p class="case-story__text">
-                                We help you scale with confidence. From financial clarity to stronger teams, we enable your sustainable growth.
-                            </p>
-                            <p class="case-story__read-more button-arrow">Read the case story</p>
-                            <span class="case-story__category">Scaling up</span>
-                        </div>
-                    </a>
-                </li>
-                <li class="case-story__item">
-                    <a href="#" class="case-story__link">
-                        <div class="case-story__background">
-                            <img src="assets/images/case-story.jpg" alt="">
-                            <video autoplay loop muted playsinline disablepictureinpicture background width="365" height="435">
-                                <source src="assets/videos/case-story.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="case-story__content">
-                            <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo" class="case-story__logo" loading="lazy">
-                            <p class="case-story__text">
-                                We help you scale with confidence. From financial clarity to stronger teams, we enable your sustainable growth.
-                            </p>
-                            <p class="case-story__read-more button-arrow">Read the case story</p>
-                            <span class="case-story__category">Going global</span>
-                        </div>
-                    </a>
-                </li>
-                <li class="case-story__item">
-                    <a href="#" class="case-story__link">
-                        <div class="case-story__background">
-                            <img src="assets/images/case-story-2.jpg" alt="">
-                            <video autoplay loop muted playsinline disablepictureinpicture background width="365" height="435">
-                                <source src="assets/videos/case-story.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="case-story__content">
-                            <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo" class="case-story__logo" loading="lazy">
-                            <p class="case-story__text">
-                                We help you scale with confidence. From financial clarity to stronger teams, we enable your sustainable growth.
-                            </p>
-                            <p class="case-story__read-more button-arrow">Read the case story</p>
-                            <span class="case-story__category">Making data work</span>
-                        </div>
-                    </a>
-                </li>
-                <li class="case-story__item">
-                    <a href="#" class="case-story__link">
-                        <div class="case-story__background">
-                            <img src="assets/images/case-story.jpg" alt="">
-                            <video autoplay loop muted playsinline disablepictureinpicture background width="365" height="435">
-                                <source src="assets/videos/case-story.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="case-story__content">
-                            <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo" class="case-story__logo" loading="lazy">
-                            <p class="case-story__text">
-                                We help you scale with confidence. From financial clarity to stronger teams, we enable your sustainable growth.
-                            </p>
-                            <p class="case-story__read-more button-arrow">Read the case story</p>
-                            <span class="case-story__category">Protecting quality</span>
-                        </div>
-                    </a>
-                </li>  
-
-                <li class="case-story__item case-story__item--clone">
-                    <a href="#" class="case-story__link">
-                        <div class="case-story__background">
-                            <img src="assets/images/case-story.jpg" alt="">
-                            <video autoplay loop muted playsinline disablepictureinpicture background width="365" height="435">
-                                <source src="assets/videos/case-story.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="case-story__content">
-                            <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo" class="case-story__logo" loading="lazy">
-                            <p class="case-story__text">
-                                We help you scale with confidence. From financial clarity to stronger teams, we enable your sustainable growth.
-                            </p>
-                            <p class="case-story__read-more button-arrow">Read the case story</p>
-                            <span class="case-story__category">Ensuring sustainability</span>
-                        </div>
-                    </a>
-                </li>
-                <li class="case-story__item case-story__item--clone">
-                    <a href="#" class="case-story__link">
-                        <div class="case-story__background">
-                            <img src="assets/images/case-story-2.jpg" alt="">
-                            <video autoplay loop muted playsinline disablepictureinpicture background width="365" height="435">
-                                <source src="assets/videos/case-story.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="case-story__content">
-                            <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo" class="case-story__logo" loading="lazy">
-                            <p class="case-story__text">
-                                We help you scale with confidence. From financial clarity to stronger teams, we enable your sustainable growth.
-                            </p>
-                            <p class="case-story__read-more button-arrow">Read the case story</p>
-                            <span class="case-story__category">Scaling up</span>
-                        </div>
-                    </a>
-                </li>
-                <li class="case-story__item case-story__item--clone">
-                    <a href="#" class="case-story__link">
-                        <div class="case-story__background">
-                            <img src="assets/images/case-story.jpg" alt="">
-                            <video autoplay loop muted playsinline disablepictureinpicture background width="365" height="435">
-                                <source src="assets/videos/case-story.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="case-story__content">
-                            <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo" class="case-story__logo" loading="lazy">
-                            <p class="case-story__text">
-                                We help you scale with confidence. From financial clarity to stronger teams, we enable your sustainable growth.
-                            </p>
-                            <p class="case-story__read-more button-arrow">Read the case story</p>
-                            <span class="case-story__category">Going global</span>
-                        </div>
-                    </a>
-                </li>
-                <li class="case-story__item case-story__item--clone">
-                    <a href="#" class="case-story__link">
-                        <div class="case-story__background">
-                            <img src="assets/images/case-story-2.jpg" alt="">
-                            <video autoplay loop muted playsinline disablepictureinpicture background width="365" height="435">
-                                <source src="assets/videos/case-story.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="case-story__content">
-                            <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo" class="case-story__logo" loading="lazy">
-                            <p class="case-story__text">
-                                We help you scale with confidence. From financial clarity to stronger teams, we enable your sustainable growth.
-                            </p>
-                            <p class="case-story__read-more button-arrow">Read the case story</p>
-                            <span class="case-story__category">Making data work</span>
-                        </div>
-                    </a>
-                </li>
-                <li class="case-story__item case-story__item--clone">
-                    <a href="#" class="case-story__link">
-                        <div class="case-story__background">
-                            <img src="assets/images/case-story.jpg" alt="">
-                            <video autoplay loop muted playsinline disablepictureinpicture background width="365" height="435">
-                                <source src="assets/videos/case-story.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="case-story__content">
-                            <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo" class="case-story__logo" loading="lazy">
-                            <p class="case-story__text">
-                                We help you scale with confidence. From financial clarity to stronger teams, we enable your sustainable growth.
-                            </p>
-                            <p class="case-story__read-more button-arrow">Read the case story</p>
-                            <span class="case-story__category">Protecting quality</span>
-                        </div>
-                    </a>
-                </li>
-
-                <li class="case-story__item case-story__item--clone">
-                    <a href="#" class="case-story__link">
-                        <div class="case-story__background">
-                            <img src="assets/images/case-story.jpg" alt="">
-                            <video autoplay loop muted playsinline disablepictureinpicture background width="365" height="435">
-                                <source src="assets/videos/case-story.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="case-story__content">
-                            <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo" class="case-story__logo" loading="lazy">
-                            <p class="case-story__text">
-                                We help you scale with confidence. From financial clarity to stronger teams, we enable your sustainable growth.
-                            </p>
-                            <p class="case-story__read-more button-arrow">Read the case story</p>
-                            <span class="case-story__category">Ensuring sustainability</span>
-                        </div>
-                    </a>
-                </li>
-                <li class="case-story__item case-story__item--clone">
-                    <a href="#" class="case-story__link">
-                        <div class="case-story__background">
-                            <img src="assets/images/case-story-2.jpg" alt="">
-                            <video autoplay loop muted playsinline disablepictureinpicture background width="365" height="435">
-                                <source src="assets/videos/case-story.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="case-story__content">
-                            <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo" class="case-story__logo" loading="lazy">
-                            <p class="case-story__text">
-                                We help you scale with confidence. From financial clarity to stronger teams, we enable your sustainable growth.
-                            </p>
-                            <p class="case-story__read-more button-arrow">Read the case story</p>
-                            <span class="case-story__category">Scaling up</span>
-                        </div>
-                    </a>
-                </li>
-                <li class="case-story__item case-story__item--clone">
-                    <a href="#" class="case-story__link">
-                        <div class="case-story__background">
-                            <img src="assets/images/case-story.jpg" alt="">
-                            <video autoplay loop muted playsinline disablepictureinpicture background width="365" height="435">
-                                <source src="assets/videos/case-story.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="case-story__content">
-                            <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo" class="case-story__logo" loading="lazy">
-                            <p class="case-story__text">
-                                We help you scale with confidence. From financial clarity to stronger teams, we enable your sustainable growth.
-                            </p>
-                            <p class="case-story__read-more button-arrow">Read the case story</p>
-                            <span class="case-story__category">Going global</span>
-                        </div>
-                    </a>
-                </li>
-                <li class="case-story__item case-story__item--clone">
-                    <a href="#" class="case-story__link">
-                        <div class="case-story__background">
-                            <img src="assets/images/case-story-2.jpg" alt="">
-                            <video autoplay loop muted playsinline disablepictureinpicture background width="365" height="435">
-                                <source src="assets/videos/case-story.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="case-story__content">
-                            <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo" class="case-story__logo" loading="lazy">
-                            <p class="case-story__text">
-                                We help you scale with confidence. From financial clarity to stronger teams, we enable your sustainable growth.
-                            </p>
-                            <p class="case-story__read-more button-arrow">Read the case story</p>
-                            <span class="case-story__category">Making data work</span>
-                        </div>
-                    </a>
-                </li>
-                <li class="case-story__item case-story__item--clone">
-                    <a href="#" class="case-story__link">
-                        <div class="case-story__background">
-                            <img src="assets/images/case-story.jpg" alt="">
-                            <video autoplay loop muted playsinline disablepictureinpicture background width="365" height="435">
-                                <source src="assets/videos/case-story.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="case-story__content">
-                            <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo" class="case-story__logo" loading="lazy">
-                            <p class="case-story__text">
-                                We help you scale with confidence. From financial clarity to stronger teams, we enable your sustainable growth.
-                            </p>
-                            <p class="case-story__read-more button-arrow">Read the case story</p>
-                            <span class="case-story__category">Protecting quality</span>
-                        </div>
-                    </a>
-                </li>
+                <?php for ($i = 1; $i <= 15; $i++): ?>
+                    <li class="case-story__item<?php echo $i > 5 ? ' case-story__item--clone' : ''; ?>">
+                        <a href="#" class="case-story__link">
+                            <div class="case-story__background">
+                                <img src="assets/images/case-story.jpg" width="365" height="435" alt="" loading="lazy">
+                                <video preload="none" loop muted playsinline disablepictureinpicture background width="365" height="435">
+                                    <source data-src="assets/videos/case-story.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="case-story__content">
+                                <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo" class="case-story__logo" loading="lazy">
+                                <p class="case-story__text">
+                                    We help you scale with confidence. From financial clarity to stronger teams, we enable your sustainable growth.
+                                </p>
+                                <p class="case-story__read-more button-arrow">Read the case story</p>
+                                <span class="case-story__category">Ensuring sustainability</span>
+                            </div>
+                        </a>
+                    </li>
+                <?php endfor; ?>
             </ul>
         </div>
     </div>
@@ -320,6 +68,11 @@
         </ul>
     </div>
 </section>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        new GreenstepHero(document.querySelector('[data-greenstep-hero]'));
+    });
+</script>
 <section class="text-media section-bg--white section-padding">
     <div class="wrap">
         <div class="text-media__content" data-animation="bottom">
@@ -328,14 +81,14 @@
             <a href="#" class="button button-primary">Explore our partnership model</a>
         </div>
         <div class="text-media__media" data-animation="bottom">
-            <img src="assets/images/tmp.jpg" alt="">
+            <img src="assets/images/tmp.jpg" width="640" height="528" alt="" loading="lazy">
         </div>
     </div>
 </section>
 <section class="text-media section-bg--neutral-100 section-padding">
     <div class="wrap">
         <div class="text-media__media" data-animation="bottom">
-            <img src="assets/images/tmp.jpg" alt="">
+            <img src="assets/images/tmp.jpg" width="640" height="528" alt="" loading="lazy">
         </div>
         <div class="text-media__content" data-animation="bottom">
             <h2>Greenstep as your technology partner</h2>
@@ -365,7 +118,7 @@
             <a href="#" class="button button-arrow">Book a meeting</a>
         </div>
         <div class="text-media__media" data-animation="bottom">
-            <img src="assets/images/tmp.jpg" alt="">
+            <img src="assets/images/tmp.jpg" width="640" height="528" alt="" loading="lazy">
         </div>     
     </div>
 </section>
@@ -408,14 +161,14 @@
 </section>
 <section class="people-cta section-bg--accent-100 section-padding" data-greenstep-people-cta>
     <div class="people-cta__bg">
-        <img src="assets/images/person-1.jpg" data-parallax-plane="1" width="300" height="346" alt="">
-        <img src="assets/images/person-5.jpg" data-parallax-plane="1" width="300" height="384" alt="">
-        <img src="assets/images/person-4.jpg" data-parallax-plane="2" width="300" height="264" alt="">
-        <img src="assets/images/person-2.jpg" data-parallax-plane="4" width="300" height="332" alt="">
-        <img src="assets/images/person-3.jpg" data-parallax-plane="3" width="299" height="306" alt="">
-        <img src="assets/images/person-6.jpg" data-parallax-plane="3" width="300" height="381" alt="">
-        <img src="assets/images/person-7.jpg" data-parallax-plane="4" width="300" height="326" alt="">
-        <img src="assets/images/person-4.jpg" data-parallax-plane="2" width="300" height="264" alt="">
+        <img src="assets/images/person-1.jpg" data-parallax-plane="1" width="300" height="346" alt="" loading="lazy">
+        <img src="assets/images/person-5.jpg" data-parallax-plane="1" width="300" height="384" alt="" loading="lazy">
+        <img src="assets/images/person-4.jpg" data-parallax-plane="2" width="300" height="264" alt="" loading="lazy">
+        <img src="assets/images/person-2.jpg" data-parallax-plane="4" width="300" height="332" alt="" loading="lazy">
+        <img src="assets/images/person-3.jpg" data-parallax-plane="3" width="299" height="306" alt="" loading="lazy">
+        <img src="assets/images/person-6.jpg" data-parallax-plane="3" width="300" height="381" alt="" loading="lazy">
+        <img src="assets/images/person-7.jpg" data-parallax-plane="4" width="300" height="326" alt="" loading="lazy">
+        <img src="assets/images/person-4.jpg" data-parallax-plane="2" width="300" height="264" alt="" loading="lazy">
     </div>
     <div class="wrap">
         <div class="people-cta__content" data-animation="bottom">
@@ -508,15 +261,15 @@
                         <?php foreach ( $logos as $logo ): ?>
 
                             <div class="logo">
-                                <img src="<?php echo $logo; ?>" alt="">
+                                <img src="<?php echo $logo; ?>" width="993" height="311" alt="" loading="lazy">
                             </div>
 
                         <?php endforeach; ?>
 
-                        <div class="logo duplicate"><img src="<?php echo $logos[0]; ?>" alt=""></div>
-                        <div class="logo duplicate"><img src="<?php echo $logos[1]; ?>" alt=""></div>
-                        <div class="logo duplicate"><img src="<?php echo $logos[2]; ?>" alt=""></div>
-                        <div class="logo duplicate absolute"><img src="<?php echo ( $index % 2 ) ? $logos[ array_key_last($logos) ] : $logos[3]; ?>" alt=""></div>
+                        <div class="logo duplicate"><img src="<?php echo $logos[0]; ?>" width="993" height="311" alt="" loading="lazy"></div>
+                        <div class="logo duplicate"><img src="<?php echo $logos[1]; ?>" width="993" height="311" alt="" loading="lazy"></div>
+                        <div class="logo duplicate"><img src="<?php echo $logos[2]; ?>" width="993" height="311" alt="" loading="lazy"></div>
+                        <div class="logo duplicate absolute"><img src="<?php echo ( $index % 2 ) ? $logos[ array_key_last($logos) ] : $logos[3]; ?>" width="993" height="311" alt="" loading="lazy"></div>
                     </div>
 
                 <?php endforeach; ?>                
@@ -532,7 +285,7 @@
         </div>
         <div class="image-cards__items">
             <a href="#" class="image-card" data-animation="bottom">
-                <img class="image-card__image"src="assets/images/tmp.jpg" width="640" height="528" alt="">
+                <img class="image-card__image" src="assets/images/tmp.jpg" width="640" height="528" alt="" loading="lazy">
                 <h3 class="image-card__title">Flexible interim solutions</h3>
                 <p class="image-card__text">
                     <strong>Get the expert support you need quickly</strong> in CFO, HR, IT or sustainability roles.
@@ -540,7 +293,7 @@
                 </p>
             </a>
             <a href="#" class="image-card" data-animation="bottom">
-                <img class="image-card__image"src="assets/images/tmp.jpg" width="640" height="528" alt="">
+                <img class="image-card__image" src="assets/images/tmp.jpg" width="640" height="528" alt="" loading="lazy">
                 <h3 class="image-card__title">Your trusted technology partner</h3>
                 <p class="image-card__text">
                     <strong>Our 100+ tech experts help implement and optimize</strong> ERP, BI and automation.
@@ -548,7 +301,7 @@
                 </p>
             </a>
             <a href="#" class="image-card" data-animation="bottom">
-                <img class="image-card__image"src="assets/images/tmp.jpg" width="640" height="528" alt="">
+                <img class="image-card__image" src="assets/images/tmp.jpg" width="640" height="528" alt="" loading="lazy">
                 <h3 class="image-card__title">Financial services</h3>
                 <p class="image-card__text">
                     <strong>Comprehensive accounting, payroll and CFO services</strong> to support your growth.
