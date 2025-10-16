@@ -50,7 +50,7 @@
     <header class="site-header">
         <div class="site-header__eyebrow">
             <div class="wrap">
-                <div class="site-header__language-menu">
+                <div class="site-header__language-menu" role="menubar">
                     <label for="language" class="visually-hidden">Select language</label>
                     <select id="language" name="language" data-language-menu onchange="window.location = this.value;">
                         <option value="#" selected>English</option>
@@ -411,13 +411,13 @@
                         </li>
                     </ul>
                     <div class="mobile-eyebrow-links">
-                        <div class="mobile-eyebrow-links__language-menu">
-                            <select name="language" aria-label="Select language" onchange="window.location = this.value;">
-                                <option value="#" selected>Global (EN)</option>
+                        <div class="mobile-eyebrow-links__language-menu" role="menubar">
+                            <label for="language" class="visually-hidden">Select language</label>
+                            <select id="language" name="language" data-mobile-language-menu onchange="window.location = this.value;">
+                                <option value="#" selected>English</option>
                                 <option value="#">Suomi</option>
-                                <option value="#">Svenska (Finland)</option>
+                                <option value="#">Svenska</option>
                                 <option value="#">Eesti</option>
-                                <option value="#">Svenska (Sverige)</option>
                                 <option value="#">Norsk</option>
                                 <option value="#">Nederlands</option>
                             </select>
