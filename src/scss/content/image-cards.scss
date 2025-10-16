@@ -1,7 +1,7 @@
 .image-cards {
     &__text {
         text-align: center;
-        margin-bottom: 4rem;
+        margin-bottom: clamp(3rem, 5vw, 5rem);
 
         :is(h1, h2, h3) {
             font-size: var(--fs-heading-2);

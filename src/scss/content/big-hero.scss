@@ -337,6 +337,12 @@ html[data-theme="dark"] {
                 &__list {
                     animation: none;
                 }
+
+                &__item {
+                    &--clone {
+                        display: none;
+                    }
+                }
             }
         }
     }

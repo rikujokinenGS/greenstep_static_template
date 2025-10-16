@@ -412,8 +412,8 @@
                     </ul>
                     <div class="mobile-eyebrow-links">
                         <div class="mobile-eyebrow-links__language-menu" role="menubar">
-                            <label for="language" class="visually-hidden">Select language</label>
-                            <select id="language" name="language" data-mobile-language-menu onchange="window.location = this.value;">
+                            <label for="mobile-language" class="visually-hidden">Select language</label>
+                            <select id="mobile-language" name="language" data-mobile-language-menu onchange="window.location = this.value;">
                                 <option value="#" selected>English</option>
                                 <option value="#">Suomi</option>
                                 <option value="#">Svenska</option>
