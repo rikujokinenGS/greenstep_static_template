@@ -120,6 +120,7 @@
                     position: relative;
                     display: flex;
                     align-items: center;
+                    width: fit-content;
                     border: none;
                     background: none;
                     color: var(--clr-neutral-900);
@@ -155,6 +156,7 @@
                     position: relative;
                     display: flex;
                     align-items: center;
+                    width: fit-content;
                     border: none;
                     background: none;
                     margin: 0;
@@ -205,6 +207,7 @@
                         & + label {
                             position: relative;
                             display: block;
+                            width: fit-content;
                             color: var(--clr-neutral-900);
                             font-family: var(--ff);
                             font-weight: 500;
