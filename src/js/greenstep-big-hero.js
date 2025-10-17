@@ -5,22 +5,22 @@
 
     var _window = typeof window !== 'undefined' ? window : this;
 
-    var GreenstepHero = (_window.GreenstepHero = function (element) {
+    var GreenstepBigHero = (_window.GreenstepBigHero = function (element) {
         let _ = this;
 
-        if (element._GreenstepHero) return element._GreenstepHero;
+        if (element._GreenstepBigHero) return element._GreenstepBigHero;
 
         _.el = element;
-        _.el._GreenstepHero = _;
+        _.el._GreenstepBigHero = _;
 
         _.caseStories = _.el.querySelectorAll('.case-story__item');
 
         _.init();
     });
 
-    var GreenstepHeroPrototype = GreenstepHero.prototype;
+    var GreenstepBigHeroPrototype = GreenstepBigHero.prototype;
 
-    GreenstepHeroPrototype.init = function() {
+    GreenstepBigHeroPrototype.init = function() {
         let _ = this;
 
         if (_.caseStories) {
@@ -30,7 +30,7 @@
         }
     };
 
-    GreenstepHeroPrototype.lazyLoadCaseStoryVideos = function() {
+    GreenstepBigHeroPrototype.lazyLoadCaseStoryVideos = function() {
         let _ = this;
         let isMobileHero = parseInt(getComputedStyle(_.el).getPropertyValue("--mobile-hero")) == 1;
 
@@ -50,7 +50,7 @@
         });
     };
 
-    GreenstepHeroPrototype.addCaseStoryVideoEventListeners = function() {
+    GreenstepBigHeroPrototype.addCaseStoryVideoEventListeners = function() {
         let _ = this;
 
         _.caseStories.forEach((caseStory) => {
@@ -74,7 +74,7 @@
         });
     };
 
-    GreenstepHeroPrototype.addResizeEventListener = function() {
+    GreenstepBigHeroPrototype.addResizeEventListener = function() {
         let _ = this;
 
         _window.addEventListener('resize', () => {
@@ -92,5 +92,5 @@
         });
     };
 
-    return GreenstepHero;
+    return GreenstepBigHero;
 });

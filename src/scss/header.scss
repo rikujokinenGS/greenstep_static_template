@@ -189,9 +189,9 @@
                 }
 
                 &__mobile-theme-toggle {
-                    --mobile-theme-toggle-width: 2rem;
+                    --mobile-theme-toggle-width: 2.125rem;
                     --mobile-theme-toggle-height: 1.25rem;
-                    --mobile-theme-toggle-gap: 0.25rem;
+                    --mobile-theme-toggle-gap: 0.1875rem;
 
                     input {
                         position: absolute !important;
@@ -770,7 +770,7 @@ html[data-theme="dark"] {
                         color: color-mix(in srgb, var(--clr-white) 60%, transparent);
 
                         &::before {
-                            background-color: color-mix(in srgb, var(--clr-white) 60%, transparent);
+                            background-color: var(--clr-accent-400);
                         }
                     }
                 }
