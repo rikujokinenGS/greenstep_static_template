@@ -1,6 +1,6 @@
     </main>
     <footer class="site-footer">
-        <div class="site-footer__sitemap site-footer__section">
+        <div class="site-footer__sitemap site-footer__section" data-animation>
             <div class="wrap">
                 <div class="site-footer__logo" style="-webkit-mask-image: url(assets/images/logo-greenstep.svg); mask-image: url(assets/images/logo-greenstep.svg);"></div>
                 
@@ -62,7 +62,7 @@
                 </nav>
             </div>
         </div>
-        <div class="site-footer__newsletter site-footer__section">
+        <div class="site-footer__newsletter site-footer__section" data-animation>
             <div class="wrap">
                 <div class="site-footer__mobile-logo" style="-webkit-mask-image: url(assets/images/logo-greenstep.svg); mask-image: url(assets/images/logo-greenstep.svg);"></div>
 
@@ -78,7 +78,7 @@
                 </div>
             </div>
         </div>
-        <div class="site-footer__certificates site-footer__section">
+        <div class="site-footer__certificates site-footer__section" data-animation>
             <div class="wrap">
                 <div class="site-footer__certificates-items">
                     <div class="certificate-item">

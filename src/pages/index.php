@@ -124,7 +124,7 @@
 </section>
 <section class="cards section-bg--white section-padding">
     <div class="wrap">
-        <h2 class="cards__title">Tailored solutions for every business</h2>
+        <h2 class="cards__title" data-animation>Tailored solutions for every business</h2>
         <div class="cards__grid" data-animation="bottom">
             <a href="#" class="card-item">
                 <h3 class="card-item__title">Startup and growth companies</h3>
@@ -185,7 +185,7 @@
 </script>
 <section class="stats section-bg--white section-padding" data-greenstep-stats data-greenstep-stats-duration="2000" data-greenstep-stats-locale="en-US">
     <div class="wrap">
-        <div class="stats__text">
+        <div class="stats__text"data-animation>
             <h2>Why <strong>growth businesses</strong> choose us</h2>
         </div>
         <div class="stats__items">
@@ -279,7 +279,7 @@
 </section>
 <section class="image-cards section-bg--white section-padding">
     <div class="wrap">
-        <div class="image-cards__text">
+        <div class="image-cards__text" data-animation>
             <h2>Finance made simple, <strong>growth made possible</strong></h2>
             <p>Greenstep takes care of the complex stuff — you get insights, confidence and time back.</p>
         </div>
@@ -313,7 +313,7 @@
 </section>
 <section class="testimonials section-bg--neutral-100 section-padding" data-greenstep-testimonials>
     <div class="wrap">
-        <header class="testimonials__header">
+        <header class="testimonials__header" data-animation>
             <h2>Trusted by growth companies</h2>
 
             <nav class="testimonials__navigation">
@@ -323,7 +323,7 @@
         </header>
     </div>
 
-    <div class="testimonials__items">
+    <div class="testimonials__items" data-animation="bottom">
         <?php for ($i = 1; $i <= 7; $i++): ?>
             <a href="#" class="testimonial-item<?php echo $i === 1 ? ' active' : ''; ?>">
                 <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo" class="testimonial-item__logo" loading="lazy">
@@ -343,7 +343,7 @@
         <?php endfor; ?>
     </div>
 
-    <nav class="testimonials__mobile-navigation">
+    <nav class="testimonials__mobile-navigation" data-animation>
         <div class="wrap">
             <button class="testimonials__navigation-button testimonials__navigation-button--prev" disabled>Previous</button>
             <button class="testimonials__navigation-button testimonials__navigation-button--next">Next</button>
