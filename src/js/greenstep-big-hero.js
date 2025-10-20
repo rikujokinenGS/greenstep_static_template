@@ -25,7 +25,6 @@
 
         if (_.caseStories) {
             _.addCaseStoryVideoEventListeners();
-            _.addResizeEventListener();
             _.addMobileStoryVideoIntersectionObservers();
         }
     };
@@ -36,11 +35,10 @@
         _.caseStories.forEach((caseStory) => {
             caseStory.addEventListener('mouseenter', () => {
                 let isMobileHero = parseInt(getComputedStyle(_.el).getPropertyValue("--mobile-hero")) == 1;
-
-                if (isMobileHero) return;
-
                 let video = caseStory.querySelector('.case-story__background video');
                 let sources = video.querySelectorAll('source');
+
+                if (isMobileHero) return;
 
                 if (sources[0].hasAttribute('data-src')) {
                     sources.forEach(source => {
@@ -51,33 +49,21 @@
                     video.load();
                 }
 
-                video.play();
+                if (video.paused) {
+                    video.play();
+                }
             });
 
             caseStory.addEventListener('mouseleave', () => {
                 let isMobileHero = parseInt(getComputedStyle(_.el).getPropertyValue("--mobile-hero")) == 1;
+                let video = caseStory.querySelector('.case-story__background video');
 
                 if (isMobileHero) return;
 
-                let video = caseStory.querySelector('.case-story__background video');
-                video.pause();
-            });
-        });
-    };
-
-    GreenstepBigHeroPrototype.addResizeEventListener = function() {
-        let _ = this;
-
-        _window.addEventListener('resize', () => {
-            let isMobileHero = parseInt(getComputedStyle(_.el).getPropertyValue("--mobile-hero")) == 1;
-
-            _.caseStories.forEach((caseStory) => {
-                let video = caseStory.querySelector('.case-story__background video');
-
-                if (isMobileHero) {
-                    video.play();
-                } else {
-                    video.pause();
+                if (!video.paused) {
+                    setTimeout(() => {
+                        video.pause();
+                    }, 100);
                 }
             });
         });

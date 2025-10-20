@@ -72,16 +72,6 @@
                 &::before {
                     display: none;
                 }
-
-                &.hide-image {
-                    .case-story {
-                        &__background {
-                            img {
-                                opacity: 0 !important;
-                            }
-                        }
-                    }
-                }
             }
 
             &__link {
@@ -374,6 +364,18 @@ html[data-theme="dark"] {
                     &:focus-visible {
                         img {
                             opacity: 1 !important;
+                        }
+                    }
+                }
+
+                &__item {
+                    &.hide-image {
+                        .case-story {
+                            &__background {
+                                img {
+                                    opacity: 0 !important;
+                                }
+                            }
                         }
                     }
                 }
