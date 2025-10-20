@@ -455,11 +455,11 @@
                     <div class="search-loading"></div>
                 </form>
 
-                <div class="search-results">
+                <div class="search-results" data-search-results>
                     <p class="search-results-count">
                         <strong data-search-results-count>62</strong> results found with keyword <strong data-search-results-keyword>palkanlaskenta</strong>
                     </p>
-                    <ol data-search-results>
+                    <ol data-search-results-list>
                         <li class="search-result">
                             <article>
                                 <a href="#">

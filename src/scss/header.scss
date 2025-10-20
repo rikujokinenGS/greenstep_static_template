@@ -431,6 +431,7 @@
                 }
 
                 .search-loading {
+                    display: none;
                     position: absolute;
                     top: 50%;
                     right: 0.75rem;
@@ -447,6 +448,10 @@
                     mask-repeat: no-repeat;
                     transform: translateY(-50%);
                     animation: loading-spin 3s linear infinite;
+
+                    &.show {
+                        display: block;
+                    }
                 }
 
                 @keyframes loading-spin {
@@ -457,11 +462,15 @@
             }
 
             .search-results {
-                display: flex;
+                display: none;
                 flex-direction: column;
                 gap: 1.375rem;
                 flex-grow: 1;
                 overflow: hidden;
+
+                &.show {
+                    display: flex;
+                }
                 
                 &-count {
                     font-size: var(--fs-small);
