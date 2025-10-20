@@ -209,12 +209,12 @@ html[data-theme="dark"] {
         }
 
         &--accent-100 {
-            background-color: color-mix(in srgb, var(--clr-neutral-900), var(--clr-white) 2%);
+            background-color: var(--clr-neutral-800);
             color: var(--clr-white);
         }
 
         &--neutral-100 {
-            background-color: color-mix(in srgb, var(--clr-neutral-900), var(--clr-white) 2%);
+            background-color: var(--clr-neutral-800);
             color: var(--clr-white);
         }
     }

@@ -94,6 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 if (searchInput.value == "") {
                     searchResultsContainer.classList.remove("show");
+                    document.body.classList.remove('search-results-shown');
                     return;
                 }
 
@@ -144,6 +145,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                     searchResultsContainer.classList.add("show");
                     searchLoader.classList.remove("show");
+                    document.body.classList.add('search-results-shown');
                 }, 500);
             }
 

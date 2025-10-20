@@ -131,15 +131,11 @@
         scroll-snap-align: start;
         transition: background-color 150ms ease, box-shadow 150ms ease;
 
-        &.active,
         &:hover,
         &:focus-visible {
             background-color: var(--clr-accent-400);
             box-shadow: 0 0.25rem 0.625rem 0 color-mix(in srgb, var(--clr-accent-600) 10%, transparent);
-        }
-
-        &:hover,
-        &:focus-visible {
+            
             .testimonial-item {
                 &__footer {
                     .button {
@@ -240,7 +236,7 @@ html[data-theme="dark"] {
         }
 
         .testimonial-item {
-            background-color: var(--clr-neutral-800);
+            background-color: var(--clr-neutral-700);
 
             &__logo {
                 filter: grayscale(1) brightness(0) invert(1);

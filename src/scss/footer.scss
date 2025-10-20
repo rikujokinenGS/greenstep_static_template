@@ -153,6 +153,14 @@ html[data-theme="dark"] {
             background-color: var(--clr-white);
         }
 
+        &__newsletter {
+            &-form {
+                p {
+                    color: color-mix(in srgb, var(--clr-white) 60%, transparent);
+                }
+            }
+        }
+
         &__certificates {
             &-items {
                 .certificate-item {
