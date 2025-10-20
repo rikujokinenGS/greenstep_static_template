@@ -18,13 +18,13 @@
             }
 
             > a {
-                color: var(--clr-neutral-500);
+                color: var(--clr-neutral-600);
                 text-decoration: none;
                 transition: color 150ms ease-out;
 
                 &:hover,
                 &:focus-visible {
-                    color: var(--clr-neutral-700);
+                    color: var(--clr-neutral-500);
                 }
             }
         }

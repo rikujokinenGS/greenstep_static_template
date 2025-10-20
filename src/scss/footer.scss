@@ -70,7 +70,7 @@
 
             p {
                 font-size: var(--fs-tiny);
-                color: var(--clr-neutral-500);
+                color: var(--clr-neutral-600);
                 margin-bottom: 0;
             }
 
@@ -79,7 +79,7 @@
 
                 &:hover,
                 &:focus {
-                    color: var(--clr-neutral-400);
+                    color: var(--clr-neutral-500);
                 }
             }
         }
@@ -134,7 +134,7 @@
         p {
             font-size: var(--fs-small);
             font-weight: 500;
-            color: var(--clr-neutral-500);
+            color: var(--clr-neutral-600);
             margin-bottom: 0;
         }
     }
