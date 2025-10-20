@@ -15,11 +15,14 @@ Author URI: https://www.greenstep.com/
 @use './scss/_variables';
 
 @use './scss/buttons';
-@use './scss/forms';
 @use './scss/header';
+@use './scss/forms';
+@use './scss/footer';
 
+@use './scss/menus/footer-links';
 @use './scss/menus/header-buttons';
 @use './scss/menus/main-menu';
+@use './scss/menus/sitemap';
 
 @use './scss/content/big-hero';
 @use './scss/content/cards';

@@ -325,7 +325,7 @@
 
     <div class="testimonials__items">
         <?php for ($i = 1; $i <= 7; $i++): ?>
-            <div class="testimonial-item<?php echo $i === 1 ? ' active' : ''; ?>">
+            <a href="#" class="testimonial-item<?php echo $i === 1 ? ' active' : ''; ?>">
                 <img src="assets/images/logo-oura.svg" width="90" height="29" alt="Oura logo" class="testimonial-item__logo" loading="lazy">
                 <p class="testimonial-item__text">"Working with Greenstep was smooth from the start. Clear operating models were established early in the project, which enabled us to complete the ERP implementation on time - and even under budget. We have also outsource our payroll management to Greenstep."</p>
                 
@@ -337,9 +337,9 @@
                             <p class="testimonial-item__author-position">ICT Manager</p>
                         </div>
                     </div>
-                    <a href="#" class="button button-arrow">Read more</a>
+                    <div class="button button-arrow">Read more</div>
                 </div>
-            </div>
+            </a>
         <?php endfor; ?>
     </div>
 

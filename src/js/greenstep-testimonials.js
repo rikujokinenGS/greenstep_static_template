@@ -28,26 +28,15 @@
     GreenstepTestimonialsPrototype.init = function() {
         let _ = this;
 
-        _.container.addEventListener('scroll', function(e) {
-            let container = e.target;
-
-            if (container.scrollLeft === 0) {
-                _.prevBtns.forEach(btn => btn.setAttribute('disabled', ''));
-            }
-            else {
-                _.prevBtns.forEach(btn => btn.removeAttribute('disabled'));
-            }
-
-            if (container.scrollLeft + container.clientWidth >= container.scrollWidth) {
-                _.nextBtns.forEach(btn => btn.setAttribute('disabled', ''));
-            }
-            else {
-                _.nextBtns.forEach(btn => btn.removeAttribute('disabled'));
-            }
-        });
-
         _.container.addEventListener('scrollsnapchange', function(e) {
             _.currentIndex = Array.prototype.indexOf.call(_.items, e.snapTargetInline);
+
+            _.items.forEach(item => item.classList.remove('active'));
+            _.items[_.currentIndex].classList.add('active');
+
+            setTimeout(() => {
+                _.setButtonStates();
+            }, 100);
         });
 
         _.prevBtns.forEach(btn => btn.addEventListener('click', _.previous.bind(_)));
@@ -60,6 +49,8 @@
         _.items[_.currentIndex].classList.remove('active');
         _.items[index].classList.add('active');
         _.currentIndex = index;
+
+        _.setButtonStates();
 
         _.items[index].scrollIntoView({ container: 'nearest', behavior: 'smooth', inline: 'start' });
     };
@@ -84,6 +75,24 @@
         }
 
         _.show(nextIndex);
+    };
+
+    GreenstepTestimonialsPrototype.setButtonStates = function() {
+        let _ = this;
+
+        if (_.currentIndex === 0) {
+            _.prevBtns.forEach(btn => btn.setAttribute('disabled', ''));
+        }
+        else {
+            _.prevBtns.forEach(btn => btn.removeAttribute('disabled'));
+        }
+
+        if (_.currentIndex === _.items.length - 1) {
+            _.nextBtns.forEach(btn => btn.setAttribute('disabled', ''));
+        }
+        else {
+            _.nextBtns.forEach(btn => btn.removeAttribute('disabled'));
+        }
     };
 
     return GreenstepTestimonials;

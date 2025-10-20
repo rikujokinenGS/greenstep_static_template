@@ -57,7 +57,7 @@
                 object-fit: cover;
                 object-position: center;
                 z-index: -2;
-                transition: transform 0.3s ease;
+                transition: transform 0.3s ease-out;
             }
 
             :is(h1, h2, h3, h4, h5, h6) {
@@ -119,6 +119,11 @@
     .image-cards {
         &__text {
             text-align: left;
+
+            :is(h1, h2, h3, p) {
+                margin-left: 0;
+                margin-right: 0;
+            }
         }
 
         &__items {
