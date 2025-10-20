@@ -94,7 +94,7 @@
         padding-left: calc((100% - min(var(--wrap-max-width), 100% - (var(--wrap-gutter-x) * 2))) / 2);
         padding-right: calc((100% - min(var(--wrap-max-width), 100% - (var(--wrap-gutter-x) * 2))) / 2);
         scroll-padding-inline: calc((100% - min(var(--wrap-max-width), 100% - (var(--wrap-gutter-x) * 2))) / 2);
-        scroll-snap-type: x mandatory;
+        scroll-snap-type: x proximity;
 
         &::-webkit-scrollbar-thumb {
             width: 0;

@@ -55,11 +55,9 @@
         _.items[index].scrollIntoView({ container: 'nearest', behavior: 'smooth', inline: 'start' });
     };
 
-    GreenstepTestimonialsPrototype.previous = function(e) {
+    GreenstepTestimonialsPrototype.previous = function() {
         let _ = this;
         let previousIndex = _.currentIndex - 1;
-
-        e.preventDefault();
 
         if (previousIndex < 0) {
             return;
@@ -68,11 +66,9 @@
         _.show(previousIndex);
     };
 
-    GreenstepTestimonialsPrototype.next = function(e) {
+    GreenstepTestimonialsPrototype.next = function() {
         let _ = this;
         let nextIndex = _.currentIndex + 1;
-
-        e.preventDefault();
 
         if (nextIndex >= _.items.length) {
             return;
