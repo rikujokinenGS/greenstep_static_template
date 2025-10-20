@@ -27,7 +27,6 @@
 
         _window.addEventListener('scroll', _.parallaxScroll.bind(_), { passive: true });
         _window.addEventListener('resize', _.parallaxScroll.bind(_));
-        _.parallaxScroll();
     };
 
     GreenstepPeopleCTAPrototype.parallaxScroll = function() {

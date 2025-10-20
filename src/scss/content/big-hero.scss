@@ -72,6 +72,16 @@
                 &::before {
                     display: none;
                 }
+
+                &.hide-image {
+                    .case-story {
+                        &__background {
+                            img {
+                                opacity: 0 !important;
+                            }
+                        }
+                    }
+                }
             }
 
             &__link {
@@ -85,7 +95,7 @@
 
                 &:hover,
                 &:focus-visible {
-                    .case-story{
+                    .case-story {
                         &__text,
                         &__read-more {
                             opacity: 1;
@@ -359,18 +369,19 @@ html[data-theme="dark"] {
             .case-story {
                 &__link {
                     border-radius: var(--br-small);
+
+                    &:hover,
+                    &:focus-visible {
+                        img {
+                            opacity: 1 !important;
+                        }
+                    }
                 }
 
                 &__text {
                     display: none;
                 }
-
-                &__background {
-                    img {
-                        display: none;
-                    }
-                }
-
+                
                 &__read-more {
                     display: none;
                 }

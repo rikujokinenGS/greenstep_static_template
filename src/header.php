@@ -32,6 +32,9 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
 
+    <link rel="preload" href="assets/fonts/dm-sans-normal-latin.woff2" as="font" type="font/woff2" crossorigin async>
+    <link rel="preload" href="assets/fonts/dm-sans-italic-latin.woff2" as="font" type="font/woff2" crossorigin async>
+
     <link rel="stylesheet" href="./style.css">    
     <script src="./script.js" defer></script>
 </head>

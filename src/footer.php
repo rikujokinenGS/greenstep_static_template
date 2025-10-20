@@ -82,19 +82,19 @@
             <div class="wrap">
                 <div class="site-footer__certificates-items">
                     <div class="certificate-item">
-                        <img src="assets/images/GDPR.png" alt="GDPR Certificate">
+                        <img src="assets/images/GDPR.png" width="49" height="48" alt="GDPR Certificate" loading="lazy">
                         <p class="certificate-item__text"><strong>GDPR</strong><br>Compliant</p>
                     </div>
                     <div class="certificate-item">
-                        <img src="assets/images/into.png" alt="Into Certificate">
+                        <img src="assets/images/into.png" width="80" height="80" alt="Into Certificate" loading="lazy">
                         <p class="certificate-item__text"><strong>Into</strong><br>Certificate</p>
                     </div>
                     <div class="certificate-item">
-                        <img src="assets/images/microsoft-digital-and-app-innovation.svg" alt="Microsoft Digital & App Innovation">
+                        <img src="assets/images/microsoft-digital-and-app-innovation.svg" width="286" height="140" alt="Microsoft Digital & App Innovation" loading="lazy">
                         <p class="certificate-item__text"><strong>Microsoft</strong><br>Digital & App Innovation</p>
                     </div>
                     <div class="certificate-item">
-                        <img src="assets/images/microsoft-data-and-ai.svg" alt="Microsoft Data & AI">
+                        <img src="assets/images/microsoft-data-and-ai.svg" width="260" height="140" alt="Microsoft Data & AI" loading="lazy">
                         <p class="certificate-item__text"><strong>Microsoft</strong><br>Data & AI</p>
                     </div>
                 </div>

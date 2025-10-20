@@ -35,15 +35,17 @@ document.addEventListener("DOMContentLoaded", () => {
     let languageMenu = document.querySelector('[data-language-menu]');
 
     if (languageMenu) {
-        let languageMenuChoices = new Choices(languageMenu, {
-            searchEnabled: false,
-            itemSelectText: '',
-            shouldSort: false,
-        });
+        setTimeout(() => { // Avoid forced reflow
+            let languageMenuChoices = new Choices(languageMenu, {
+                searchEnabled: false,
+                itemSelectText: '',
+                shouldSort: false,
+            });
 
-        languageMenuChoices.containerOuter.element.setAttribute('role', 'menuitem');
-        languageMenuChoices.containerInner.element.querySelector('.choices__list > *').removeAttribute('role');
-        languageMenuChoices.containerInner.element.querySelector('.choices__list > *').removeAttribute('aria-selected');
+            languageMenuChoices.containerOuter.element.setAttribute('role', 'menuitem');
+            languageMenuChoices.containerInner.element.querySelector('.choices__list > *').removeAttribute('role');
+            languageMenuChoices.containerInner.element.querySelector('.choices__list > *').removeAttribute('aria-selected');
+        }, 100);
     }
 
     let mobileLanguageMenu = document.querySelector('[data-mobile-language-menu]');
