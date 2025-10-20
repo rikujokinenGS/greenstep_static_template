@@ -357,6 +357,10 @@ html[data-theme="dark"] {
 
         &__case-stories {
             .case-story {
+                &__link {
+                    border-radius: var(--br-small);
+                }
+
                 &__text {
                     display: none;
                 }
