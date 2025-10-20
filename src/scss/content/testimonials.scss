@@ -94,7 +94,7 @@
         padding-left: calc((100% - min(var(--wrap-max-width), 100% - (var(--wrap-gutter-x) * 2))) / 2);
         padding-right: calc((100% - min(var(--wrap-max-width), 100% - (var(--wrap-gutter-x) * 2))) / 2);
         scroll-padding-inline: calc((100% - min(var(--wrap-max-width), 100% - (var(--wrap-gutter-x) * 2))) / 2);
-        scroll-padding-top: calc(var(--header-main-height) + var(--header-eyebrow-height));
+        scroll-padding-top: calc(var(--header-main-height) + var(--header-eyebrow-height) + 1rem);
         scroll-snap-type: x mandatory;
 
         &::-webkit-scrollbar-thumb {
@@ -266,6 +266,14 @@ html[data-theme="dark"] {
                     }
                 }
             }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .testimonials {
+        &__items {
+            scroll-padding-top: calc(var(--header-main-height) + 1rem);
         }
     }
 }
