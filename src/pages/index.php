@@ -74,23 +74,23 @@
     });
 </script>
 <section class="text-media section-bg--white section-padding">
-    <div class="wrap">
-        <div class="text-media__content" data-animation="bottom">
+    <div class="wrap" data-animation="bottom">
+        <div class="text-media__content">
             <h2>Flexible interim solutions</h2>
             <p>Get the expert support you need quickly in CFO, HR, IT or sustainability roles.</p>
             <a href="#" class="button button-primary">Explore our partnership model</a>
         </div>
-        <div class="text-media__media" data-animation="bottom">
+        <div class="text-media__media">
             <img src="assets/images/tmp.jpg" width="640" height="528" alt="" loading="lazy">
         </div>
     </div>
 </section>
 <section class="text-media section-bg--neutral-100 section-padding">
-    <div class="wrap">
-        <div class="text-media__media" data-animation="bottom">
+    <div class="wrap" data-animation="bottom">
+        <div class="text-media__media">
             <img src="assets/images/tmp.jpg" width="640" height="528" alt="" loading="lazy">
         </div>
-        <div class="text-media__content" data-animation="bottom">
+        <div class="text-media__content">
             <h2>Greenstep as your technology partner</h2>
             <p>Our 100+ tech experts help implement and optimize ERP, BI and automation.</p>
             <ul>
@@ -104,8 +104,8 @@
     </div>
 </section>
 <section class="text-media section-bg--white section-padding">
-    <div class="wrap">       
-        <div class="text-media__content" data-animation="bottom">
+    <div class="wrap" data-animation="bottom">       
+        <div class="text-media__content">
             <h2>Your financial backbone</h2>
             <p>From accounting and payroll to CFO support and strategic financial planning, we provide world-class financial services to help your business thrive.</p>
             <ul>
@@ -117,7 +117,7 @@
 
             <a href="#" class="button button-arrow">Book a meeting</a>
         </div>
-        <div class="text-media__media" data-animation="bottom">
+        <div class="text-media__media">
             <img src="assets/images/tmp.jpg" width="640" height="528" alt="" loading="lazy">
         </div>     
     </div>
