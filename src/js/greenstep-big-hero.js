@@ -25,7 +25,7 @@
 
         if (_.caseStories) {
             _.addCaseStoryVideoEventListeners();
-            _.addMobileStoryVideoIntersectionObservers();
+            _.addCaseStoryVideoIntersectionObservers();
         }
     };
 
@@ -50,7 +50,7 @@
                 }
 
                 if (video.paused) {
-                    video.play();
+                    video.play().catch(() => {}); // ignore autoplay errors
                 }
             });
 
@@ -69,20 +69,19 @@
         });
     };
 
-    GreenstepBigHeroPrototype.addMobileStoryVideoIntersectionObservers = function() {
+    GreenstepBigHeroPrototype.addCaseStoryVideoIntersectionObservers = function() {
         let _ = this;
 
         let options = {
-            rootMargin: '0% -25% 0% -25%',
-            threshold: 0.5
+            root: _.el.querySelector('.case-story__slider'),
+            rootMargin: '0px 50px 0px 0px',
+            threshold: 0
         };
 
         let observer = new IntersectionObserver((entries, observer) => {
             entries.forEach(entry => {
                 let isMobileHero = parseInt(getComputedStyle(_.el).getPropertyValue("--mobile-hero")) == 1;
                 let video = entry.target.querySelector('.case-story__background video');
-
-                if (!isMobileHero) return;
 
                 if (entry.isIntersecting) {
                     let sources = video.querySelectorAll('source');
@@ -96,10 +95,19 @@
                         video.load();
                     }
 
-                    video.play();
-                    entry.target.classList.add('hide-image');
+                    if (isMobileHero) {
+                        video.addEventListener('loadeddata', () => {
+                            entry.target.classList.add('hide-image');
+                        });
+
+                        if (video.readyState >= 2) {
+                            entry.target.classList.add('hide-image');
+                        }
+
+                        video.play().catch(() => {}); // ignore autoplay errors
+                    }
                 }
-                else {
+                else if (isMobileHero) {
                     video.pause();
                     entry.target.classList.remove('hide-image');
                 }

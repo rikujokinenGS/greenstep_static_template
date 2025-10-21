@@ -16,7 +16,7 @@
                         <a href="#" class="case-story__link">
                             <div class="case-story__background">
                                 <img src="assets/images/case-story.jpg" width="365" height="435" alt="" loading="lazy">
-                                <video preload="none" loop muted playsinline disablepictureinpicture background width="365" height="435">
+                                <video loop muted playsinline disablepictureinpicture background width="365" height="435">
                                     <source data-src="assets/videos/case-story.mp4" type="video/mp4">
                                 </video>
                             </div>
