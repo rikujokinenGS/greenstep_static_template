@@ -100,11 +100,7 @@
 }
 
 html[data-theme="dark"] {
-    &:root {
-        --clr-accent-500: #05be8a;
-        --clr-accent: #03eaac;
-        --clr-accent-300: #12febc;
-        
+    &:root {        
         --choices-darken: var(--clr-white);
         --choices-lighten: var(--clr-neutral-900);
         --choices-bg-color: var(--clr-neutral-900);

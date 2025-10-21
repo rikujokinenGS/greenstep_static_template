@@ -166,6 +166,11 @@ html[data-theme="dark"] {
                 }
 
                 a {
+                    &:hover,
+                    &:focus-visible {
+                        color: var(--clr-neutral-300);
+                    }
+                    
                     &:focus-visible {
                         outline-color: var(--clr-white);
                     }
@@ -186,6 +191,12 @@ html[data-theme="dark"] {
                         }
                     }
                 }
+            }
+        }
+
+        &__copyright {
+            p {
+                color: color-mix(in srgb, var(--clr-white) 60%, transparent);
             }
         }
     }

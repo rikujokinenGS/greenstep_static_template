@@ -42,6 +42,13 @@ html[data-theme="dark"] {
         > ul {
             > li {
                 > a {
+                    color: color-mix(in srgb, var(--clr-white) 60%, transparent);
+
+                    &:hover,
+                    &:focus-visible {
+                        color: var(--clr-neutral-200);
+                    }
+
                     &:focus-visible {
                         outline-color: var(--clr-white);
                     }

@@ -214,21 +214,6 @@ html[data-theme="dark"] {
     .testimonials {
         &__navigation {
             &-button {
-                background-color: var(--clr-neutral-700);
-
-                &::after {
-                    background-color: var(--clr-white);
-                }
-
-                &:hover,
-                &:focus-visible {
-                    background-color: var(--clr-accent-400);
-
-                    &::after {
-                        background-color: var(--clr-neutral-900);
-                    }
-                }
-
                 &:focus-visible {
                     outline-color: var(--clr-white);
                 }
