@@ -61,6 +61,11 @@
                 transform: scale(1.2);
             }
         }
+
+        &:focus-visible {
+            outline: 1px solid var(--clr-neutral-900);
+            outline-offset: 2px;
+        }
     }
 }
 
@@ -80,6 +85,10 @@ html[data-theme="dark"] {
             .card-item__icon {
                 background-color: var(--clr-neutral-900);
             }
+        }
+
+        &:focus-visible {
+            outline-color: var(--clr-white);
         }
     }
 }

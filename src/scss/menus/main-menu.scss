@@ -66,7 +66,7 @@
                 }
 
                 &:focus-visible {
-                    outline: 1px solid var(--clr-accent-500);
+                    outline: 1px solid var(--clr-neutral-900);
                 }
 
                 &[aria-haspopup="true"] {
@@ -113,7 +113,7 @@
                                 pointer-events: none;
 
                                 &:focus-visible {
-                                    outline: 1px solid var(--clr-accent-500);
+                                    outline: 1px solid var(--clr-neutral-900);
                                     outline-offset: 2px;
                                 }
                             }
@@ -139,7 +139,7 @@
                                             }
 
                                             &:focus-visible {
-                                                outline: 1px solid var(--clr-accent-500);
+                                                outline: 1px solid var(--clr-neutral-900);
                                                 outline-offset: 2px;
                                             }
 
@@ -330,19 +330,25 @@
             .hamburger {
                 > span {
                     &:first-child {
-                        transform: translateX(-0.375em) rotate(-45deg) scaleX(0.83);
+                        transform: translateX(-0.3125em) rotate(-45deg) scaleX(0.83);
                     }
 
                     &:nth-child(2) {
                         opacity: 0;
-                        transform: translateX(-0.375em);
+                        transform: translateX(-0.3125em);
                     }
 
                     &:last-child {
-                        transform: translateX(-0.375em) rotate(45deg) scaleX(0.83);
+                        transform: translateX(-0.3125em) rotate(45deg) scaleX(0.83);
                     }
                 }
             }
+        }
+
+        &:focus-visible {
+            outline: 1px solid var(--clr-neutral-900);
+            outline-offset: 2px;
+            border-radius: var(--br-small);
         }
     }
 }
@@ -363,17 +369,21 @@ html[data-theme="dark"] {
                                 background-color: var(--clr-accent-500);
                             }
                         }
+
+                        &:focus-visible {
+                            outline-color: var(--clr-white);
+                        }
                     }
                 }
 
                 > a {
                     &:hover,
                     &:focus-visible {
-                        color: var(--clr-accent-500);
+                        color: var(--clr-neutral-400);
                     }
 
                     &:focus-visible {
-                        outline: 1px solid var(--clr-accent-500);
+                        outline: 1px solid var(--clr-white);
                     }
 
                     &[aria-haspopup="true"] {
@@ -400,6 +410,10 @@ html[data-theme="dark"] {
                                             &:focus-visible {
                                                 background-color: var(--clr-neutral-700);
                                             }
+
+                                            &:focus-visible {
+                                                outline-color: var(--clr-white);
+                                            }
                                         }
                                     }
                                 }
@@ -410,6 +424,10 @@ html[data-theme="dark"] {
 
                                 > a {
                                     color: var(--clr-neutral-500);
+
+                                    &:focus-visible {
+                                        outline-color: var(--clr-white);
+                                    }
                                 }
 
                                 > ul {
@@ -423,7 +441,7 @@ html[data-theme="dark"] {
                                                 }
 
                                                 &:focus-visible {
-                                                    outline-color: var(--clr-accent-500);
+                                                    outline-color: var(--clr-neutral-400);
                                                 }
                                             }
                                         }
@@ -451,6 +469,10 @@ html[data-theme="dark"] {
                 > span {
                     background-color: var(--clr-white);
                 }
+            }
+
+            &:focus-visible {
+                outline-color: var(--clr-white);
             }
         }
     }
