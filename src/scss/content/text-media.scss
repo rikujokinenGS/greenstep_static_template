@@ -50,7 +50,7 @@
         .text-media {
             &__content {
                 :is(p, ul, ol) {
-                    font-size: clamp(var(--fs-reqular), 1.25vw + 0.25rem, var(--fs-large));
+                    font-size: clamp(var(--fs-regular), 1.25vw + 0.25rem, var(--fs-large));
                     max-width: 45ch;
                 }
 
