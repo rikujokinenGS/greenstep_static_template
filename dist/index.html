@@ -460,82 +460,9 @@
 
                 <div class="search-results" data-search-results>
                     <p class="search-results-count">
-                        <strong data-search-results-count>62</strong> results found with keyword <strong data-search-results-keyword>palkanlaskenta</strong>
+                        <strong data-search-results-count>0</strong> results found with keyword <strong data-search-results-keyword></strong>
                     </p>
-                    <ol data-search-results-list>
-                        <li class="search-result">
-                            <article>
-                                <a href="#">
-                                    <p class="tagline">Page</p>
-                                    <h1>Greenstep tarjoaa Leppäkoskelle sujuvaa <span class="highlight">palkanlaskenta</span>a sekä palkkayhteyspalvelua</h1>
-                                    <p class="url">https://greenstep.fi/artikkelit/tarjoamme-leppakoski-groupille-luotettavaa-palkkayhteyshenkilo-ja-palkanlaskennan-palvelua</p>
-                                </a>
-                            </article>
-                        </li>
-                        <li class="search-result">
-                            <article>
-                                <a href="#">
-                                    <p class="tagline">Page</p>
-                                    <h1>The Switch vähensi manuaalista työtä ulkoistamalla palkanlaskennan Greenstepille</h1>
-                                    <p class="url">https://greenstep.fi/artikkelit/tarjoamme-leppakoski-groupille-luotettavaa-palkkayhteyshenkilo-ja-palkanlaskennan-palvelua</p>
-                                </a>
-                            </article>
-                        </li>
-                        <li class="search-result">
-                            <article>
-                                <a href="#">
-                                    <p class="tagline">Post</p>
-                                    <h1>Kauppakamariaamiainen: Datalla johtaminen käytännöksi, Joensuu</h1>
-                                    <p class="url">https://greenstep.fi/artikkelit/tarjoamme-leppakoski-groupille-luotettavaa-palkkayhteyshenkilo-ja-palkanlaskennan-palvelua</p>
-                                </a>
-                            </article>
-                        </li>
-                        <li class="search-result">
-                            <article>
-                                <a href="#">
-                                    <p class="tagline">Page</p>
-                                    <h1>Kauppakamariaamiainen: Datalla johtaminen käytännöksi, Joensuu</h1>
-                                    <p class="url">https://greenstep.fi/artikkelit/tarjoamme-leppakoski-groupille-luotettavaa-palkkayhteyshenkilo-ja-palkanlaskennan-palvelua</p>
-                                </a>
-                            </article>
-                        </li>
-                        <li class="search-result">
-                            <article>
-                                <a href="#">
-                                    <p class="tagline">Page</p>
-                                    <h1>Greenstep tarjoaa Leppäkoskelle sujuvaa <span class="highlight">palkanlaskenta</span>a sekä palkkayhteyspalvelua</h1>
-                                    <p class="url">https://greenstep.fi/artikkelit/tarjoamme-leppakoski-groupille-luotettavaa-palkkayhteyshenkilo-ja-palkanlaskennan-palvelua</p>
-                                </a>
-                            </article>
-                        </li>
-                        <li class="search-result">
-                            <article>
-                                <a href="#">
-                                    <p class="tagline">Page</p>
-                                    <h1>The Switch vähensi manuaalista työtä ulkoistamalla palkanlaskennan Greenstepille</h1>
-                                    <p class="url">https://greenstep.fi/artikkelit/tarjoamme-leppakoski-groupille-luotettavaa-palkkayhteyshenkilo-ja-palkanlaskennan-palvelua</p>
-                                </a>
-                            </article>
-                        </li>
-                        <li class="search-result">
-                            <article>
-                                <a href="#">
-                                    <p class="tagline">Post</p>
-                                    <h1>Kauppakamariaamiainen: Datalla johtaminen käytännöksi, Joensuu</h1>
-                                    <p class="url">https://greenstep.fi/artikkelit/tarjoamme-leppakoski-groupille-luotettavaa-palkkayhteyshenkilo-ja-palkanlaskennan-palvelua</p>
-                                </a>
-                            </article>
-                        </li>
-                        <li class="search-result">
-                            <article>
-                                <a href="#">
-                                    <p class="tagline">Page</p>
-                                    <h1>Kauppakamariaamiainen: Datalla johtaminen käytännöksi, Joensuu</h1>
-                                    <p class="url">https://greenstep.fi/artikkelit/tarjoamme-leppakoski-groupille-luotettavaa-palkkayhteyshenkilo-ja-palkanlaskennan-palvelua</p>
-                                </a>
-                            </article>
-                        </li>
-                    </ol>
+                    <ol data-search-results-list></ol>
                 </div>
             </div>
         </search>

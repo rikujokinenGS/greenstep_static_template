@@ -133,7 +133,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                         let url = document.createElement("p");
                         url.classList.add("url");
-                        url.textContent = "https://www.greenstep.fi/posts/sample-url-path";
+                        url.textContent = "https://www.greenstep.fi/articles/sample-url-path";
 
                         link.appendChild(tagline);
                         link.appendChild(title);
@@ -146,6 +146,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     searchResultsContainer.classList.add("show");
                     searchLoader.classList.remove("show");
                     document.body.classList.add('search-results-shown');
+
+                    searchResultsList.scroll({ top: 0 });
                 }, 500);
             }
 
@@ -177,6 +179,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             function closeSearchForm() {
                 document.body.classList.remove('search-form-open');
+                document.body.classList.remove('search-results-shown');
                 searchToggle.setAttribute('aria-expanded', 'false')
                 mobileSearchToggle.setAttribute('aria-expanded', 'false');
                 searchToggle.setAttribute('aria-label', searchToggle.getAttribute('data-label-closed'));
