@@ -38,7 +38,6 @@
         --case-story-gap: clamp(0.75rem, 1.5vw, 1.375rem);
 
         margin: 4rem auto;
-        max-width: 2000px;
 
         .case-story {
             &__slider {
@@ -352,12 +351,13 @@ html[data-theme="dark"] {
     }
 }
 
-@media only screen and (min-width: 2000px) {
+@media only screen and (min-width: 2560px) {
     .big-hero {
         --case-stories-overflow-color: var(--clr-white);
 
         &__case-stories {
             position: relative;
+            max-width: 2560px;
 
             &::before {
                 content: "";
