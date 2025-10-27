@@ -1,0 +1,105 @@
+.logo-slider {
+    overflow-x: hidden;
+
+    &__title {
+        text-align: center;
+        font-weight: 500;
+        color: var(--clr-neutral-500);
+
+        strong {
+            font-weight: 500;
+            color: var(--clr-neutral-900);
+        }
+    }
+
+    &__slider {
+        overflow: hidden;
+        height: 7rem;
+    }
+
+    &__items {
+        --_logo-slider-gap: 0px;
+
+        display: flex;
+        width: max-content;
+        flex-wrap: nowrap;
+        gap: var(--_logo-slider-gap);
+        height: 100%;       
+        animation: logoSlider 40s linear infinite;
+    }
+    
+    @keyframes logoSlider {
+        to {
+            transform: translateX(calc(-1 * (100% / 3) - (var(--_logo-slider-gap) / 3)));
+        }
+    }
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: clamp(12rem, 16vw, 16rem);
+        height: 100%;
+
+        img {
+            max-width: 7.25rem;
+            max-height: 1.25rem;
+            height: auto;
+            margin: auto;
+            filter: grayscale(1) brightness(0) invert(1) brightness(0.4);
+        }
+    }
+
+    &--boxed {
+        .logo-slider {
+            &__slider {
+                height: auto;
+            }
+
+            &__title {
+                margin-bottom: 3rem;
+            }
+
+            &__items {
+                --_logo-slider-gap: 0.5rem;
+            }
+
+            &__item {
+                width: clamp(10rem, 20vw, 20rem);
+                aspect-ratio: 1;
+                border-radius: var(--br-small);
+                background-color: var(--clr-neutral-100);
+            }
+        }
+    }
+}
+
+html[data-theme="dark"] {
+    .logo-slider {
+        &__title {
+            color: color-mix(in srgb, var(--clr-white) 60%, transparent);
+
+            strong {
+                color: var(--clr-white);
+            }
+        }
+
+        &--boxed {
+            .logo-slider__item {
+                background-color: var(--clr-neutral-800);
+
+                img {
+                    filter: grayscale(1) brightness(0) invert(1) !important;
+                }
+            }
+        }
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .logo-slider {
+        &__items {
+            animation-play-state: paused;
+        }
+    }
+}

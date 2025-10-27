@@ -173,7 +173,7 @@
                 max-height: 1.75rem;
                 object-fit: contain;
                 object-position: top left;
-                filter: brightness(0) invert(1);
+                filter: grayscale(1) brightness(0) invert(1);
                 z-index: 5;
             }
 

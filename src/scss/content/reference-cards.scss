@@ -1,0 +1,196 @@
+.reference-cards {
+    &__text {
+        max-width: 48rem;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(clamp(280px, 48vw, 400px), 1fr));
+        gap: 1rem;
+        margin-top: 4rem;
+
+        .reference-card {
+            display: flex;
+            flex-direction: column;
+            background-color: var(--clr-neutral-100);
+            border-radius: var(--br-medium);
+            padding: clamp(2rem, 4vw, 4rem) clamp(2rem, 3vw, 3rem);
+            transition: background-color 150ms ease-out, box-shadow 150ms ease-out;
+
+            &__text {
+                order: 2;
+
+                h3 {
+                    font-size: var(--fs-heading-6);
+                    font-weight: 600;
+                    line-height: 140%;
+                }
+            }
+
+            &__media {
+                order: 1;
+
+                &-logo {
+                    margin-bottom: clamp(2rem, 3vw, 3rem);
+
+                    img {
+                        position: relative;
+                        max-width: 4rem;
+                        height: auto;
+                        filter: grayscale(1) brightness(0) invert(1) brightness(0.4);
+                    }
+                }
+            }
+
+            &:hover {
+                background-color: var(--clr-accent-400);
+                box-shadow:
+                    0 0.25rem 0.375rem -0.125rem rgba(0, 0, 0, 0.03),
+                    0 0.75rem 1rem -0.25rem rgba(0, 0, 0, 0.08);
+            }
+
+            &--large {
+                grid-column: 1 / -1;
+                flex-direction: row;
+                gap: 2rem 4rem;
+                padding: 2rem;
+
+                .reference-card {
+                    &__text {
+                        flex: 1;
+                        order: 1;
+                        padding: clamp(1px, 2vw, 2rem);
+
+                        h3 {
+                            font-size: var(--fs-heading-4);
+                            font-weight: 500;
+                            line-height: 130%;
+                            max-width: 18ch;
+                        }
+
+                        p {
+                            max-width: 45ch;
+                        }
+                    }
+
+                    &__media {
+                        flex: 1;
+                        order: 2;
+                        position: relative;
+                        border-radius: var(--br-small);
+                        overflow: hidden;
+
+                        &-image {
+                            position: relative;
+                            width: 100%;
+                            object-fit: cover;
+                            object-position: center;
+                        }
+
+                        &-logo {
+                            position: absolute;
+                            top: clamp(1rem, 2vw, 2rem);
+                            left: clamp(1rem, 2vw, 2rem);
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: clamp(5.5rem, 7.5vw, 7.5rem);
+                            height: clamp(5.5rem, 7.5vw, 7.5rem);
+                            margin-bottom: 0;
+                            border-radius: var(--br-small);
+                            overflow: hidden;
+                            isolation: isolate;
+
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                background-color: color-mix(in srgb, var(--clr-white) 50%, transparent);
+                                backdrop-filter: blur(0.5rem);
+                            }
+
+                            img {
+                                filter: grayscale(1) brightness(0) invert(1) brightness(0.4) !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+html[data-theme="dark"] {
+    .reference-cards {
+        &__items {
+            .reference-card {
+                background-color: var(--clr-neutral-800);
+
+                &__media {
+                    &-logo {
+                        img {
+                            filter: grayscale(1) brightness(0) invert(1) brightness(0.8);
+                        }
+                    }
+                }
+
+                &:hover {
+                    background-color: var(--clr-accent-400);
+                    color: var(--clr-neutral-900);
+
+                    .reference-card {
+                        &__media {
+                            &-logo {
+                                img {
+                                    filter: grayscale(1) brightness(0) invert(1) brightness(0.4);
+                                }
+                            }
+                        }
+                    }
+
+                    .button-arrow {
+                        color: var(--clr-neutral-900);
+
+                        &::after {
+                            background-color: var(--clr-neutral-900);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 782px) {
+    .reference-cards {
+        &__items {
+            grid-template-columns: 1fr;
+            
+            .reference-card {
+                &--large {
+                    flex-direction: column;
+
+                    .reference-card {
+                        &__text {
+                            flex: auto;
+                            order: 2;
+                            padding: 0;
+                        }
+
+                        &__media {
+                            flex: auto;
+                            order: 1;
+
+                            &-image {
+                                min-height: 12rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

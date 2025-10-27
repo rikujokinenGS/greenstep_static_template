@@ -27,28 +27,25 @@
             object-position: center;
         }
 
-        &-overlays {
+        &-overlay {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
 
-            > img {
+            img {
+                position: absolute;
+                top: calc(50% + 3rem);
+                left: -1rem;
                 max-width: 100%;
-
-                &:first-child {
-                    position: absolute;
-                    top: calc(50% + 3rem);
-                    left: -1rem;
-                    transform: translateY(-50%);
-                }
+                transform: translateY(-50%);
             }
         }
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 782px) {
     .hero {
         .wrap {
             flex-direction: column;
@@ -64,14 +61,12 @@
         }
 
         &__image {            
-            &-overlays {
-                > img {
-                    &:first-child {
-                        top: auto;
-                        bottom: 1rem;
-                        max-width: 75%;
-                        transform: none;
-                    }
+            &-overlay {
+                img {
+                    top: auto;
+                    bottom: 1rem;
+                    max-width: 75%;
+                    transform: none;
                 }
             }
         }

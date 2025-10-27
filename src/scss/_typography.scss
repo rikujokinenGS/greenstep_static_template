@@ -130,6 +130,29 @@ ul li {
     }
 }
 
+ol li {
+    position: relative;
+    list-style-type: none;
+    padding-left: clamp(3rem, 4vw, 4rem);
+    counter-increment: list-item;
+
+    &::before {
+        content: counter(list-item);
+        position: absolute;
+        top: -0.1875rem;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 2rem;
+        height: 2rem;
+        font-size: var(--fs-regular);
+        font-weight: 500;
+        background-color: var(--clr-neutral-300);
+        border-radius: 100vw;
+    }
+}
+
 a {
     color: inherit;
 }
@@ -150,7 +173,13 @@ kbd {
     box-shadow: 0.0625rem 0.125rem 0.125rem color-mix(in srgb, var(--clr-neutral-900) 25%, transparent);
 }
 
-html[data-theme="dark"] {
+html[data-theme="dark"] {    
+    ol li {
+        &::before {
+            background-color: var(--clr-neutral-800);
+        }
+    }
+
     kbd {
         background-color: var(--clr-neutral-900);
         color: var(--clr-white);
