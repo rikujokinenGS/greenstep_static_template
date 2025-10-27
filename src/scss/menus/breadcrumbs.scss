@@ -1,0 +1,89 @@
+.breadcrumbs {
+    margin-bottom: 2rem;
+
+    ul {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            font-size: clamp(var(--fs-tiny), 0.875vw + 0.25rem, var(--fs-small));
+            color: var(--clr-neutral-900);
+            white-space: nowrap;
+
+            &::before {
+                display: none;
+            }
+
+            &::after {
+                content: "";
+                width: 0.5em;
+                height: 0.5em;
+                background-color: var(--clr-neutral-600);
+                -webkit-mask-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' viewBox='0 0 6 10'%3E%3Cpath d='M6,4.99c0,.26-.1.51-.29.71l-4,4c-.39.39-1.03.39-1.42,0-.39-.39-.39-1.03,0-1.42l3.29-3.29L.29,1.7C-.1,1.31-.1.68.29.29.68-.1,1.31-.1,1.7.29l4,4c.2.2.29.45.29.71h.01Z'/%3E%3C/svg%3E");
+                mask-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' viewBox='0 0 6 10'%3E%3Cpath d='M6,4.99c0,.26-.1.51-.29.71l-4,4c-.39.39-1.03.39-1.42,0-.39-.39-.39-1.03,0-1.42l3.29-3.29L.29,1.7C-.1,1.31-.1.68.29.29.68-.1,1.31-.1,1.7.29l4,4c.2.2.29.45.29.71h.01Z'/%3E%3C/svg%3E");
+                -webkit-mask-size: contain;
+                mask-size: contain;
+                -webkit-mask-position: center;
+                mask-position: center;
+                -webkit-mask-repeat: no-repeat;
+                mask-repeat: no-repeat;
+            }
+
+            &:last-child {
+                &::after {
+                    display: none;
+                }
+            }
+
+            a {
+                font-size: inherit;
+                color: var(--clr-neutral-600);
+                text-decoration: none;
+                transition: color 150ms ease-out;
+
+                &:hover,
+                &:focus-visible {
+                    color: var(--clr-neutral-900);
+                }
+
+                &:focus-visible {
+                    outline: 1px solid var(--clr-neutral-900);
+                    outline-offset: 2px;
+                    border-radius: var(--br-small);
+                }
+            }
+        }
+    }
+}
+
+html[data-theme="dark"] {
+    .breadcrumbs {
+        ul {
+            li {
+                color: var(--clr-white);
+
+                a {
+                    color: color-mix(in srgb, var(--clr-white) 60%, transparent);
+
+                    &:hover,
+                    &:focus-visible {
+                        color: var(--clr-white);
+                    }
+
+                    &:focus-visible {
+                        outline-color: var(--clr-white);
+                    }
+                }
+            }
+        }
+    }
+}

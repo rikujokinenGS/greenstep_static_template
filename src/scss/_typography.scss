@@ -76,16 +76,22 @@ p {
         letter-spacing: 0.1em;
         text-transform: uppercase;
     }
+
+    + :is(ol, ul) {
+        margin-top: 2em;
+    }
 }
 
 :is(p, ul, ol) {
-    & + :is(ul, ol) {
-        margin-top: 1em;
-    }
-
     & + .button {
         margin-top: clamp(1.5em, 2vw, 2em);
     }
+}
+
+:is(ul, ol) {
+    & + :is(ul, ol) {
+        margin-top: 1em;
+    }    
 }
 
 ul, ol {

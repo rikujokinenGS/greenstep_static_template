@@ -72,16 +72,15 @@
 @media only screen and (max-width: 992px) {
     .text-media {
         .wrap {
-            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: stretch;
         }
 
         &__content {
-            flex: 0 0 100%;
             order: 1;
         }
 
         &__media {
-            flex: 0 0 100%;
             order: 2;
         }
     }

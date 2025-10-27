@@ -1,9 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {    
     let mainMenu = document.querySelector('[data-main-menu]');
     let mainMenuToggle = document.querySelector('[data-main-menu-toggle]');
+    let sitemap = document.querySelector('[data-sitemap]');
 
     if (mainMenu) {
-        new GreenstepMenu(mainMenu);
+        new GreenstepMainMenu(mainMenu);
 
         if (mainMenuToggle) {
             mainMenuToggle.addEventListener('click', () => {
@@ -15,5 +16,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 mainMenuToggle.setAttribute('aria-label', !expanded ? mainMenuToggle.getAttribute('data-label-open') : mainMenuToggle.getAttribute('data-label-closed'));
             });
         }
+    }
+
+    if (sitemap) {
+        new GreenstepSitemap(sitemap);
     }
 });

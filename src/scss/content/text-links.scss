@@ -1,0 +1,136 @@
+.text-links {
+    .wrap {
+        display: flex;
+        align-items: center;
+        gap: 2rem clamp(4rem, 6vw, 6rem);
+    }
+
+    &__content {
+        flex: 0 0 calc(50% - (clamp(4rem, 6vw, 6rem) / 2));
+
+        :is(p, ul, ol) {
+            font-size: var(--fs-medium);
+            max-width: 50ch;
+        }
+    }
+
+    &__links {
+        flex: 0 0 calc(50% - (clamp(4rem, 6vw, 6rem) / 2));
+        padding: clamp(2.5rem, 3.5vw, 3.5rem) clamp(2rem, 3.875vw, 3.875rem);
+        background-color: var(--clr-neutral-100);
+        border-radius: var(--br-small);
+
+        :is(h1, h2, h3, h4, h5) {
+            font-size: var(--fs-heading-5);
+            line-height: 140%;
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+
+            li {
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+
+                &::before {
+                    display: none;
+                }
+
+                a {
+                    position: relative;
+                    display: block;
+                    font-size: var(--fs-medium);
+                    font-weight: 500;
+                    line-height: 150%;
+                    padding: 0.625rem 3rem 0.625rem 0;
+                    text-decoration: none;
+                    transition: color 150ms ease-out;
+
+                    .caret {
+                        position: absolute;
+                        top: 50%;
+                        right: 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 2rem;
+                        height: 2rem;
+                        background-color: var(--clr-neutral-300);
+                        border-radius: 100vw;
+                        transform: translateY(-50%);
+                        transition: background-color 150ms ease-out;
+
+                        &::after {
+                            content: '';
+                            width: 0.75rem;
+                            height: 0.75rem;
+                            background-color: var(--clr-neutral-900);
+                            -webkit-mask-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' viewBox='0 0 8 14'%3E%3Cpath d='M1,14c-.26,0-.51-.1-.71-.29-.39-.39-.39-1.02,0-1.41l5.29-5.29L.29,1.71C-.1,1.32-.1.68.29.29S1.32-.1,1.71.29l6,6c.39.39.39,1.02,0,1.41L1.71,13.71c-.2.2-.45.29-.71.29Z'/%3E%3C/svg%3E");
+                            mask-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' viewBox='0 0 8 14'%3E%3Cpath d='M1,14c-.26,0-.51-.1-.71-.29-.39-.39-.39-1.02,0-1.41l5.29-5.29L.29,1.71C-.1,1.32-.1.68.29.29S1.32-.1,1.71.29l6,6c.39.39.39,1.02,0,1.41L1.71,13.71c-.2.2-.45.29-.71.29Z'/%3E%3C/svg%3E");
+                            -webkit-mask-size: contain;
+                            mask-size: contain;
+                            -webkit-mask-position: center;
+                            mask-position: center;
+                            -webkit-mask-repeat: no-repeat;
+                            mask-repeat: no-repeat;
+                            transition: background-color 150ms ease-out;
+                        }
+                    }
+
+                    &:hover,
+                    &:focus-visible {
+                        color: var(--clr-neutral-600);
+
+                        .caret {
+                            background-color: var(--clr-accent-400);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+html[data-theme="dark"] {
+    .text-links {
+        &__links {
+            background-color: var(--clr-neutral-800);
+
+            a {
+                .caret {
+                    background-color: var(--clr-neutral-700);
+
+                    &::after {
+                        background-color: var(--clr-white);
+                    }
+                }
+
+                &:hover,
+                &:focus-visible {
+                    color: color-mix(in srgb, var(--clr-white) 60%, transparent);
+
+                    .caret {
+                        &::after {
+                            background-color: var(--clr-neutral-900);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .text-links {
+        .wrap {
+            flex-direction: column;
+            align-items: stretch;
+        }
+    }
+}

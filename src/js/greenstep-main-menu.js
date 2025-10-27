@@ -5,13 +5,13 @@
 
     let _window = typeof window !== 'undefined' ? window : this;
 
-    let GreenstepMenu = (_window.GreenstepMenu = function (element) {
+    let GreenstepMainMenu = (_window.GreenstepMainMenu = function (element) {
         let _ = this;
 
-        if (element._GreenstepMenu) return element._GreenstepMenu;
+        if (element._GreenstepMainMenu) return element._GreenstepMainMenu;
 
         _.el = element;
-        _.el._GreenstepMenu = _;
+        _.el._GreenstepMainMenu = _;
 
         _.topLevelMenuItems = _.el.querySelectorAll(':scope > ul > li > a');
         _.allMenuItems = _.el.querySelectorAll('a[href]');
@@ -23,9 +23,9 @@
         _.init();
     });
 
-    let GreenstepMenuPrototype = GreenstepMenu.prototype;
+    let GreenstepMainMenuPrototype = GreenstepMainMenu.prototype;
 
-    GreenstepMenuPrototype.init = function() {
+    GreenstepMainMenuPrototype.init = function() {
         let _ = this;
         
         _.addTopLevelMenuItemListeners();
@@ -41,7 +41,7 @@
         };
     };
 
-    GreenstepMenuPrototype.addTopLevelMenuItemListeners = function() {
+    GreenstepMainMenuPrototype.addTopLevelMenuItemListeners = function() {
         let _ = this;
 
         _.topLevelMenuItems.forEach(function(menuItem) {
@@ -50,7 +50,7 @@
         });
     };
 
-    GreenstepMenuPrototype.setEscKeyListener = function() {
+    GreenstepMainMenuPrototype.setEscKeyListener = function() {
         let _ = this;
 
         _window.addEventListener("keyup", (e) => {
@@ -60,7 +60,7 @@
         });
     };
 
-    GreenstepMenuPrototype.addMenuItemKeyListeners = function() {
+    GreenstepMainMenuPrototype.addMenuItemKeyListeners = function() {
         let _ = this;
 
         _.allMenuItems.forEach(function(menuItem) {
@@ -70,7 +70,7 @@
         });
     };
 
-    GreenstepMenuPrototype.handleKeyPress = function(e) {
+    GreenstepMainMenuPrototype.handleKeyPress = function(e) {
         let _ = this;
 
         if (_.hasFocus) {
@@ -99,9 +99,7 @@
 
                 case ' ':
                 case 32:
-                    if (!target.parentNode.classList.contains('menu-item-has-children')) {
-                        window.location = target.href;
-                    }
+                    window.location = target.href;
                     break;
 
                 case 'Left':
@@ -197,20 +195,21 @@
                     if (key.length === 1 && key.match(/\S/)) {
                         let haystack = null;
     
-                        if (_.el.querySelectorAll('[aria-haspopup][aria-expanded="true"]').length > 0) {
-                            if (_.focusOnMenuLevel == 2 || _.focusOnMenuLevel == 3) {
-                                haystack = target.parentNode.parentNode.querySelectorAll(":scope > li > a[href]");
-                            }
-                        }
-                        else {
-                            haystack = target.parentNode.parentNode.querySelectorAll(":scope > li > a");
-                        }
+                        haystack = target.parentNode.parentNode.querySelectorAll(":scope > li > a");
     
                         if (haystack) {
-                            foundLink = [...haystack].find(el => el.innerText.charAt(0).toLowerCase() == key.toLowerCase());
+                            if (!_.letterState) _.letterState = {};
+                            const letter = key.toLowerCase();
+                            const matches = [...haystack].filter(el => el.innerText.charAt(0).toLowerCase() === letter);
 
-                            if (foundLink) {
-                                foundLink.focus();
+                            if (matches.length) {
+                                if (_.letterState.lastLetter === letter) {
+                                    _.letterState.index = (_.letterState.index + 1) % matches.length;
+                                } else {
+                                    _.letterState.index = 0;
+                                    _.letterState.lastLetter = letter;
+                                }
+                                matches[_.letterState.index].focus();
                             }
                         }
                     }
@@ -222,7 +221,7 @@
         }
     };
 
-    GreenstepMenuPrototype.focusOnSubMenu = function(menuItem) {
+    GreenstepMainMenuPrototype.focusOnSubMenu = function(menuItem) {
         let _ = this;
 
         let subMenu = menuItem.nextElementSibling;
@@ -230,7 +229,7 @@
         subMenu.querySelector(':scope > li > a[href]').focus();
     };
 
-    GreenstepMenuPrototype.nextMenuItem = function(currentMenuItem) {
+    GreenstepMainMenuPrototype.nextMenuItem = function(currentMenuItem) {
         let _ = this;
         
         let nextMenuItem = currentMenuItem.closest('li').nextElementSibling;
@@ -242,7 +241,7 @@
         nextMenuItem.querySelector('a[href]').focus();
     };
 
-    GreenstepMenuPrototype.previousMenuItem = function(currentMenuItem) {
+    GreenstepMainMenuPrototype.previousMenuItem = function(currentMenuItem) {
         let _ = this;
         
         let previousMenuItem = currentMenuItem.closest('li').previousElementSibling;
@@ -254,7 +253,7 @@
         previousMenuItem.querySelector('a[href]').focus();
     };
 
-    GreenstepMenuPrototype.changeFocusAway = function(e) {
+    GreenstepMainMenuPrototype.changeFocusAway = function(e) {
         let _ = this;
 
         let focusableElements = Array.from(document.querySelectorAll('a[href], button, textarea, input, select, [tabindex]:not([tabindex="-1"])'));
@@ -284,7 +283,7 @@
             el.getAttribute('aria-hidden') !== 'true';
     }
 
-    GreenstepMenuPrototype.handleFocus = function(menuItem) {
+    GreenstepMainMenuPrototype.handleFocus = function(menuItem) {
         let _ = this;
         let isMobileMenu = parseInt(getComputedStyle(_.el).getPropertyValue("--mobile-menu")) == 1;
 
@@ -325,7 +324,7 @@
         }
     };
 
-    GreenstepMenuPrototype.getMenuLevel = function(menuItem) {
+    GreenstepMainMenuPrototype.getMenuLevel = function(menuItem) {
         if (menuItem.parentNode.parentNode.getAttribute("role") == "menubar") {
             return 1;
         }
@@ -339,7 +338,7 @@
         return null;
     };
 
-    GreenstepMenuPrototype.releaseFocus = function() {
+    GreenstepMainMenuPrototype.releaseFocus = function() {
         let _ = this;
         let isMobileMenu = parseInt(getComputedStyle(_.el).getPropertyValue("--mobile-menu")) == 1;
 
@@ -348,7 +347,7 @@
         }
     };
 
-    GreenstepMenuPrototype.toggleSubMenu = function(menuItem, event) {
+    GreenstepMainMenuPrototype.toggleSubMenu = function(menuItem, event) {
         let _ = this;
 
         if (event) {
@@ -365,7 +364,7 @@
         }
     };
 
-    GreenstepMenuPrototype.toggleMobileSubMenu = function(menuItem, event) {
+    GreenstepMainMenuPrototype.toggleMobileSubMenu = function(menuItem, event) {
         let _ = this;
 
         let isMobileMenu = parseInt(getComputedStyle(_.el).getPropertyValue("--mobile-menu")) == 1;
@@ -375,7 +374,7 @@
         }
     };
 
-    GreenstepMenuPrototype.openSubMenu = function(menuItem) {
+    GreenstepMainMenuPrototype.openSubMenu = function(menuItem) {
         let _ = this;
 
         let isMobileMenu = parseInt(getComputedStyle(_.el).getPropertyValue("--mobile-menu")) == 1;
@@ -394,7 +393,7 @@
         }
     };
 
-    GreenstepMenuPrototype.closeSubMenu = function(menuItem) {
+    GreenstepMainMenuPrototype.closeSubMenu = function(menuItem) {
         let _ = this;
 
         let isMobileMenu = parseInt(getComputedStyle(_.el).getPropertyValue("--mobile-menu")) == 1;
@@ -410,7 +409,7 @@
         }
     };
 
-    GreenstepMenuPrototype.closeParentSubMenu = function(menuItem) {
+    GreenstepMainMenuPrototype.closeParentSubMenu = function(menuItem) {
         let _ = this;
 
         let parentMenuItem = menuItem.closest('ul').previousElementSibling;
@@ -421,7 +420,7 @@
         }
     };
 
-    GreenstepMenuPrototype.closeAllSubMenus = function() {
+    GreenstepMainMenuPrototype.closeAllSubMenus = function() {
         let _ = this;
 
         _.topLevelMenuItems.forEach(function(menuItem) {
@@ -432,7 +431,7 @@
         _.hasFocus = false;
     };
 
-    GreenstepMenuPrototype.setNegativeTabIndexes = function() {
+    GreenstepMainMenuPrototype.setNegativeTabIndexes = function() {
         let _ = this;
 
         if (_.allMenuItems) {
@@ -446,5 +445,5 @@
         }
     }
 
-    return GreenstepMenu;
+    return GreenstepMainMenu;
 });

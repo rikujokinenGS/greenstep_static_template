@@ -19,6 +19,7 @@ Author URI: https://www.greenstep.com/
 @use './scss/forms';
 @use './scss/footer';
 
+@use './scss/menus/breadcrumbs';
 @use './scss/menus/footer-links';
 @use './scss/menus/header-buttons';
 @use './scss/menus/main-menu';
@@ -26,11 +27,13 @@ Author URI: https://www.greenstep.com/
 
 @use './scss/content/big-hero';
 @use './scss/content/cards';
+@use './scss/content/hero';
 @use './scss/content/image-cards';
 @use './scss/content/logo-masonry';
 @use './scss/content/people-cta';
 @use './scss/content/stats';
 @use './scss/content/testimonials';
+@use './scss/content/text-links';
 @use './scss/content/text-media';
 
 html {
@@ -209,12 +212,12 @@ html[data-theme="dark"] {
         }
 
         &--accent-100 {
-            background-color: var(--clr-neutral-800);
+            background-color: color-mix(in srgb, var(--clr-neutral-900), var(--clr-neutral-800) 40%);
             color: var(--clr-white);
         }
 
         &--neutral-100 {
-            background-color: var(--clr-neutral-800);
+            background-color: color-mix(in srgb, var(--clr-neutral-900), var(--clr-neutral-800) 40%);
             color: var(--clr-white);
         }
     }
