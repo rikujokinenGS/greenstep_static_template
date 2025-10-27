@@ -321,6 +321,17 @@
     }
 
     &__language-menu {
+        select {
+            margin: 0;
+            padding: 0;
+            font-family: var(--ff);
+            font-size: var(--fs-tiny);
+            font-weight: 500;
+            border: none;
+            background: none;
+            appearance: none;
+        }
+
         .choices {
             display: flex;
             align-items: center;
