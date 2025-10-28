@@ -26,6 +26,7 @@
         gap: var(--_logo-slider-gap);
         height: 100%;       
         animation: logoSlider 40s linear infinite;
+        will-change: transform;
     }
     
     @keyframes logoSlider {

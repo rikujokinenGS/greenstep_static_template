@@ -371,7 +371,7 @@ html[data-theme="dark"] {
                         }
 
                         &:focus-visible {
-                            outline-color: var(--clr-white);
+                            outline-color: color-mix(in srgb, var(--clr-white) 60%, transparent);
                         }
                     }
                 }
@@ -383,7 +383,7 @@ html[data-theme="dark"] {
                     }
 
                     &:focus-visible {
-                        outline: 1px solid var(--clr-white);
+                        outline-color: color-mix(in srgb, var(--clr-white) 60%, transparent);
                     }
 
                     &[aria-haspopup="true"] {
@@ -412,7 +412,7 @@ html[data-theme="dark"] {
                                             }
 
                                             &:focus-visible {
-                                                outline-color: var(--clr-white);
+                                                outline-color: color-mix(in srgb, var(--clr-white) 60%, transparent);
                                             }
                                         }
                                     }
@@ -426,7 +426,7 @@ html[data-theme="dark"] {
                                     color: var(--clr-neutral-500);
 
                                     &:focus-visible {
-                                        outline-color: var(--clr-white);
+                                        outline-color: color-mix(in srgb, var(--clr-white) 60%, transparent);
                                     }
                                 }
 
@@ -449,16 +449,6 @@ html[data-theme="dark"] {
                                 }                            
                             }
                         }
-
-                        > .menu-item {
-                            > a {
-                                color: red;
-
-                                &:focus-visible {
-                                    outline-color: var(--clr-white);
-                                }
-                            }
-                        }
                     }
                 }
             }
@@ -472,7 +462,7 @@ html[data-theme="dark"] {
             }
 
             &:focus-visible {
-                outline-color: var(--clr-white);
+                outline-color: color-mix(in srgb, var(--clr-white) 60%, transparent);
             }
         }
     }

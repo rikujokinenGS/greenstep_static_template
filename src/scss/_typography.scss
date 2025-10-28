@@ -91,7 +91,11 @@ p {
 :is(ul, ol) {
     & + :is(ul, ol) {
         margin-top: 1em;
-    }    
+    }
+
+    & + p {
+        margin-top: 2em;
+    }
 }
 
 ul, ol {

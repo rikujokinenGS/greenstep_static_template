@@ -15,6 +15,7 @@ function connectSync() {
         browsersync({
             proxy: '127.0.0.1:8010',
             notify: false,
+            reloadDelay: 1000,
             middleware: [
                 compression(),
                 (req, res, next) => {

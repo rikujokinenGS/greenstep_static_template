@@ -49,6 +49,13 @@ textarea {
     }
 }
 
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    min-width: 0;
+}
+
 [type="search"] {
     &::-webkit-search-decoration,
     &::-webkit-search-cancel-button,
@@ -58,7 +65,7 @@ textarea {
     }
 }
 
-.choices {
+.choices {    
     &[data-type*=select-one] {
         &::after {
             border: none;
@@ -79,6 +86,10 @@ textarea {
 
     &__inner {
         display: block;
+
+        .choices__item {
+            transition: color 150ms ease-out;
+        }
     }
 
     &__list {
@@ -100,7 +111,7 @@ textarea {
                 left: 0;
                 width: 100%;
                 height: 100%;
-                background-color: color-mix(in srgb, var(--choices-bg-color) 20%, transparent);
+                background-color: color-mix(in srgb, var(--choices-bg-color) 20%, transparent) !important;
                 backdrop-filter: blur(1.25rem);
                 z-index: -1;
             }
@@ -115,9 +126,18 @@ textarea {
 
     &.is-open {
         .choices__inner {
-            border-color: var(--clr-neutral-900) !important;
+            border-color: var(--clr-neutral-500) !important;
             border-bottom-left-radius: var(--choices-border-radius) !important;
             border-bottom-right-radius: var(--choices-border-radius) !important;
+        }
+    }
+
+    &:hover,
+    &:focus-visible {
+        .choices__inner {
+            .choices__item {
+                color: var(--clr-neutral-600);
+            }
         }
     }
 }
@@ -172,6 +192,21 @@ html[data-theme="dark"] {
             &--dropdown,
             [aria-expanded] {
                 border-color: color-mix(in srgb, var(--clr-white) 15%, transparent) !important;
+            }
+        }
+
+        &.is-open {
+            .choices__inner {
+                border-color: var(--clr-neutral-600) !important;
+            }
+        }
+
+        &:hover,
+        &:focus-visible {
+            .choices__inner {
+                .choices__item {
+                    color: color-mix(in srgb, var(--clr-white) 60%, transparent);
+                }
             }
         }
     }

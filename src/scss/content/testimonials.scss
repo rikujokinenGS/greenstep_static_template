@@ -215,7 +215,7 @@ html[data-theme="dark"] {
         &__navigation {
             &-button {
                 &:focus-visible {
-                    outline-color: var(--clr-white);
+                    outline-color: color-mix(in srgb, var(--clr-white) 60%, transparent);
                 }
 
                 &[disabled] {
@@ -257,7 +257,7 @@ html[data-theme="dark"] {
             }
 
             &:focus-visible {
-                outline-color: var(--clr-white);
+                outline-color: color-mix(in srgb, var(--clr-white) 60%, transparent);
             }
         }
     }

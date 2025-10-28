@@ -25,6 +25,8 @@ Author URI: https://www.greenstep.com/
 @use './scss/menus/main-menu';
 @use './scss/menus/sitemap';
 
+@use './scss/content/accordion';
+@use './scss/content/banners';
 @use './scss/content/big-hero';
 @use './scss/content/cards';
 @use './scss/content/hero';
@@ -33,9 +35,11 @@ Author URI: https://www.greenstep.com/
 @use './scss/content/logo-slider';
 @use './scss/content/people-cta';
 @use './scss/content/reference-cards';
+@use './scss/content/services-dropdown';
 @use './scss/content/small-cta';
 @use './scss/content/stats';
 @use './scss/content/testimonials';
+@use './scss/content/text-banners';
 @use './scss/content/text-links';
 @use './scss/content/text-media';
 
@@ -126,6 +130,10 @@ body {
     max-width: min(var(--wrap-max-width), 100% - (var(--wrap-gutter-x) * 2));
     margin-left: auto;
     margin-right: auto;
+
+    &-narrow {
+        max-width: min(var(--wrap-narrow-max-width), 100% - (var(--wrap-gutter-x) * 2));
+    }
 }
 
 .section-padding {

@@ -4,6 +4,7 @@
     --header-main-height: clamp(4rem, 8.25vw, 5rem);
 
     --wrap-max-width: 1380px; // Ultimately change to 1440px
+    --wrap-narrow-max-width: 768px;
     --wrap-gutter-x: clamp(1.25rem, 3vw, 3rem);
 
     --section-spacing: clamp(4rem, 7vw, 7rem);
@@ -57,7 +58,7 @@
     // Choices.js
     --choices-darken: var(--clr-neutral-900);
     --choices-lighten: var(--clr-white);
-    --choices-bg-color: var(--clr-white);
+    --choices-bg-color: transparent;
     --choices-bg-color-disabled: var(--clr-accent-100);
     --choices-bg-color-dropdown: var(--clr-white);
     --choices-text-color: var(--clr-neutral-900);
@@ -103,7 +104,7 @@ html[data-theme="dark"] {
     &:root {        
         --choices-darken: var(--clr-white);
         --choices-lighten: var(--clr-neutral-900);
-        --choices-bg-color: var(--clr-neutral-900);
+        --choices-bg-color: transparent;
         --choices-bg-color-disabled: var(--clr-accent-100);
         --choices-bg-color-dropdown: var(--clr-neutral-900);
         --choices-text-color: var(--clr-white);

@@ -9,8 +9,12 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         languageMenuChoices.containerOuter.element.setAttribute('role', 'menuitem');
-        languageMenuChoices.containerInner.element.querySelector('.choices__list > *').removeAttribute('role');
-        languageMenuChoices.containerInner.element.querySelector('.choices__list > *').removeAttribute('aria-selected');
+
+        if (languageMenuChoices.containerInner.element.querySelectorAll('.choices__list > *').length > 0) {
+            languageMenuChoices.containerInner.element.querySelector('.choices__list > *').removeAttribute('role');
+            languageMenuChoices.containerInner.element.querySelector('.choices__list > *').removeAttribute('aria-selected');
+        }
+
     }
 
     let mobileLanguageMenu = document.querySelector('[data-mobile-language-menu]');
@@ -23,7 +27,10 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         mobileLanguageMenuChoices.containerOuter.element.setAttribute('role', 'menuitem');
-        mobileLanguageMenuChoices.containerInner.element.querySelector('.choices__list > *').removeAttribute('role');
-        mobileLanguageMenuChoices.containerInner.element.querySelector('.choices__list > *').removeAttribute('aria-selected');
+
+        if (mobileLanguageMenuChoices.containerInner.element.querySelectorAll('.choices__list > *').length > 0) {
+            mobileLanguageMenuChoices.containerInner.element.querySelector('.choices__list > *').removeAttribute('role');
+            mobileLanguageMenuChoices.containerInner.element.querySelector('.choices__list > *').removeAttribute('aria-selected');
+        }
     }
 });

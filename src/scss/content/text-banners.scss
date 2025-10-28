@@ -1,0 +1,38 @@
+.text-banners {
+    .wrap {
+        display: flex;
+        gap: clamp(3rem, 4vw, 4rem);
+    }
+    
+    &__content {
+        flex: 2;
+
+        :is(h1, h2, h3, h4) {
+            font-size: var(--fs-heading-4);
+            font-weight: 500;
+            line-height: 130%;
+            margin-bottom: 0.75em;
+            max-width: 30ch;
+        }
+
+        :is(p, ul, ol) {
+            font-size: var(--fs-medium);
+            max-width: 60ch;
+        }
+    }
+
+    &__banners {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+@media only screen and (max-width: 782px) {
+    .text-banners {
+        .wrap {
+            flex-direction: column;
+        }
+    }
+}

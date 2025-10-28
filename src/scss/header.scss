@@ -760,7 +760,7 @@ html[data-theme="dark"] {
                     }
 
                     &:focus-visible {
-                        outline-color: var(--clr-white);
+                        outline-color: color-mix(in srgb, var(--clr-white) 60%, transparent);
                     }
                 }
 
@@ -801,7 +801,7 @@ html[data-theme="dark"] {
                 }
 
                 &:focus-visible {
-                    outline-color: var(--clr-white);
+                    outline-color: color-mix(in srgb, var(--clr-white) 60%, transparent);
                 }
             }
 
@@ -849,7 +849,7 @@ html[data-theme="dark"] {
             }
 
             &:focus-visible {
-                outline-color: var(--clr-white);
+                outline-color: color-mix(in srgb, var(--clr-white) 60%, transparent);
             }
         }
 
@@ -859,7 +859,7 @@ html[data-theme="dark"] {
             }
 
             &:focus-visible {
-                outline-color: var(--clr-white);
+                outline-color: color-mix(in srgb, var(--clr-white) 60%, transparent);
             }
         }
 
@@ -948,7 +948,7 @@ html[data-theme="dark"] {
                         }
 
                         &:has(.choices:focus-visible) {
-                            outline-color: var(--clr-white);
+                            outline-color: color-mix(in srgb, var(--clr-white) 60%, transparent);
                         }
 
                         .choices {
@@ -982,7 +982,7 @@ html[data-theme="dark"] {
                         }
 
                         &:focus-visible {
-                            outline-color: var(--clr-white);
+                            outline-color: color-mix(in srgb, var(--clr-white) 60%, transparent);
                         }
                     }
 
@@ -997,7 +997,7 @@ html[data-theme="dark"] {
                         }
 
                         &:focus-visible {
-                            outline-color: var(--clr-white);
+                            outline-color: color-mix(in srgb, var(--clr-white) 60%, transparent);
                         }
                     }
                 }

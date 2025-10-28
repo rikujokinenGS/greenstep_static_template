@@ -1,0 +1,164 @@
+.accordion {
+    &__header {
+        text-align: center;
+
+        :is(h1, h2, h3, h4, h5, h6) {
+            font-size: var(--fs-heading-3);
+            font-weight: 500;
+            line-height: 120%;
+            letter-spacing: 0.02em;
+            margin-bottom: 0.75em;
+        }
+    }
+
+    &__items {
+        margin-top: clamp(3rem, 4vw, 4rem);
+
+        .accordion-item {
+            position: relative;
+            padding: 2rem 0;
+            border-bottom: 1px solid var(--clr-neutral-300);
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            &__title {
+                width: 100%;
+                max-width: none;
+                margin: 0;
+                font-size: var(--fs-regular);
+                font-weight: 600;
+                line-height: 150%;
+                color: var(--clr-neutral-900);
+
+                button {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 2rem;
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
+                    color: inherit;
+                    background: none;
+                    text-align: left;
+                    border: none;
+                    padding: 0;
+                    font: inherit;
+                    cursor: pointer;
+                    transition: color 150ms ease-out;
+
+                    .indicator {
+                        position: relative;
+                        width: 1.25rem;
+                        height: 1.25rem;
+                        flex: 0 0 1.25rem;
+                        border: 1px solid var(--clr-neutral-600);
+                        border-radius: 100vw;
+                        
+                        &::before,
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            width: 40%;
+                            height: 1px;
+                            background-color: var(--clr-neutral-600);
+                            transform-origin: center;
+                            transform: translate(-50%, -50%);
+                            transition: transform 150ms ease-out;
+                        }
+
+                        &::after {
+                            transform: translate(-50%, -50%) rotate(90deg);
+                        }
+                    }
+                    
+                    &[aria-expanded="true"] {
+                        .indicator {
+                            &::after {
+                                transform: translate(-50%, -50%) rotate(0deg);
+                            }
+                        }
+                    }
+
+                    &:hover,
+                    &:focus-visible {
+                        color: var(--clr-neutral-600);
+                    }
+
+                    &:focus-visible {
+                        outline: 1px solid var(--clr-neutral-900);
+                        outline-offset: 2px;
+                        border-radius: var(--br-medium);
+                    }
+                }
+            }
+
+            &__content {
+                display: grid;
+                grid-template-rows: 0fr;
+                transition: padding 300ms ease-in-out, grid-template-rows 300ms ease-in-out;
+                padding: 0;
+
+                &[aria-hidden="false"] {
+                    grid-template-rows: 1fr;
+                    padding-top: 1rem;
+                }
+            }
+
+            &__text {
+                overflow: hidden;
+                transition: padding 300ms ease-in-out;
+
+                > *:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+html[data-theme="dark"] {
+    .accordion {
+        &__items {
+            .accordion-item {
+                border-bottom-color: var(--clr-neutral-700);
+
+                &__title {
+                    color: var(--clr-white);
+
+                    button {
+                        .indicator {
+                            border-color: var(--clr-neutral-400);
+                            
+                            &::before,
+                            &::after {
+                                background-color: var(--clr-neutral-400);
+                            }
+                        }
+
+                        &:hover,
+                        &:focus-visible {
+                            color: color-mix(in srgb, var(--clr-white) 60%, transparent);
+                        }
+
+                        &:focus-visible {
+                            outline-color: color-mix(in srgb, var(--clr-white) 60%, transparent);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .accordion {
+        &__header {
+            text-align: left;
+        }
+    }
+}
