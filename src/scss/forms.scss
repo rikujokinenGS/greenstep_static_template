@@ -238,4 +238,12 @@ html[data-theme="dark"] {
             }
         }
     }
+
+    .people-search-form {
+        border-color: var(--clr-white);
+
+        [type="search"] {
+            background: none;
+        }
+    }
 }

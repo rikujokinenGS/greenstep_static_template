@@ -13,7 +13,7 @@
         _.el = element;
         _.el._GreenstepPeopleParallax = _;
 
-        _.maxOffset = 75;
+        _.maxOffset = 50;
         _.planes = [1, 1.25, 1.5, 1.75];
         _.parallaxContainer = _.el.querySelector('[data-parallax-container]');
         
@@ -27,6 +27,7 @@
 
         _window.addEventListener('scroll', _.parallaxScroll.bind(_), { passive: true });
         _window.addEventListener('resize', _.parallaxScroll.bind(_));
+        _window.addEventListener('load', _.parallaxScroll.bind(_));
     };
 
     GreenstepPeopleParallaxPrototype.parallaxScroll = function() {

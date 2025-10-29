@@ -183,6 +183,7 @@ html[data-theme="dark"] {
 
                 &::before {
                     backdrop-filter: blur(2rem);
+                    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.05);
                 }
             }
         }

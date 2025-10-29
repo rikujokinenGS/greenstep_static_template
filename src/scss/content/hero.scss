@@ -230,11 +230,15 @@
             }
 
             &--people {
-                height: auto;
+                height: 22rem;
+                flex: 0 0 22rem;
                 
                 .people {
                     position: relative;
-                    height: 22rem;
+                    top: auto;
+                    left: auto;
+                    right: auto;
+                    height: 100%;
                     margin-top: 0;
                     margin-bottom: 0;
                     overflow: visible;
