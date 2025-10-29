@@ -159,16 +159,16 @@
         </div>
     </div>
 </section>
-<section class="people-cta section-bg--accent-100 section-padding" data-greenstep-people-cta>
-    <div class="people-cta__bg">
-        <img src="assets/images/person-1.jpg" data-parallax-plane="1" width="300" height="346" alt="" loading="lazy">
-        <img src="assets/images/person-5.jpg" data-parallax-plane="1" width="300" height="384" alt="" loading="lazy">
-        <img src="assets/images/person-4.jpg" data-parallax-plane="2" width="300" height="264" alt="" loading="lazy">
-        <img src="assets/images/person-2.jpg" data-parallax-plane="4" width="300" height="332" alt="" loading="lazy">
-        <img src="assets/images/person-3.jpg" data-parallax-plane="3" width="299" height="306" alt="" loading="lazy">
-        <img src="assets/images/person-6.jpg" data-parallax-plane="3" width="300" height="381" alt="" loading="lazy">
-        <img src="assets/images/person-7.jpg" data-parallax-plane="4" width="300" height="326" alt="" loading="lazy">
-        <img src="assets/images/person-4.jpg" data-parallax-plane="2" width="300" height="264" alt="" loading="lazy">
+<section class="people-cta section-bg--accent-100 section-padding" data-greenstep-people-parallax>
+    <div class="people-cta__bg" data-parallax-container>
+        <img src="assets/images/person-1.jpg" data-parallax-item data-parallax-plane="1" width="300" height="346" alt="" loading="lazy">
+        <img src="assets/images/person-5.jpg" data-parallax-item data-parallax-plane="1" width="300" height="384" alt="" loading="lazy">
+        <img src="assets/images/person-4.jpg" data-parallax-item data-parallax-plane="2" width="300" height="264" alt="" loading="lazy">
+        <img src="assets/images/person-2.jpg" data-parallax-item data-parallax-plane="4" width="300" height="332" alt="" loading="lazy">
+        <img src="assets/images/person-3.jpg" data-parallax-item data-parallax-plane="3" width="299" height="306" alt="" loading="lazy">
+        <img src="assets/images/person-6.jpg" data-parallax-item data-parallax-plane="3" width="300" height="381" alt="" loading="lazy">
+        <img src="assets/images/person-7.jpg" data-parallax-item data-parallax-plane="4" width="300" height="326" alt="" loading="lazy">
+        <img src="assets/images/person-4.jpg" data-parallax-item data-parallax-plane="2" width="300" height="264" alt="" loading="lazy">
     </div>
     <div class="wrap">
         <div class="people-cta__content" data-animation="bottom">
@@ -180,7 +180,7 @@
 </section>
 <script>
     document.addEventListener('DOMContentLoaded', () => {
-        new GreenstepPeopleCTA(document.querySelector('[data-greenstep-people-cta]'));
+        new GreenstepPeopleParallax(document.querySelector('[data-greenstep-people-parallax]'));
     });
 </script>
 <section class="stats section-bg--white section-padding" data-greenstep-stats data-greenstep-stats-duration="2000" data-greenstep-stats-locale="en-US">

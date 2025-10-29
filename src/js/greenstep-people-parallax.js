@@ -5,35 +5,35 @@
 
     var _window = typeof window !== 'undefined' ? window : this;
 
-    var GreenstepPeopleCTA = (_window.GreenstepPeopleCTA = function (element) {
+    var GreenstepPeopleParallax = (_window.GreenstepPeopleParallax = function (element) {
         let _ = this;
 
-        if (element._GreenstepPeopleCTA) return element._GreenstepPeopleCTA;
+        if (element._GreenstepPeopleParallax) return element._GreenstepPeopleParallax;
 
         _.el = element;
-        _.el._GreenstepPeopleCTA = _;
+        _.el._GreenstepPeopleParallax = _;
 
         _.maxOffset = 75;
         _.planes = [1, 1.25, 1.5, 1.75];
-        _.parallaxContainer = _.el.querySelector('.people-cta__bg');
+        _.parallaxContainer = _.el.querySelector('[data-parallax-container]');
         
         _.init();
     });
 
-    var GreenstepPeopleCTAPrototype = GreenstepPeopleCTA.prototype;
+    var GreenstepPeopleParallaxPrototype = GreenstepPeopleParallax.prototype;
 
-    GreenstepPeopleCTAPrototype.init = function() {
+    GreenstepPeopleParallaxPrototype.init = function() {
         let _ = this;
 
         _window.addEventListener('scroll', _.parallaxScroll.bind(_), { passive: true });
         _window.addEventListener('resize', _.parallaxScroll.bind(_));
     };
 
-    GreenstepPeopleCTAPrototype.parallaxScroll = function() {
+    GreenstepPeopleParallaxPrototype.parallaxScroll = function() {
         let _ = this;
 
         if (!_window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-            let images = _.parallaxContainer.querySelectorAll('img');
+            let images = _.el.querySelectorAll('[data-parallax-item]');
             let rect = _.parallaxContainer.getBoundingClientRect();
             let windowHeight = _window.innerHeight;
             let containerHeight = rect.height;
@@ -50,5 +50,5 @@
         }
     };
 
-    return GreenstepPeopleCTA;
+    return GreenstepPeopleParallax;
 });
