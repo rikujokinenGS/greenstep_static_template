@@ -108,30 +108,6 @@
         <h2 class="cards__title" data-animation>Tarjoamme palkanlaskentaa ympäri maailman</h2>
         <a href="#" class="cards__read-more button button-outline" data-animation>Varaa tapaaminen</a>
 
-        <div class="cards__grid" data-animation="bottom">
-            <div class="card-item">
-                <div class="card-item__icon" style="-webkit-mask-image: url(assets/images/icon-startup-growth-companies.svg); mask-image: url(assets/images/icon-startup-growth-companies.svg);"></div>
-                <h3 class="card-item__title">Paikallinen kumppani Pohjoismaissa ja Baltiassa</h3>
-                <p class="card-item__text">Palvelemme Suomessa, Ruotsissa, Norjassa ja Virossa — jo lähes 1000 asiakasta luottaa meihin.</p>
-            </div>
-            <div class="card-item">
-                <div class="card-item__icon" style="-webkit-mask-image: url(assets/images/icon-investors-pe-funds.svg); mask-image: url(assets/images/icon-investors-pe-funds.svg);"></div>
-                <h3 class="card-item__title">Globaali ulottuvuus MSI-verkoston kautta</h3>
-                <p class="card-item__text">Kansainväliset palkat onnistuvat kumppaneidemme avulla missä päin maailmaa tahansa.</p>
-            </div>
-            <div class="card-item">
-                <div class="card-item__icon" style="-webkit-mask-image: url(assets/images/icon-listed-companies.svg); mask-image: url(assets/images/icon-listed-companies.svg);"></div>
-                <h3 class="card-item__title">Varmuus paikallisesta osaamisesta</h3>
-                <p class="card-item__text">Tunnemme eri maiden lait ja käytännöt — varmistamme lainmukaisuuden ja tehostamme konsernitasoista toimintaa.</p>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="cards section-bg--white section-padding">
-    <div class="wrap">
-        <h2 class="cards__title" data-animation>Tarjoamme palkanlaskentaa ympäri maailman</h2>
-        <a href="#" class="cards__read-more button button-outline" data-animation>Varaa tapaaminen</a>
-
         <div class="cards__grid cards__grid--boxed" data-animation="bottom">
             <div class="card-item">
                 <div class="card-item__icon" style="-webkit-mask-image: url(assets/images/icon-startup-growth-companies.svg); mask-image: url(assets/images/icon-startup-growth-companies.svg);"></div>

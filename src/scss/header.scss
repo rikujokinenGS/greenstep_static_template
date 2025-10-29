@@ -539,6 +539,10 @@
                         padding: 0;
                         list-style-type: none;
 
+                        &::before {
+                            display: none;
+                        }
+
                         a {
                             display: block;
                             background-color: var(--clr-neutral-100);

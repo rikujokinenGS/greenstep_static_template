@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0">
     <meta name="format-detection" content="telephone=no,email=no,address=no,date=no,url=no">
 
-    <meta name="description" content="Site description">
     <title>Greenstep</title>
+    <meta name="description" content="Tarjoamme laadukkaat kirjanpidon, palkanlaskennan, talousjohtamisen sekä HR:n palvelut yrityksille Suomessa ja ulkomailla. Ota yhteyttä!">
 
     <link rel="icon" type="image/png" sizes="36x36" href="assets/favicon/android-icon-36x36.png">
     <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon/android-icon-48x48.png">
