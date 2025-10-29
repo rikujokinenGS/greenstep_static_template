@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
             let searchResultsCount = searchForm.querySelector('[data-search-results-count]');
             let searchResultsKeyword = searchForm.querySelector('[data-search-results-keyword]');
             let searchTimeout = null;
+            let openSearchLinks = document.querySelectorAll('[href="#open-search"]');
 
             let searchFormOutsideClickListener = (event) => {
                 if (!searchForm.contains(event.target) && 
@@ -39,6 +40,15 @@ document.addEventListener("DOMContentLoaded", () => {
                     searchTimeout = setTimeout(fetchSearchResults, 500);
                 };
             });
+
+            if (openSearchLinks) {
+                openSearchLinks.forEach((link) => {
+                    link.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        openSearchForm();
+                    });
+                });
+            }
 
             function fetchSearchResults() {
                 clearTimeout(searchTimeout);
@@ -111,7 +121,9 @@ document.addEventListener("DOMContentLoaded", () => {
                     searchInput.focus();
                 }
 
-                window.addEventListener('click', searchFormOutsideClickListener);
+                setTimeout(() => {
+                    window.addEventListener('click', searchFormOutsideClickListener);
+                }, 500);
             }
 
             function closeSearchForm() {
