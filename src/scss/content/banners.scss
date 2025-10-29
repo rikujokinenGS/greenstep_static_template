@@ -4,7 +4,7 @@
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
-        gap: 4rem 6rem;
+        gap: clamp(3rem, 4vw, 4rem) 6rem;
     }
 
     &__text {
@@ -187,12 +187,18 @@ html[data-theme="dark"] {
 
 @media only screen and (max-width: 782px) {
     .banners {
+        .wrap {
+            flex-direction: column;
+            align-items: stretch;
+        }
+
         &__text {
             order: 1;
         }
         
         &__cta {
             order: 3;
+            display: block;
         }
 
         &__items {

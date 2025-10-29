@@ -128,18 +128,19 @@
     </div>
 </section>
 <section class="spotlight section-bg--white section-padding" data-greenstep-spotlight>
-    <div class="spotlight__bg">
-        <img src="assets/images/spotlight-1.png" data-parallax-plane="1" width="208" height="246" alt="" loading="lazy">
-        <img src="assets/images/spotlight-2.png" data-parallax-plane="2" width="448" height="307" alt="" loading="lazy">
-        <img src="assets/images/spotlight-3.png" data-parallax-plane="3" width="585" height="501" alt="" loading="lazy">
-        <img src="assets/images/spotlight-4.png" data-parallax-plane="4" width="312" height="311" alt="" loading="lazy">
-    </div>
     <div class="wrap">
         <div class="spotlight__content" data-animation="bottom">
-            <h2>Greenstep Hub — 100%<strong>tietoturvallinen ja tehokas viestintä</strong> ja aineistojen toimitus</h2>
+            <h2>Greenstep Hub — 100% <strong>tietoturvallinen ja tehokas viestintä</strong> ja aineistojen toimitus</h2>
             <p>Palkanlaskentaan liittyy aina paljon luottamuksellisia keskusteluja sekä tiedostojen siirtoa. Olemme <a href="#">ISO27001-sertifioitu kumppani</a>. Asiakkaanamme voit olla varma, että tietojasi käsitellään tietoturvallisesti. Lue kuinka Oura hyödyntää Greenstep Hubia.</p>
             <a href="#" class="button button-primary">Lue lisää</a>
         </div>
+    </div>
+    <div class="spotlight__bg">
+        <img src="assets/images/spotlight-1.png" data-parallax-plane="1" width="208" height="246" alt="" loading="lazy">
+        <img src="assets/images/spotlight-2.png" data-parallax-plane="3" width="448" height="307" alt="" loading="lazy">
+        <img src="assets/images/spotlight-3.png" data-parallax-plane="1" width="585" height="501" alt="" loading="lazy">
+        <img src="assets/images/spotlight-4.png" data-parallax-plane="4" width="312" height="311" alt="" loading="lazy">
+        <img src="assets/images/spotlight-5.png" data-parallax-plane="4" width="420" height="498" alt="" loading="lazy">
     </div>
 </section>
 <script>
