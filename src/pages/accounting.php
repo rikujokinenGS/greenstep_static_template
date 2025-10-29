@@ -13,7 +13,7 @@
             <a href="#" class="button button-primary">Varaa tapaaminen</a>
         </div>
         <div class="hero__image">
-            <img src="assets/images/hero.jpg" width="672" height="730" alt="">
+            <img src="assets/images/hero.jpg" width="672" height="730" alt="" fetchpriority="high">
 
             <div class="hero__image-overlay">
                 <img src="assets/images/hero-overlay-2.png" width="347" height="398" alt="">
@@ -106,24 +106,48 @@
 <section class="cards section-bg--white section-padding">
     <div class="wrap">
         <h2 class="cards__title" data-animation>Tarjoamme palkanlaskentaa ympäri maailman</h2>
-        <a href="#" class="cards__read-more button button-outline">Varaa tapaaminen</a>
+        <a href="#" class="cards__read-more button button-outline" data-animation>Varaa tapaaminen</a>
 
         <div class="cards__grid" data-animation="bottom">
-            <a href="#" class="card-item">
-                <h3 class="card-item__title">Paikallinen kumppani Pohjoismaissa ja Baltiassa</h3>
+            <div class="card-item">
                 <div class="card-item__icon" style="-webkit-mask-image: url(assets/images/icon-startup-growth-companies.svg); mask-image: url(assets/images/icon-startup-growth-companies.svg);"></div>
+                <h3 class="card-item__title">Paikallinen kumppani Pohjoismaissa ja Baltiassa</h3>
                 <p class="card-item__text">Palvelemme Suomessa, Ruotsissa, Norjassa ja Virossa — jo lähes 1000 asiakasta luottaa meihin.</p>
-            </a>
-            <a href="#" class="card-item">
-                <h3 class="card-item__title">Globaali ulottuvuus MSI-verkoston kautta</h3>
+            </div>
+            <div class="card-item">
                 <div class="card-item__icon" style="-webkit-mask-image: url(assets/images/icon-investors-pe-funds.svg); mask-image: url(assets/images/icon-investors-pe-funds.svg);"></div>
+                <h3 class="card-item__title">Globaali ulottuvuus MSI-verkoston kautta</h3>
                 <p class="card-item__text">Kansainväliset palkat onnistuvat kumppaneidemme avulla missä päin maailmaa tahansa.</p>
-            </a>
-            <a href="#" class="card-item">
-                <h3 class="card-item__title">Varmuus paikallisesta osaamisesta</h3>
+            </div>
+            <div class="card-item">
                 <div class="card-item__icon" style="-webkit-mask-image: url(assets/images/icon-listed-companies.svg); mask-image: url(assets/images/icon-listed-companies.svg);"></div>
+                <h3 class="card-item__title">Varmuus paikallisesta osaamisesta</h3>
                 <p class="card-item__text">Tunnemme eri maiden lait ja käytännöt — varmistamme lainmukaisuuden ja tehostamme konsernitasoista toimintaa.</p>
-            </a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="cards section-bg--white section-padding">
+    <div class="wrap">
+        <h2 class="cards__title" data-animation>Tarjoamme palkanlaskentaa ympäri maailman</h2>
+        <a href="#" class="cards__read-more button button-outline" data-animation>Varaa tapaaminen</a>
+
+        <div class="cards__grid cards__grid--boxed" data-animation="bottom">
+            <div class="card-item">
+                <div class="card-item__icon" style="-webkit-mask-image: url(assets/images/icon-startup-growth-companies.svg); mask-image: url(assets/images/icon-startup-growth-companies.svg);"></div>
+                <h3 class="card-item__title">Paikallinen kumppani Pohjoismaissa ja Baltiassa</h3>
+                <p class="card-item__text">Palvelemme Suomessa, Ruotsissa, Norjassa ja Virossa — jo lähes 1000 asiakasta luottaa meihin.</p>
+            </div>
+            <div class="card-item">
+                <div class="card-item__icon" style="-webkit-mask-image: url(assets/images/icon-investors-pe-funds.svg); mask-image: url(assets/images/icon-investors-pe-funds.svg);"></div>
+                <h3 class="card-item__title">Globaali ulottuvuus MSI-verkoston kautta</h3>
+                <p class="card-item__text">Kansainväliset palkat onnistuvat kumppaneidemme avulla missä päin maailmaa tahansa.</p>
+            </div>
+            <div class="card-item">
+                <div class="card-item__icon" style="-webkit-mask-image: url(assets/images/icon-listed-companies.svg); mask-image: url(assets/images/icon-listed-companies.svg);"></div>
+                <h3 class="card-item__title">Varmuus paikallisesta osaamisesta</h3>
+                <p class="card-item__text">Tunnemme eri maiden lait ja käytännöt — varmistamme lainmukaisuuden ja tehostamme konsernitasoista toimintaa.</p>
+            </div>
         </div>
     </div>
 </section>
@@ -182,11 +206,11 @@
             <p>Greenstep tuntee startup- ja kasvuyrityskentän läpikotaisin; sijoittajat, rahoituskierrosten realiteetit ja sen, millaista on rakentaa yritystä paineen alla. Olemme olleet mukana kymmenissä rahoituskierroksissa ja nähneet, miten oikea valmistautuminen vaikuttaa lopputulokseen.</p>
 
             <div class="services-dropdown__dropdowns">
-                <div class="services-dropdown__dropdown">
+                <div class="services-dropdown__dropdown" role="menubar">
                     <label for="services-dropdown-select-1" class="visually-hidden">Valitse tarve</label>
                     <select id="services-dropdown-select-1" name="services-dropdown-select-1"></select>
                 </div>
-                <div class="services-dropdown__dropdown">
+                <div class="services-dropdown__dropdown" role="menubar">
                     <label for="services-dropdown-select-2" class="visually-hidden">Valitse palvelu</label>
                     <select id="services-dropdown-select-2" name="services-dropdown-select-2"></select>
                 </div>
@@ -372,37 +396,37 @@
 <section class="cards section-bg--white section-padding">
     <div class="wrap">
         <h2 class="cards__title" data-animation>Tarjoamme palkkapalvelun lisäksi myös suoraan palkanlaskennan prosesseja tukevia palveluita</h2>
-        <div class="cards__grid" data-animation="bottom">
-            <a href="#" class="card-item">
-                <h3 class="card-item__title">Startupin ja kasvuyrityksen rahoitusneuvonta</h3>
+        <div class="cards__grid cards__grid--boxed" data-animation="bottom">
+            <div class="card-item">
                 <div class="card-item__icon" style="-webkit-mask-image: url(assets/images/icon-startup-growth-companies.svg); mask-image: url(assets/images/icon-startup-growth-companies.svg);"></div>
+                <h3 class="card-item__title">Startupin ja kasvuyrityksen rahoitusneuvonta</h3>
                 <p class="card-item__text">Autamme valmistautumaan rahoituskierroksiin ja löytämään oikeat sijoittajat. Teemme yhdessä tarvittavat laskelmat, valuaatiot ja sijoittajamateriaalit, joihin sijoittajat voivat luottaa. Saat selkänojan kokeneilta neuvottelijoilta ja yhteydet sijoittajaverkostoon.</p>
-            </a>
-            <a href="#" class="card-item">
-                <h3 class="card-item__title">Kasvuyrityksien taloushallinto ja veroasiantuntijuus</h3>
+            </div>
+            <div class="card-item">
                 <div class="card-item__icon" style="-webkit-mask-image: url(assets/images/icon-investors-pe-funds.svg); mask-image: url(assets/images/icon-investors-pe-funds.svg);"></div>
+                <h3 class="card-item__title">Kasvuyrityksien taloushallinto ja veroasiantuntijuus</h3>
                 <p class="card-item__text">Hoidamme kirjanpidon, palkanlaskennan ja talousprosessit luotettavasti - myös osa-aikaisen talousjohtajan tai controllerin avulla. Vero- ja lakiasiantuntijamme varmistavat, että verosuunnittelu ja riskienhallinta tukevat kasvua.</p>
-            </a>
-            <a href="#" class="card-item">
-                <h3 class="card-item__title">HR-palvelut ja henkilöstön kehittäminen</h3>
+            </div>
+            <div class="card-item">
                 <div class="card-item__icon" style="-webkit-mask-image: url(assets/images/icon-listed-companies.svg); mask-image: url(assets/images/icon-listed-companies.svg);"></div>
+                <h3 class="card-item__title">HR-palvelut ja henkilöstön kehittäminen</h3>
                 <p class="card-item__text">Kasvun keskellä henkilöstö on suurin voimavarasi. Autamme rakentamaan rekrytointi- ja perehdytyskäytännöt, kehittämään työnantajabrändiä ja johtamaan henkilöstä siten, että parhaat osaajat viihtyvät ja uudet huippuosaajat löytävät yrityksesi.</p>
-            </a>
-            <a href="#" class="card-item">
-                <h3 class="card-item__title">Analytiikka ja BI-raportointi kasvun tueksi</h3>
+            </div>
+            <div class="card-item">
                 <div class="card-item__icon" style="-webkit-mask-image: url(assets/images/icon-international-companies2.svg); mask-image: url(assets/images/icon-international-companies2.svg);"></div>
+                <h3 class="card-item__title">Analytiikka ja BI-raportointi kasvun tueksi</h3>
                 <p class="card-item__text">BI Book -työkalumme ja asiantuntijapalvelumme tarjoavat selkeät, visuaaliset raportit esimerkiksi taloustilanteesta, myynnistä ja asiakaskäyttäytymisestä. Näin päätöksenteko on aina ajantasaista ja dataan perustuvaa.</p>
-            </a>
-            <a href="#" class="card-item">
-                <h3 class="card-item__title">NetSuite ERP - skaalautuva järjestelmä kansainväliseen kasvuun</h3>
+            </div>
+            <div class="card-item">
                 <div class="card-item__icon" style="-webkit-mask-image: url(assets/images/icon-saas-companies.svg); mask-image: url(assets/images/icon-saas-companies.svg);"></div>
+                <h3 class="card-item__title">NetSuite ERP - skaalautuva järjestelmä kansainväliseen kasvuun</h3>
                 <p class="card-item__text">NetSuite kokoaa liiketoiminnan yhteen alustaan ja skaalautuu tarpeidesi mukana. Varmistamme, että järjestelmä tukee kasvuasi ja että saat siitä täyden hyödyn jo alkuvaiheesta lähtien.</p>
-            </a>
-            <a href="#" class="card-item">
-                <h3 class="card-item__title">Vastuullisuus ja kestävän kehityksen raportointi</h3>
+            </div>
+            <div class="card-item">
                 <div class="card-item__icon" style="-webkit-mask-image: url(assets/images/icon-non-profit-organizations.svg); mask-image: url(assets/images/icon-non-profit-organizations.svg);"></div>
+                <h3 class="card-item__title">Vastuullisuus ja kestävän kehityksen raportointi</h3>
                 <p class="card-item__text">Valmistaudu sijoittajien ja asiakkaiden vastuullisuusvaatimuksiin jo varhaisessa vaiheessa. Autamme määrittämään ja mittaamaan vastuullisuustavoitteet sekä raportoimaan niistä EU-vaatimusten ja sijoittajakriteerien mukaisesti.</p>
-            </a>
+            </div>
         </div>
     </div>
 </section>

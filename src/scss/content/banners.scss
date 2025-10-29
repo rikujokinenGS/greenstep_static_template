@@ -39,6 +39,10 @@
     text-decoration: none;
     transition: background-color 150ms ease-out;
 
+    &:has(.banner-item__read-more) {
+        min-height: clamp(250px, 30vw, 390px);
+    }
+
     &__text {
         :is(h1, h2, h3, h4, h5, h6) {
             position: relative;
@@ -66,6 +70,10 @@
                 mask-repeat: no-repeat;
                 transition: background-color 150ms ease-out;
             }
+        }
+
+        > *:last-child {
+            margin-bottom: 0;
         }
     }
 

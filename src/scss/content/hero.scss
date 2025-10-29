@@ -44,10 +44,43 @@
                 transform: translateY(-50%);
             }
         }
+
+        &--masonry {
+            &-columns {
+                display: flex;
+                flex-direction: row;
+                gap: 1rem;
+                margin-top: calc(-1 * var(--section-spacing));
+                margin-bottom: calc(-1 * var(--section-spacing));
+                height: clamp(480px, 61vw, 900px);
+                overflow: hidden;
+            }
+
+            &-column {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+
+                &:first-child {
+                    transform: translateY(-17.5%);
+                }
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    aspect-ratio: 9.35/10;
+                    max-height: none;
+                    border-radius: var(--br-medium);
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+        }
     }
 }
 
-@media only screen and (max-width: 782px) {
+@media only screen and (max-width: 992px) {
     .hero {
         .wrap {
             flex-direction: column;
@@ -70,6 +103,42 @@
                     bottom: 1rem;
                     max-width: 75%;
                     transform: none;
+                }
+            }
+
+            &--masonry {
+                margin-top: 2rem;
+
+                &-columns {
+                    flex-direction: column;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    width: calc(100% + (2 * var(--wrap-gutter-x)));
+                    height: auto;
+                    margin-left: calc(-1 * var(--wrap-gutter-x));
+                    margin-right: calc(-1 * var(--wrap-gutter-x));
+                }
+
+                &-column {
+                    flex-direction: row;
+                    margin-left: -25.5vw;
+                    margin-right: -25.5vw;
+
+                    &:first-child {
+                        transform: none;
+                    }
+
+                    &:last-child {
+                        transform: translateX(25.5vw);
+                    }
+
+                    img {
+                        flex: 0 0 calc(100% / 3 - (1rem / 3 * 2));
+                        width: calc(100% / 3 - (1rem / 3 * 2));
+                        height: auto;
+                        aspect-ratio: 4/3;
+                        border-radius: var(--br-small);
+                    }
                 }
             }
         }

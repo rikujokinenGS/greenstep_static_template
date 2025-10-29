@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
             languageMenuChoices.containerInner.element.querySelector('.choices__list > *').removeAttribute('role');
             languageMenuChoices.containerInner.element.querySelector('.choices__list > *').removeAttribute('aria-selected');
         }
-
     }
 
     let mobileLanguageMenu = document.querySelector('[data-mobile-language-menu]');

@@ -37,8 +37,6 @@
         let _ = this;
 
         _.setupDropdowns();
-        _.populateSelectOptions(_.select1Choices, _.settings.data);
-        _.populateSelectOptions(_.select2Choices, _.settings.data[0].customProperties.services);
         _.setContent(_.settings.data[0].customProperties.services[0]);
     };
 
@@ -61,6 +59,23 @@
             
             _.setContent(selectedService);
         });
+
+        _.populateSelectOptions(_.select1Choices, _.settings.data);
+        _.populateSelectOptions(_.select2Choices, _.settings.data[0].customProperties.services);
+
+        _.select1Choices.containerOuter.element.setAttribute('role', 'menuitem');
+
+        if (_.select1Choices.containerInner.element.querySelectorAll('.choices__list > *').length > 0) {
+            _.select1Choices.containerInner.element.querySelector('.choices__list > *').removeAttribute('role');
+            _.select1Choices.containerInner.element.querySelector('.choices__list > *').removeAttribute('aria-selected');
+        }
+
+        _.select2Choices.containerOuter.element.setAttribute('role', 'menuitem');
+
+        if (_.select2Choices.containerInner.element.querySelectorAll('.choices__list > *').length > 0) {
+            _.select2Choices.containerInner.element.querySelector('.choices__list > *').removeAttribute('role');
+            _.select2Choices.containerInner.element.querySelector('.choices__list > *').removeAttribute('aria-selected');
+        }
     };
 
     GreenstepServicesDropdownPrototype.populateSelectOptions = function(choices, data) {

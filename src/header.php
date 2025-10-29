@@ -9,12 +9,12 @@
     <meta name="description" content="Site description">
     <title>Greenstep</title>
 
-    <link rel="icon" type="image/png" sizes="36x36"  href="assets/favicon/android-icon-36x36.png">
-    <link rel="icon" type="image/png" sizes="48x48"  href="assets/favicon/android-icon-48x48.png">
-    <link rel="icon" type="image/png" sizes="72x72"  href="assets/favicon/android-icon-72x72.png">
-    <link rel="icon" type="image/png" sizes="96x96"  href="assets/favicon/android-icon-96x96.png">
-    <link rel="icon" type="image/png" sizes="144x144"  href="assets/favicon/android-icon-144x144.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="36x36" href="assets/favicon/android-icon-36x36.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon/android-icon-48x48.png">
+    <link rel="icon" type="image/png" sizes="72x72" href="assets/favicon/android-icon-72x72.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/android-icon-96x96.png">
+    <link rel="icon" type="image/png" sizes="144x144" href="assets/favicon/android-icon-144x144.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-icon-192x192.png">
     <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
@@ -35,7 +35,7 @@
     <link rel="preload" href="assets/fonts/dm-sans-normal-latin.woff2" as="font" type="font/woff2" crossorigin async>
     <link rel="preload" href="assets/fonts/dm-sans-italic-latin.woff2" as="font" type="font/woff2" crossorigin async>
 
-    <link rel="stylesheet" href="./style.css">    
+    <link rel="stylesheet" href="./style.css">
     <script src="./script.js" defer></script>
 </head>
 <body>
@@ -284,7 +284,7 @@
                                             </a>
                                         </li>
                                         <li class="menu-item menu-item-with-description" role="presentation">
-                                            <a href="#" role="menuitem">
+                                            <a href="offices" role="menuitem">
                                                 <div class="link-text">Offices & Global Reach <span class="link-description">Find us across the Nordics and Europe.</span></div>
                                             </a>
                                         </li>

@@ -125,37 +125,37 @@
 <section class="cards section-bg--white section-padding">
     <div class="wrap">
         <h2 class="cards__title" data-animation>Tailored solutions for every business</h2>
-        <div class="cards__grid" data-animation="bottom">
-            <a href="#" class="card-item">
+        <div class="cards__grid cards__grid--boxed" data-animation="bottom">
+            <div class="card-item">
                 <h3 class="card-item__title">Startup and growth companies</h3>
                 <div class="card-item__icon" style="-webkit-mask-image: url(assets/images/icon-startup-growth-companies.svg); mask-image: url(assets/images/icon-startup-growth-companies.svg);"></div>
                 <p class="card-item__text">Tailored financial and operational solutions are provided to help startups streamline their processes and scale efficiently.</p>
-            </a>
-            <a href="#" class="card-item">
+            </div>
+            <div class="card-item">
                 <h3 class="card-item__title">Investors and PE funds</h3>
                 <div class="card-item__icon" style="-webkit-mask-image: url(assets/images/icon-investors-pe-funds.svg); mask-image: url(assets/images/icon-investors-pe-funds.svg);"></div>
                 <p class="card-item__text">Comprehensive due diligence and financial advisory services assist investors and private equity funds in making informed decisions.</p>
-            </a>
-            <a href="#" class="card-item">
+            </div>
+            <div class="card-item">
                 <h3 class="card-item__title">Listed companies</h3>
                 <div class="card-item__icon" style="-webkit-mask-image: url(assets/images/icon-listed-companies.svg); mask-image: url(assets/images/icon-listed-companies.svg);"></div>
                 <p class="card-item__text">Comprehensive due diligence and financial advisory services assist investors and private equity funds in making informed decisions.</p>
-            </a>
-            <a href="#" class="card-item">
+            </div>
+            <div class="card-item">
                 <h3 class="card-item__title">International companies</h3>
                 <div class="card-item__icon" style="-webkit-mask-image: url(assets/images/icon-international-companies2.svg); mask-image: url(assets/images/icon-international-companies2.svg);"></div>
                 <p class="card-item__text">Global operations are facilitated through localized financial expertise and support for international compliance and regulations.</p>
-            </a>
-            <a href="#" class="card-item">
+            </div>
+            <div class="card-item">
                 <h3 class="card-item__title">SaaS companies</h3>
                 <div class="card-item__icon" style="-webkit-mask-image: url(assets/images/icon-saas-companies.svg); mask-image: url(assets/images/icon-saas-companies.svg);"></div>
                 <p class="card-item__text">Specialization in subscription-based revenue models helps SaaS companies optimize their financial management and reporting.</p>
-            </a>
-            <a href="#" class="card-item">
+            </div>
+            <div class="card-item">
                 <h3 class="card-item__title">Non-profit organizations</h3>
                 <div class="card-item__icon" style="-webkit-mask-image: url(assets/images/icon-non-profit-organizations.svg); mask-image: url(assets/images/icon-non-profit-organizations.svg);"></div>
                 <p class="card-item__text">Financial planning and grant management support non-profits in maximizing their impact while maintaining fiscal responsibility.</p>
-            </a>
+            </div>
         </div>
     </div>
 </section>
