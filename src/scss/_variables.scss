@@ -58,7 +58,7 @@
     // Choices.js
     --choices-darken: var(--clr-neutral-900);
     --choices-lighten: var(--clr-white);
-    --choices-bg-color: transparent;
+    --choices-bg-color: var(--clr-white);
     --choices-bg-color-disabled: var(--clr-accent-100);
     --choices-bg-color-dropdown: var(--clr-white);
     --choices-text-color: var(--clr-neutral-900);
@@ -104,7 +104,7 @@ html[data-theme="dark"] {
     &:root {        
         --choices-darken: var(--clr-white);
         --choices-lighten: var(--clr-neutral-900);
-        --choices-bg-color: transparent;
+        --choices-bg-color: var(--clr-neutral-900);
         --choices-bg-color-disabled: var(--clr-accent-100);
         --choices-bg-color-dropdown: var(--clr-neutral-900);
         --choices-text-color: var(--clr-white);

@@ -38,7 +38,9 @@
                 position: absolute;
                 top: calc(50% + 3rem);
                 left: -2rem;
+                width: auto;
                 max-width: 100%;
+                max-height: clamp(200px, 28vw, 400px);
                 transform: translateY(-50%);
             }
         }

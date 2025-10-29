@@ -86,6 +86,7 @@ select {
 
     &__inner {
         display: block;
+        background-color: transparent;
 
         .choices__item {
             transition: color 150ms ease-out;
