@@ -9,7 +9,7 @@ function connectSync() {
     connect.server({
         port: 8010,
         keepalive: true,
-        base: 'dist',
+        base: 'docs',
         bin: '/usr/bin/php',
     }, function () {
         browsersync({
@@ -32,11 +32,11 @@ function connectSync() {
                     next();
                 },
                 (req, res, next) => {
-                    const filePath = path.join(__dirname, 'dist', req.url);
+                    const filePath = path.join(__dirname, 'docs', req.url);
 
                     if (!fs.existsSync(filePath) && !req.url.includes('browser-sync')) {
                         res.writeHead(404, { 'Content-Type': 'text/html' });
-                        fs.createReadStream(path.join(__dirname, 'dist', '404.html')).pipe(res);
+                        fs.createReadStream(path.join(__dirname, 'docs', '404.html')).pipe(res);
                     } else {
                         next();
                     }
@@ -61,7 +61,7 @@ function browserSyncReload(done) {
 }
 
 function watchFiles() {
-    gulp.watch('dist/**/*', browserSyncReload);
+    gulp.watch('docs/**/*', browserSyncReload);
 }
 
 const watch = gulp.parallel([watchFiles, connectSync]);
