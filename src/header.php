@@ -74,7 +74,7 @@
         </div>
         <div class="site-header__main">
             <div class="wrap">
-                <a href="index.html" class="site-header__logo" aria-label="Greenstep homepage">
+                <a href="" class="site-header__logo" aria-label="Greenstep homepage">
                     <div class="logo" style="-webkit-mask-image: url(assets/images/logo-greenstep.svg); mask-image: url(assets/images/logo-greenstep.svg);"></div>
                 </a>
                 <nav id="main-menu" class="main-menu" aria-label="Main menu" data-main-menu>
