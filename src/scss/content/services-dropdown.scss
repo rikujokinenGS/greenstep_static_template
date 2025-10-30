@@ -125,12 +125,6 @@
                     text-overflow: ellipsis;
                 }
             }
-
-            &__list {                
-                &--dropdown {
-                    word-break: keep-all;
-                }
-            }
         }
     }
 }

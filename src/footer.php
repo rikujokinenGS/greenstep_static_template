@@ -68,13 +68,13 @@
 
                 <h2>Liity uutiskirjeen tilaajaksi</h2>
 
-                <div class="site-footer__newsletter-form">
+                <div class="site-footer__newsletter-form newsletter-form">
                     <form action="#" method="post">
                         <label for="newsletter-email" class="visually-hidden">Sähköpostiosoite</label>
                         <input type="email" id="newsletter-email" name="email" placeholder="Sähköpostiosoite" autocomplete="email" required>
                         <button class="button button-primary" type="submit">Tilaa uutiskirje</button>
                     </form>
-                    <p>By clicking Sign Up you're confirming that you agree with our <a href="#">Terms and Conditions</a>.</p>
+                    <p class="terms">By clicking Sign Up you're confirming that you agree with our <a href="#">Terms and Conditions</a>.</p>
                 </div>
             </div>
         </div>

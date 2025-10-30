@@ -350,7 +350,7 @@
                                     <a href="#" role="menuitem">News & Insights</a>
                                     <ul class="sub-menu" role="menu" aria-label="News & Insights submenu">
                                         <li class="menu-item menu-item-with-icon menu-item-with-description" role="presentation">
-                                            <a href="#" role="menuitem">
+                                            <a href="blog" role="menuitem">
                                                 <div class="link-icon" style="-webkit-mask-image: url(assets/images/icon-blog.svg); mask-image: url(assets/images/icon-blog.svg);"></div>
                                                 <div class="link-text">Blog <span class="link-description">Insights on finance, tech, HR and sustainability.</span></div>
                                             </a>

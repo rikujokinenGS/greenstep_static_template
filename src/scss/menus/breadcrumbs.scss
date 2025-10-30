@@ -1,5 +1,5 @@
 .breadcrumbs {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 
     ul {
         display: flex;
@@ -15,7 +15,7 @@
             margin: 0;
             padding: 0;
             list-style-type: none;
-            font-size: clamp(var(--fs-tiny), 0.875vw + 0.25rem, var(--fs-small));
+            font-size: var(--fs-regular);
             color: var(--clr-neutral-900);
             white-space: nowrap;
 
@@ -82,6 +82,18 @@ html[data-theme="dark"] {
                     &:focus-visible {
                         outline-color: color-mix(in srgb, var(--clr-white) 60%, transparent);
                     }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .breadcrumbs {
+        ul {
+            li {
+                a {
+                    font-size: var(--fs-small);
                 }
             }
         }

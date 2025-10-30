@@ -1,6 +1,13 @@
 .hero {
     overflow: hidden;
 
+    &--archive {
+        .wrap {
+            padding-top: var(--section-spacing);
+            gap: 0 !important;
+        }
+    }
+
     .wrap {
         display: flex;
         align-items: center;
@@ -8,7 +15,7 @@
     }
 
     &__text {
-        flex: 0 0 50%;
+        flex: 1 0 50%;
         padding-right: clamp(4rem, 6vw, 6rem);
 
         p {
@@ -165,6 +172,15 @@
             }
         }
     }
+
+    &__newsletter-signup {
+        flex: 1 1 27.5%;
+
+        p {
+            font-size: var(--fs-medium);
+            margin-bottom: 1.5em;
+        }
+    }
 }
 
 @media only screen and (max-width: 992px) {
@@ -172,6 +188,12 @@
         .wrap {
             flex-direction: column;
             align-items: stretch;
+        }
+
+        &--archive {
+            .wrap {
+                padding-top: 0;
+            }
         }
         
         &__text {

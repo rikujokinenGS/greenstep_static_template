@@ -373,6 +373,10 @@
                 padding: 0 !important;
                 border: none;
                 min-height: auto;
+
+                .choices__item {
+                    padding-right: 0;
+                }
             }
 
             &__list {
@@ -390,11 +394,10 @@
                 }
 
                 &--dropdown,
-                [aria-expanded] {
-                    top: calc(100% + 0.5rem) !important;
-                    left: 0;
+                &[aria-expanded] {
                     margin-top: 0;
                     min-width: 200px;
+                    transform: translateX(0) translateY(0.5rem);
                 }
             }
         }
