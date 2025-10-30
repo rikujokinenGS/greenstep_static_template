@@ -140,6 +140,7 @@ html[data-theme="dark"] {
         }
 
         .people-card {
+            margin-bottom: 4rem;
 
             &--ask-more {
                 aspect-ratio: auto;
@@ -148,10 +149,8 @@ html[data-theme="dark"] {
             }
 
             &__text {
+                margin-bottom: -4rem;
 
-                &::before {
-                    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.05);
-                }
             }
 
             &__position {
