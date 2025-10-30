@@ -28,7 +28,7 @@
     <div class="wrap">
         <div class="post-cards__grid">
             <article class="post-card post-card--large">
-                <a href="#">
+                <a href="single-post">
                     <div class="post-card__media">
                         <img src="assets/images/tmp.jpg" width="640" height="528" alt="" loading="lazy">
                     </div> 
@@ -90,7 +90,7 @@
             </div>
 
             <article class="post-card">
-                <a href="#">
+                <a href="single-post">
                     <div class="post-card__media">
                         <img src="assets/images/tmp.jpg" width="640" height="528" alt="" loading="lazy">
                     </div> 
@@ -106,7 +106,7 @@
                 </a>
             </article>
             <article class="post-card">
-                <a href="#">
+                <a href="single-post">
                     <div class="post-card__media">
                         <img src="assets/images/tmp.jpg" width="640" height="528" alt="" loading="lazy">
                     </div> 
@@ -122,7 +122,7 @@
                 </a>
             </article>
             <article class="post-card">
-                <a href="#">
+                <a href="single-post">
                     <div class="post-card__media">
                         <img src="assets/images/tmp.jpg" width="640" height="528" alt="" loading="lazy">
                     </div> 
@@ -138,7 +138,7 @@
                 </a>
             </article>
             <article class="post-card">
-                <a href="#">
+                <a href="single-post">
                     <div class="post-card__media">
                         <img src="assets/images/tmp.jpg" width="640" height="528" alt="" loading="lazy">
                     </div> 
@@ -154,7 +154,7 @@
                 </a>
             </article>
             <article class="post-card">
-                <a href="#">
+                <a href="single-post">
                     <div class="post-card__media">
                         <img src="assets/images/tmp.jpg" width="640" height="528" alt="" loading="lazy">
                     </div> 
@@ -170,7 +170,7 @@
                 </a>
             </article>
             <article class="post-card">
-                <a href="#">
+                <a href="single-post">
                     <div class="post-card__media">
                         <img src="assets/images/tmp.jpg" width="640" height="528" alt="" loading="lazy">
                     </div> 
@@ -186,7 +186,7 @@
                 </a>
             </article>
             <article class="post-card">
-                <a href="#">
+                <a href="single-post">
                     <div class="post-card__media">
                         <img src="assets/images/tmp.jpg" width="640" height="528" alt="" loading="lazy">
                     </div> 
@@ -202,7 +202,7 @@
                 </a>
             </article>
             <article class="post-card">
-                <a href="#">
+                <a href="single-post">
                     <div class="post-card__media">
                         <img src="assets/images/tmp.jpg" width="640" height="528" alt="" loading="lazy">
                     </div> 
@@ -218,7 +218,7 @@
                 </a>
             </article>
             <article class="post-card">
-                <a href="#">
+                <a href="single-post">
                     <div class="post-card__media">
                         <img src="assets/images/tmp.jpg" width="640" height="528" alt="" loading="lazy">
                     </div> 

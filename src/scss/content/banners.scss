@@ -39,7 +39,8 @@
     text-decoration: none;
     transition: background-color 150ms ease-out;
 
-    &:has(.banner-item__read-more) {
+    &:has(.banner-item__read-more),
+    &:has(.banner-item__person) {
         min-height: clamp(250px, 30vw, 390px);
     }
 
@@ -80,7 +81,6 @@
     &__person {
         display: flex;
         gap: 1rem;
-        margin-bottom: 1rem;
 
         > img {
             width: 3.5rem;
@@ -130,6 +130,10 @@
     &__read-more {
         font-weight: 700;
         margin-bottom: 0;
+    }
+
+    .button {
+        margin-top: 1rem;
     }
 }
 

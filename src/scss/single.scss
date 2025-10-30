@@ -1,0 +1,112 @@
+.single-post {
+    header {
+        text-align: center;
+
+        .breadcrumbs {
+            ul {
+                justify-content: center;
+            }
+        }
+    }
+
+    &__title {
+        max-width: 22ch;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1.5em;
+    }
+
+    &__thumbnail {
+        border-radius: var(--br-medium);
+        width: 100%;
+        min-height: 15rem;
+        aspect-ratio: 20/9;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    &__toc {
+        position: sticky;
+        top: calc(var(--header-eyebrow-height) + var(--header-main-height) + var(--section-spacing));
+
+        &-title {
+            font-size: var(--fs-tiny);
+            text-transform: uppercase;
+            letter-spacing: .1em;
+            margin-bottom: 3em;
+            color: var(--clr-neutral-600);
+        }
+
+        &-list {
+            margin: 0;
+
+            li {
+                --_toc-border-color: var(--clr-neutral-300);
+
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+
+                &::before {
+                    display: none;
+                }
+
+                a {
+                    display: block;
+                    text-decoration: none;
+                    font-size: var(--fs-tiny);
+                    line-height: 150%;
+                    border-left: 0.125rem solid var(--_toc-border-color);
+                    padding: 0.75rem 1rem;
+                    transition: border-color 150ms ease-in-out;
+
+                    &:hover,
+                    &:focus-visible {
+                        color: currentColor;
+                        border-color: color-mix(in srgb, var(--clr-neutral-900) 25%, var(--clr-white));
+                    }
+
+                    &.in-view {
+                        --_toc-border-color: var(--clr-neutral-900);
+
+                        &:hover,
+                        &:focus-visible {
+                            border-color: var(--clr-neutral-900);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+html[data-theme="dark"] {
+    .single-post {
+        &__toc {
+            &-list {
+                li {
+                    --_toc-border-color: var(--clr-neutral-800);
+
+                    a {
+                        &.in-view {
+                            --_toc-border-color: var(--clr-white);
+
+                            &:hover,
+                            &:focus-visible {
+                                border-color: var(--clr-white);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .single-post {
+        &__toc {
+            display: none;
+        }
+    }
+}
