@@ -135,18 +135,20 @@ html[data-theme="dark"] {
     .people-cards {
         &__grid {
             grid-template-columns: 1fr;
+            gap: 8rem;
         }
 
         .people-card {
-            margin: 0 0 4rem 0;
-
             &--ask-more {
                 aspect-ratio: auto;
                 background-color: transparent;
                 padding: 0;
+                margin-bottom: -5rem;
             }
 
             &__text {
+                transform: translateY(5rem);
+
                 &::before {
                     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.05);
                 }
