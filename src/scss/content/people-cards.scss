@@ -7,12 +7,14 @@
 
     .people-card {
         position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
         aspect-ratio: 4 / 5;
         isolation: isolate;
+        padding: 1rem;
 
         &--ask-more {
-            display: flex;
-            flex-direction: column;
             justify-content: space-between;
             align-items: flex-start;
             gap: 2rem;
@@ -34,11 +36,7 @@
         }
 
         &__text {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: 1rem;
+            position: relative;
             padding: 1.5rem;
             font-size: 0;
 
