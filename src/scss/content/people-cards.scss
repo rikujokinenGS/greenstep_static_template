@@ -158,6 +158,7 @@ html[data-theme="dark"] {
 
             &__position {
                 display: inline;
+                display: none;
 
                 &::after {
                     content: ", ";
@@ -166,10 +167,12 @@ html[data-theme="dark"] {
 
             &__city {
                 display: inline-block;
+                display: none;
             }
 
             &__phone,
             &__email {
+                display: none;
                 text-decoration: underline;
                 font-size: var(--fs-regular);
                 font-weight: 500;
