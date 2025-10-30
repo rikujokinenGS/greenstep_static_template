@@ -158,14 +158,14 @@ html[data-theme="dark"] {
 
             &__position {
                 display: inline;
+
+                &::after {
+                    content: ", ";
+                }
             }
 
             &__city {
                 display: inline-block;
-
-                &::before {
-                    content: ", ";
-                }
             }
 
             &__phone,
@@ -173,7 +173,7 @@ html[data-theme="dark"] {
                 text-decoration: underline;
                 font-size: var(--fs-regular);
                 font-weight: 500;
-                margin-bottom: 0.5em;
+                margin-top: 0.5em;
                 text-underline-offset: 0.25rem;
             }
         }
