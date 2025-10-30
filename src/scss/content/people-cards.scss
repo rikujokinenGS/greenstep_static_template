@@ -147,8 +147,6 @@ html[data-theme="dark"] {
             }
 
             &__text {
-                transform: translateY(5rem);
-
                 &::before {
                     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.05);
                 }
