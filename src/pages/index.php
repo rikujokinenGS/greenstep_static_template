@@ -76,7 +76,7 @@
 <section class="text-media section-bg--white section-padding">
     <div class="wrap" data-animation="bottom">
         <div class="text-media__content">
-            <h3>Flexible interim solutions</h3>
+            <h2>Flexible interim solutions</h2>
             <p>Get the expert support you need quickly in CFO, HR, IT or sustainability roles.</p>
             <a href="#" class="button button-primary">Explore our partnership model</a>
         </div>
@@ -91,7 +91,7 @@
             <img src="assets/images/tmp.jpg" width="640" height="528" alt="" loading="lazy">
         </div>
         <div class="text-media__content">
-            <h3>Greenstep as your technology partner</h3>
+            <h2>Greenstep as your technology partner</h2>
             <p>Our 100+ tech experts help implement and optimize ERP, BI and automation.</p>
             <ul>
                 <li>NetSuite</li>
