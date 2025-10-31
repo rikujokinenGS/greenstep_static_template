@@ -134,6 +134,17 @@ select {
         }
     }
 
+    &.is-flipped {
+        .choices {
+            &__list {
+                &--dropdown,
+                &[aria-expanded] {
+                    transform: translateX(0.5rem) translateY(var(--choices-input-height));
+                }
+            }
+        }
+    }
+
     &:hover,
     &:focus-visible {
         .choices__inner {
