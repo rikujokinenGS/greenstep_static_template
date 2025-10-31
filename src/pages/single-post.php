@@ -55,8 +55,6 @@
                 <p>Tämä ei tarkoita pelkkää nykyisten vaiheiden digitalisointia, vaan mahdollisuutta luoda täysin uusi toimintamalli: laskut tulevat sähköisinä, hyväksytään vaikkapa mobiilisti ja siirtyvät automaattisesti kirjanpitoon oikeilla tileillä.</p>
                 <p>Kun Greenstep toteutti projektin A. Ahlströmin kanssa, nähtiin miten jopa usean tiimin välinen prosessi saatiin virtaviivaistettua niin, että sekä kontrolli että asiantuntijoiden työtyytyväisyys paranivat. Ja sillä on kauaskantoisia vaikutuksia.</p>
 
-                <img src="assets/images/post-image-tmp.jpg" width="847" height="512" alt="" loading="lazy">
-
                 <div class="wp-caption alignnone">
                     <img src="assets/images/post-image-tmp.jpg" width="847" height="512" alt="" loading="lazy">
                     <p class="wp-caption-text">Matka- ja kululaskusovellus Bezala on kehitetty juuri tätä ongelmaa ratkaisemaan. Sovelluksessa kuitit kuvataan suoraan puhelimella ja järjestelmä ehdottaa automaattisesti oikean kustannuspaikan ja ALV-käsittelyn.</p>
