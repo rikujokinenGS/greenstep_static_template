@@ -14,7 +14,7 @@
             <p>Blogistamme löydät ajankohtaiset näkemykset taloudesta, johtamisesta ja liiketoiminnan kehittämisestä — asiantuntijoiltamme sinulle. Voit myös tilata uutiskirjeen, ja saat viimeisimmät oivallukset suoraan sähköpostiisi.</p>
 
             <div class="newsletter-form">
-                <form action="#" method="post">
+                <form action="https://greenstep.activehosted.com/f/94" method="get" target="_blank">
                     <label for="newsletter-email" class="visually-hidden">Kirjoita sähköpostiosoitteesi</label>
                     <input type="email" id="newsletter-email" name="email" placeholder="Kirjoita sähköpostiosoitteesi" autocomplete="email" required>
                     <button class="button button-primary" type="submit">Tilaa uutiskirje</button>
