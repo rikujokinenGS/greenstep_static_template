@@ -95,21 +95,6 @@
                     background-color: var(--clr-neutral-600);
                     transition: background-color 150ms ease-out, transform 300ms ease-out;
                 }
-
-                &:hover,
-                &:focus-visible {
-                    background-color: var(--clr-accent-400);
-
-                    .card-item__icon {
-                        background-color: var(--clr-neutral-900);
-                        transform: scale(1.2);
-                    }
-                }
-
-                &:focus-visible {
-                    outline: 1px solid var(--clr-neutral-900);
-                    outline-offset: 2px;
-                }
             }
         }
     }
@@ -124,20 +109,6 @@ html[data-theme="dark"] {
 
                     &__icon {
                         background-color: var(--clr-neutral-400);
-                    }
-
-                    &:hover,
-                    &:focus-visible {
-                        background-color: var(--clr-accent-400);
-                        color: var(--clr-neutral-900);
-
-                        .card-item__icon {
-                            background-color: var(--clr-neutral-900);
-                        }
-                    }
-
-                    &:focus-visible {
-                        outline-color: color-mix(in srgb, var(--clr-white) 60%, transparent);
                     }
                 }
             }

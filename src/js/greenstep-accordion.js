@@ -30,6 +30,14 @@
 
         _.items.forEach((item) => {
             item.querySelector('button').addEventListener('click', _.toggleItem.bind(_, item));
+
+            let itemLinks = item.querySelectorAll(".accordion-item__text a");
+
+            if (itemLinks) {
+                itemLinks.forEach((link) => {
+                    link.setAttribute("tabindex", -1);
+                });
+            }
         });
     };
 
@@ -39,9 +47,16 @@
         let button = item.querySelector('.accordion-item__title button');
         let content = item.querySelector('#' + button.getAttribute('aria-controls'));
         let state = button.getAttribute('aria-expanded') !== 'true';
+        let itemLinks = item.querySelectorAll(".accordion-item__text a");
 
         button.setAttribute('aria-expanded', state);
         content.setAttribute('aria-hidden', !state);
+
+        if (itemLinks) {
+            itemLinks.forEach((link) => {
+                link.setAttribute("tabindex", state ? 0 : -1);
+            });
+        }
     }
 
     return GreenstepAccordion;
