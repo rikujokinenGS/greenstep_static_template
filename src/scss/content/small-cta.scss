@@ -13,6 +13,8 @@
     }
 
     &__text {
+        flex: 1;
+
         :is(h1, h2, h3, h4, h5, h6) {
             font-size: var(--fs-heading-4);
             font-weight: 500;
@@ -22,10 +24,61 @@
 
         p {
             font-size: var(--fs-medium);
+            max-width: 60ch;
         }
         
         > *:last-child {
             margin-bottom: 0;
+        }
+    }
+
+    &__person {
+        flex: 0 1 23rem;
+        display: flex;
+        gap: 1rem;
+
+        > img {
+            width: 3.5rem;
+            height: 3.5rem;
+            border-radius: 100vw;
+            object-fit: cover;
+            object-position: center;
+            filter: grayscale(1);
+        }
+
+        &-name {
+            font-size: var(--fs-regular);
+            font-weight: 700;
+            margin-bottom: 0;
+        }
+
+        &-role {
+            margin-bottom: 0;
+        }
+
+        &-role,
+        &-phone,
+        &-email {
+            font-size: var(--fs-small);
+            line-height: 150%;
+        }
+
+        &-phone,
+        &-email {
+            display: block;
+            text-decoration: none;
+            transition: color 150ms ease-out;
+
+            &:hover,
+            &:focus-visible {
+                color: var(--clr-neutral-600);
+            }
+
+            &:focus-visible {
+                outline: 1px solid var(--clr-neutral-900);
+                outline-offset: 2px;
+                border-radius: var(--br-small);
+            }
         }
     }
 }
@@ -35,10 +88,24 @@ html[data-theme="dark"] {
         &__content {
             background-color: var(--clr-neutral-800);
         }
+
+        &__person {
+            &-phone,
+            &-email {
+                &:hover,
+                &:focus-visible {
+                    color: color-mix(in srgb, var(--clr-white) 60%, transparent);
+                }
+
+                &:focus-visible {
+                    outline-color: color-mix(in srgb, var(--clr-white) 60%, transparent);
+                }
+            }
+        }
     }
 }
 
-@media only screen and (max-width: 782px) {
+@media only screen and (max-width: 992px) {
     .small-cta {
         &__content {
             flex-direction: column;
@@ -47,11 +114,47 @@ html[data-theme="dark"] {
         }
 
         &__text {
+            flex: none;
+
             :is(h1, h2, h3, h4, h5, h6) {
                 font-size: var(--fs-heading-3);
                 font-weight: 500;
                 line-height: 120%;
                 letter-spacing: 0.02em;
+            }
+        }
+
+        &__person {
+            flex: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 782px) {
+    .small-cta {
+        &__person {
+            &-role {
+                color: var(--clr-neutral-600);
+                margin-bottom: 1em;
+            }
+
+            &-phone,
+            &-email {
+                text-decoration: underline;
+                font-size: var(--fs-regular);
+                font-weight: 500;
+                margin-bottom: 0.5em;
+                text-underline-offset: 0.25rem;
+            }
+        }
+    }
+
+    html[data-theme="dark"] {
+        .small-cta {
+            &__person {
+                &-role {
+                    color: color-mix(in srgb, var(--clr-white) 60%, transparent);
+                }
             }
         }
     }

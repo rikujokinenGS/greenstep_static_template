@@ -132,7 +132,7 @@
                     <p>Järjestämme koulutuksia, joiden avulla rekrytoit timanttisen kansainvälisen tiimin. Varataan sinulle sopiva koulutus yhdessä.</p>
                 </div>
                 <div class="banner-item__person">
-                    <img src="assets/images/heli-hayrynen.jpg" width="56" height="56" alt="Heli Häyrynen">
+                    <img src="assets/images/heli-hayrynen.jpg" width="56" height="56" alt="Heli Häyrynen" loading="lazy">
                     <div class="banner-item__person-info">
                         <p class="banner-item__person-name">Heli Häyrynen</p>
                         <p class="banner-item__person-role">Partner, Head of Greenstep Academy</p>
@@ -147,7 +147,7 @@
                     <p>Järjestämme koulutuksia, joiden avulla rekrytoit timanttisen kansainvälisen tiimin. Varataan sinulle sopiva koulutus yhdessä.</p>
                 </div>
                 <div class="banner-item__person">
-                    <img src="assets/images/heli-hayrynen.jpg" width="56" height="56" alt="Heli Häyrynen">
+                    <img src="assets/images/heli-hayrynen.jpg" width="56" height="56" alt="Heli Häyrynen" loading="lazy">
                     <div class="banner-item__person-info">
                         <p class="banner-item__person-name">Heli Häyrynen</p>
                         <p class="banner-item__person-role">Partner, Head of Greenstep Academy</p>
@@ -162,7 +162,7 @@
                     <p>Järjestämme koulutuksia, joiden avulla rekrytoit timanttisen kansainvälisen tiimin. Varataan sinulle sopiva koulutus yhdessä.</p>
                 </div>
                 <div class="banner-item__person">
-                    <img src="assets/images/heli-hayrynen.jpg" width="56" height="56" alt="Heli Häyrynen">
+                    <img src="assets/images/heli-hayrynen.jpg" width="56" height="56" alt="Heli Häyrynen" loading="lazy">
                     <div class="banner-item__person-info">
                         <p class="banner-item__person-name">Heli Häyrynen</p>
                         <p class="banner-item__person-role">Partner, Head of Greenstep Academy</p>
@@ -178,7 +178,7 @@
     <div class="wrap">
         <div class="post-cards__text">
             <h2>Lisää kasvutarinoita</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <p>Tutustu käytännön neuvoihin ja syvällisiin analyyseihin, jotka auttavat rakentamaan kestävää kasvua.</p>
         </div>
         <div class="post-cards__grid">
             <article class="post-card">

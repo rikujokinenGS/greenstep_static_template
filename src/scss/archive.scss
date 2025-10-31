@@ -449,6 +449,18 @@ html[data-theme="dark"] {
 }
 
 @media only screen and (max-width: 600px) {
+    .post-cards {
+        &__filter {
+            &:last-child {
+                .button-arrow {
+                    font-size: var(--fs-small);
+                    white-space: normal;
+                    transform: none;
+                }
+            }
+        }
+    }
+
     .post-card {
         &__content {
             padding-right: 0;
