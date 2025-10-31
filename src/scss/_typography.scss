@@ -65,7 +65,7 @@ p {
     font-size: var(--fs-regular);
     font-weight: 400;
     line-height: 150%;
-    margin-bottom: 0.75em;
+    margin-bottom: 0.875em;
 
     &.tagline {
         color: var(--clr-neutral-600);
@@ -85,6 +85,10 @@ p {
 :is(p, ul, ol) {
     & + .button {
         margin-top: clamp(1.5em, 2vw, 2em);
+    }
+
+    & + :is(h1, h2, h3, h4, h5, h6) {
+        margin-top: 1.25em;
     }
 }
 
@@ -177,11 +181,25 @@ kbd {
     box-shadow: 0.0625rem 0.125rem 0.125rem color-mix(in srgb, var(--clr-neutral-900) 25%, transparent);
 }
 
+blockquote {
+    margin: 3rem 0 2rem 0;
+    padding: 0 4rem 0 1.875rem;
+    border-left: 0.25rem solid var(--clr-accent-400);
+    font-size: var(--fs-large);
+    font-weight: 500;
+    line-height: 150%;
+    color: var(--clr-neutral-600);
+}
+
 html[data-theme="dark"] {    
     ol li {
         &::before {
             background-color: var(--clr-neutral-800);
         }
+    }
+
+    blockquote {
+        color: var(--clr-neutral-300);
     }
 
     kbd {

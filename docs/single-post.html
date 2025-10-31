@@ -485,18 +485,20 @@
         </header>
 
         <aside>
-            <div class="single-post__author">
-                <img src="assets/images/author-1.jpg" width="56" height="56" alt="Heli Häyrynen" class="single-post__author-photo">
-                <div class="single-post__author-info">
-                    <p class="single-post__author-name">Heli Häyrynen</p>
-                    <p class="single-post__author-role">Partner</p>
+            <div class="single-post__aside-content">
+                <div class="single-post__author">
+                    <img src="assets/images/author-1.jpg" width="56" height="56" alt="Heli Häyrynen" class="single-post__author-photo">
+                    <div class="single-post__author-info">
+                        <p class="single-post__author-name">Heli Häyrynen</p>
+                        <p class="single-post__author-position">Partner</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="single-post__toc">
-                <p class="single-post__toc-title">Tässä artikkelissa</p>
+                <div class="single-post__toc">
+                    <p class="single-post__toc-title">Tässä artikkelissa</p>
 
-                <ul class="single-post__toc-list" data-greenstep-toc-links></ul>
+                    <ul class="single-post__toc-list" data-greenstep-toc-links></ul>
+                </div>
             </div>
         </aside>
 
@@ -556,7 +558,7 @@
                     <p>Jaa</p>
 
                     <ul>
-                        <li class="link">
+                        <li class="link" data-success="Url copied to clipboard!">
                             <button type="button" onclick="copyToClipboard(this.parentNode, 'url-here'); return false;" title="Kopioi url leikepöydälle"></button>
                         </li>
                         <li class="linkedin">
@@ -581,6 +583,17 @@
     document.addEventListener("DOMContentLoaded", function() {
         new GreenstepTOC(document.querySelector("[data-greenstep-toc]"));
     });
+
+    function copyToClipboard(el, text) {
+        if (navigator && navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(text);
+            el.addEventListener('animationend', (e) => {
+                el.classList.remove("copied");
+            }, { once: true });
+
+            el.classList.add("copied");
+        }
+    };
 </script>
 <section class="banners section-bg--white section-padding">
     <div class="wrap" data-animation>
