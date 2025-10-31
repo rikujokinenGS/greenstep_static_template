@@ -96,7 +96,7 @@
                     </div> 
                     <div class="post-card__content">
                         <div class="post-card__meta">
-                            <span class="post-card__meta-category">Verotus</span>
+                            <span class="post-card__meta-category">Artikkeli</span>
                             <span class="post-card__meta-read-time">5 min read</span>
                         </div>
 
@@ -106,13 +106,13 @@
                 </a>
             </article>
             <article class="post-card">
-                <a href="single-post">
+                <a href="single-post-reference">
                     <div class="post-card__media">
                         <img src="assets/images/tmp.jpg" width="640" height="528" alt="" loading="lazy">
                     </div> 
                     <div class="post-card__content">
                         <div class="post-card__meta">
-                            <span class="post-card__meta-category">Taloushallinto</span>
+                            <span class="post-card__meta-category">Referenssi</span>
                             <span class="post-card__meta-read-time">5 min read</span>
                         </div>
 

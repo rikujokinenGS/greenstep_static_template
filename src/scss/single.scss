@@ -7,6 +7,7 @@
     }
 
     header {
+        flex: 0 0 100%;
         text-align: center;
 
         .breadcrumbs {
@@ -150,6 +151,49 @@
             font-weight: 500;
             line-height: 140%;
             margin-bottom: 0.5em;
+        }
+    }
+
+    &__reference-company {
+        background-color: var(--clr-neutral-100);
+        padding: clamp(2rem, 4vw, 2.5rem);
+        border-radius: var(--br-medium);
+        margin-bottom: clamp(3rem, 4vw, 4rem);
+
+        p {
+            font-size: var(--fs-large);
+        }
+
+        &-logo {
+            filter: grayscale(1) brightness(0);
+            max-width: 8rem;
+            max-height: 1.75rem;
+            width: auto;
+            height: auto;
+            margin: 2rem 0.5rem 4rem 0.5rem;
+            object-fit: contain;
+        }
+
+        &-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+            gap: 1.5rem 0.625rem;
+            margin-top: 2rem;
+
+            .company-stats-item {
+                &__number {
+                    display: block;
+                    font-size: var(--fs-heading-1);
+                    font-weight: 600;
+                }
+
+                &__text {
+                    display: block;
+                    font-size: var(--fs-regular);
+                    font-weight: 700;
+                    margin-top: 0.25em;
+                }
+            }
         }
     }
 
@@ -371,6 +415,14 @@ html[data-theme="dark"] {
             background-color: var(--clr-neutral-800);
         }
 
+        &__reference-company {
+            background-color: var(--clr-neutral-800);
+
+            &-logo {
+                filter: grayscale(1) brightness(0) invert(1);
+            }
+        }
+
         &__summary {
             background-color: var(--clr-neutral-800);
         }
@@ -466,6 +518,12 @@ html[data-theme="dark"] {
 
         &__toc {
             display: none;
+        }
+
+        &__reference-company {
+            &-logo {
+                margin: 1rem 0 2rem 0;
+            }
         }
 
         &__main-content {

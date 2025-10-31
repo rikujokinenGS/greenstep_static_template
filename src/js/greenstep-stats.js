@@ -21,7 +21,7 @@
         _.el = element;
         _.el._GreenstepStats = _;
         
-        _.statItems = _.el.querySelectorAll('.stats__items .stats-item');
+        _.statItems = _.el.querySelectorAll('[data-stats-item]');
 
         _.init();
     });
@@ -42,14 +42,13 @@
 
         if (_.statItems) {
             _.statItems.forEach((statItem) => {
-                let numberContainer = statItem.querySelector('.stats-item__number');
-                let start = numberContainer.getAttribute('data-start');
-                let prefix = numberContainer.getAttribute('data-prefix');
-                let suffix = numberContainer.getAttribute('data-suffix');
+                let start = statItem.getAttribute('data-start');
+                let prefix = statItem.getAttribute('data-prefix');
+                let suffix = statItem.getAttribute('data-suffix');
 
                 if (!_window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-                    numberContainer.innerText = prefix + start + suffix;
-                    _.observer.observe(numberContainer);
+                    statItem.innerText = prefix + start + suffix;
+                    _.observer.observe(statItem);
                 }
             });
         }
