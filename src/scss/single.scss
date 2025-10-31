@@ -557,4 +557,14 @@ html[data-theme="dark"] {
             }
         }
     }
+
+    html[data-theme="dark"] {
+        .single-post {
+            &__date {
+                time {
+                    color: var(--clr-white);
+                }
+            }
+        }
+    }
 }
