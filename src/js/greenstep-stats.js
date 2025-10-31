@@ -83,8 +83,8 @@
             let interval = setInterval(() => {
                 let value = current.toFixed(_.countDecimals(end));
 
-                entry.target.textContent = prefix + value.toLocaleString(_.settings.locale) + suffix;
                 current = parseFloat(current + increment);
+                entry.target.textContent = prefix + current.toLocaleString(_.settings.locale) + suffix;
 
                 if (current > end) {
                     entry.target.textContent = prefix + end.toLocaleString(_.settings.locale) + suffix;

@@ -69,12 +69,10 @@ p {
 
     &.tagline {
         color: var(--clr-neutral-600);
-        font-size: var(--fs-tiny);
-        font-weight: 700;
+        font-size: var(--fs-reqular) !important;
+        font-weight: 500;
         line-height: 150%;
-        margin: 0 0 0.25rem 0;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
+        margin-bottom: 1em;
     }
 
     + :is(ol, ul) {
@@ -82,7 +80,7 @@ p {
     }
 }
 
-:is(p, ul, ol) {
+:is(p:not(.tagline), ul, ol) {
     & + .button {
         margin-top: clamp(1.5em, 2vw, 2em);
     }
@@ -191,7 +189,11 @@ blockquote {
     color: var(--clr-neutral-600);
 }
 
-html[data-theme="dark"] {    
+html[data-theme="dark"] {
+    p.tagline {
+        color: color-mix(in srgb, var(--clr-white) 60%, transparent);
+    }
+
     ol li {
         &::before {
             background-color: var(--clr-neutral-800);

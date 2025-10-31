@@ -36,7 +36,7 @@
 
                 <p>Retta on pohjoismainen asiantuntijapalvelukonserni, joka on erikoistunut asuntojen, kiinteistöjen ja toimitilojen välitykseen sekä hallintaan. Viime aikoina yhtiössä on tehty merkittäviä muutoksia, ja kahdesta palvelualueesta luopuminen vauhditti tarvetta uudistaa taloushallinnon rakenteita. Yhtiö päätti ulkoistaa taloushallinnon Greenstepille — kumppanille, jonka osaaminen oli jo entuudestaan tuttua.</p>
 
-                <div class="single-post__reference-company-stats" data-greenstep-stats data-greenstep-stats-duration="2000" data-greenstep-stats-locale="en-US">
+                <div class="single-post__reference-company-stats" data-greenstep-stats data-greenstep-stats-duration="2000" data-greenstep-stats-locale="fi-FI">
                     <div class="company-stats-item">
                         <span class="company-stats-item__number" data-stats-item data-start="0" data-end="6000" data-prefix="" data-suffix="">6000</span>
                         <span class="company-stats-item__text">Taloyhtiötä</span>

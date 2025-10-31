@@ -362,7 +362,7 @@
                                             </a>
                                         </li>
                                         <li class="menu-item menu-item-with-icon menu-item-with-description" role="presentation">
-                                            <a href="#" role="menuitem">
+                                            <a href="events" role="menuitem">
                                                 <div class="link-icon" style="-webkit-mask-image: url(assets/images/icon-events-webinars.svg); mask-image: url(assets/images/icon-events-webinars.svg);"></div>
                                                 <div class="link-text">Events & Webinars <span class="link-description">Join live or on-demand expert sessions.</span></div>
                                             </a>
