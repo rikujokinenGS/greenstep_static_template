@@ -119,6 +119,19 @@
                                 left: 0;
                                 margin-top: 0;
                                 min-width: 200px;
+                                transform: none;
+                            }
+                        }
+
+                        &.is-flipped {
+                            .choices {
+                                &__list {
+                                    &--dropdown,
+                                    &[aria-expanded] {
+                                        top: auto !important;
+                                        bottom: calc(100% + 0.5rem) !important;
+                                    }
+                                }
                             }
                         }
                     }
@@ -157,7 +170,7 @@
 
                     &:hover,
                     &:focus-visible {
-                        color: var(--clr-neutral-500);
+                        color: var(--clr-neutral-600);
                     }
 
                     &:focus-visible {
@@ -199,7 +212,7 @@
 
                     &:hover,
                     &:focus-visible {
-                        color: var(--clr-neutral-500);
+                        color: var(--clr-neutral-600);
                     }
 
                     &:focus-visible {
@@ -569,6 +582,18 @@
                                 font-weight: 400;
                                 line-height: 150%;
                                 margin: 0 0 0.5rem 0;
+
+                                .highlight {
+                                    font-weight: 700;
+                                }
+                            }
+
+                            .tagline {
+                                font-size: var(--fs-tiny) !important;
+                                font-weight: 700;
+                                letter-spacing: 0.01em;
+                                text-transform: uppercase;
+                                margin-bottom: 0.25em;
 
                                 .highlight {
                                     font-weight: 700;

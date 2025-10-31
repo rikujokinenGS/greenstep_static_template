@@ -58,6 +58,7 @@
 
         &-form {
             form {
+                max-width: none;
                 gap: 1.5rem;
                 
                 [type="email"] {

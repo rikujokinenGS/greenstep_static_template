@@ -140,6 +140,7 @@
 a.banner-item {
     &:hover,
     &:focus-visible {
+        color: var(--clr-neutral-900);
         background-color: var(--clr-accent-400);
     }
 
@@ -179,8 +180,8 @@ html[data-theme="dark"] {
     a.banner-item {
         &:hover,
         &:focus-visible {
-            color: var(--clr-neutral-900);
             background-color: var(--clr-accent-400);
+            color: var(--clr-neutral-900);
 
             .banner-item__text {
                 :is(h1, h2, h3, h4, h5, h6) {

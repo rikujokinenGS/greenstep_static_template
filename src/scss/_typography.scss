@@ -161,6 +161,18 @@ ol li {
 
 a {
     color: inherit;
+    transition: color 150ms ease-out;
+
+    &:hover,
+    &:focus-visible {
+        color: var(--clr-neutral-600);
+    }
+
+    &:focus-visible {
+        outline: 1px solid var(--clr-neutral-900);
+        outline-offset: 2px;
+        border-radius: var(--br-small);
+    }
 }
 
 b, strong {
@@ -190,6 +202,17 @@ blockquote {
 }
 
 html[data-theme="dark"] {
+    a {
+        &:hover,
+        &:focus-visible {
+            color: color-mix(in srgb, var(--clr-white) 60%, transparent);
+        }
+
+        &:focus-visible {
+            outline-color: color-mix(in srgb, var(--clr-white) 60%, transparent);
+        }
+    }
+
     p.tagline {
         color: color-mix(in srgb, var(--clr-white) 60%, transparent);
     }

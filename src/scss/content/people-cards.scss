@@ -91,6 +91,7 @@
         &__email {
             margin-bottom: 0;
             font-size: var(--fs-regular);
+            line-height: 150%;
         }
 
         &__phone,
@@ -168,10 +169,10 @@ html[data-theme="dark"] {
 
             &__phone,
             &__email {
+                margin-top: 0.5em;
                 text-decoration: underline;
                 font-size: var(--fs-regular);
                 font-weight: 500;
-                margin-top: 0.5em;
                 text-underline-offset: 0.25rem;
             }
         }
