@@ -418,6 +418,15 @@ html[data-theme="dark"] {
 
 @media only screen and (max-width: 768px) {
     .post-cards {
+        &__text {
+            text-align: left;
+
+            :is(h1, h2, h3) {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+
         .post-card {
             &--large {
                 grid-column: auto;
@@ -472,6 +481,11 @@ html[data-theme="dark"] {
                     transform: none;
                 }
             }
+        }
+
+        &__see-all {
+            display: block;
+            width: 100%;
         }
     }
 
