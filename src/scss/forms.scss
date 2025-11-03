@@ -203,6 +203,7 @@ select {
         [type="email"] {
             flex: 1 1 auto;
             text-overflow: ellipsis;
+            min-height: 3.625rem;
         }
 
         .button {

@@ -62,6 +62,14 @@
         &__content {
             flex: unset;
             order: 1;
+
+            h2 {
+                font-size: var(--fs-heading-3);
+            }
+
+            h3 {
+                font-size: var(--fs-heading-4);
+            }
         }
 
         &__media {
