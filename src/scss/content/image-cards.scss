@@ -119,6 +119,8 @@ html[data-theme="dark"] {
     .image-cards {
         &__items {
             .image-card {
+                color: inherit;
+                
                 &:focus-visible {
                     outline-color: color-mix(in srgb, var(--clr-white) 60%, transparent);
                 }
