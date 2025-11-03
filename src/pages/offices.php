@@ -1,4 +1,4 @@
-<section class="hero section-bg--white section-padding">
+<section class="hero section-bg--accent-100 section-padding">
     <div class="wrap">
         <div class="hero__text">
             <nav id="breadcrumbs" class="breadcrumbs" aria-label="Breadcrumbs">

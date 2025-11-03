@@ -218,8 +218,9 @@
     &__title {
         font-size: var(--fs-heading-5);
         font-weight: 500;
-        line-height: 140%;
+        line-height: 120%;
         margin-bottom: 0.5em;
+        letter-spacing: 0;
         transition: color 150ms ease-out;
     }
 

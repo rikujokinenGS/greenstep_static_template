@@ -18,7 +18,7 @@
     }
 
     aside {
-        flex: 0 0 16rem;
+        flex: 0 0 18rem;
     }
 
     footer {
@@ -86,10 +86,11 @@
     &__toc {
         &-title {
             font-size: var(--fs-tiny);
+            font-weight: 700;
             text-transform: uppercase;
             letter-spacing: .1em;
             margin-bottom: 2em;
-            color: var(--clr-neutral-600);
+            color: var(--clr-neutral-700);
         }
 
         &-list {
@@ -109,7 +110,8 @@
                 a {
                     display: block;
                     text-decoration: none;
-                    font-size: var(--fs-tiny);
+                    font-size: var(--fs-regular);
+                    font-weight: 500;
                     line-height: 150%;
                     border-left: 0.125rem solid var(--_toc-border-color);
                     padding: 0.75rem 1rem;
@@ -151,6 +153,14 @@
             font-weight: 500;
             line-height: 140%;
             margin-bottom: 0.5em;
+        }
+
+        ol, ul {
+            margin-top: 0;
+        }
+
+        p {
+            margin-top: 0;
         }
     }
 

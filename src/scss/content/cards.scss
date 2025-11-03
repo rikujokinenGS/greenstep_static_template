@@ -74,9 +74,11 @@
             .card-item {
                 --card-item-padding: clamp(2rem, 3vw, 3rem);
             
+                justify-content: space-between;
                 background-color: var(--clr-neutral-100);
                 border-radius: var(--br-small);
-                padding: var(--card-item-padding);            
+                padding: var(--card-item-padding);
+                min-height: 17rem;
                 transition: background-color 150ms ease-out;
 
                 &__title {
@@ -96,6 +98,20 @@
                     transition: background-color 150ms ease-out, transform 300ms ease-out;
                 }
             }
+
+            a.card-item {
+                &:hover {
+                    color: inherit;
+                    background-color: var(--clr-accent-400);
+
+                    .card-item {
+                        &__icon {
+                            background-color: var(--clr-neutral-900);
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -109,6 +125,19 @@ html[data-theme="dark"] {
 
                     &__icon {
                         background-color: var(--clr-neutral-400);
+                    }
+                }
+
+                a.card-item {
+                    &:hover {
+                        color: var(--clr-neutral-900);
+                        background-color: var(--clr-accent-400);
+
+                        .card-item {
+                            &__icon {
+                                background-color: var(--clr-neutral-900);
+                            }
+                        }
                     }
                 }
             }

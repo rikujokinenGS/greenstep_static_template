@@ -230,6 +230,7 @@
 
                                         &:hover,
                                         &:focus-visible {
+                                            color: inherit;
                                             background-color: var(--clr-accent-100);
                                         }
 
