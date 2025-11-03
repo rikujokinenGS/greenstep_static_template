@@ -118,12 +118,6 @@
             &:focus-visible {
                 color: var(--clr-neutral-600);
             }
-
-            &:focus-visible {
-                outline: 1px solid var(--clr-neutral-900);
-                outline-offset: 2px;
-                border-radius: var(--br-small);
-            }
         }
     }
 
@@ -142,11 +136,6 @@ a.banner-item {
     &:focus-visible {
         color: var(--clr-neutral-900);
         background-color: var(--clr-accent-400);
-    }
-
-    &:focus-visible {
-        outline: 1px solid var(--clr-neutral-900);
-        outline-offset: 2px;
     }
 }
 
@@ -169,10 +158,6 @@ html[data-theme="dark"] {
                 &:focus-visible {
                     color: color-mix(in srgb, var(--clr-white) 60%, transparent);
                 }
-
-                &:focus-visible {
-                    outline-color: color-mix(in srgb, var(--clr-white) 60%, transparent);
-                }
             }
         }
     }
@@ -190,10 +175,6 @@ html[data-theme="dark"] {
                     }
                 }
             }
-        }
-
-        &:focus-visible {
-            outline-color: color-mix(in srgb, var(--clr-white) 60%, transparent);
         }
     }
 }

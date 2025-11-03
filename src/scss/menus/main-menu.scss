@@ -65,10 +65,6 @@
                     color: var(--clr-neutral-600);
                 }
 
-                &:focus-visible {
-                    outline: 1px solid var(--clr-neutral-900);
-                }
-
                 &[aria-haspopup="true"] {
                     &[aria-expanded="true"] {
                         &::after {
@@ -111,11 +107,6 @@
                                 text-transform: uppercase;
                                 border-radius: var(--br-small);
                                 pointer-events: none;
-
-                                &:focus-visible {
-                                    outline: 1px solid var(--clr-neutral-900);
-                                    outline-offset: 2px;
-                                }
                             }
 
                             > ul {
@@ -137,11 +128,6 @@
                                             &:focus-visible {
                                                 color: var(--clr-neutral-900);
                                                 background-color: var(--clr-accent-100);
-                                            }
-
-                                            &:focus-visible {
-                                                outline: 1px solid var(--clr-neutral-900);
-                                                outline-offset: 2px;
                                             }
 
                                             .link-text {
@@ -232,11 +218,6 @@
                                         &:focus-visible {
                                             color: inherit;
                                             background-color: var(--clr-accent-100);
-                                        }
-
-                                        &:focus-visible {
-                                            outline: 1px solid var(--clr-accent-500);
-                                            outline-offset: 2px;
                                         }
 
                                         .card-image {
@@ -371,10 +352,6 @@ html[data-theme="dark"] {
                                 background-color: var(--clr-accent-500);
                             }
                         }
-
-                        &:focus-visible {
-                            outline-color: color-mix(in srgb, var(--clr-white) 60%, transparent);
-                        }
                     }
                 }
 
@@ -382,10 +359,6 @@ html[data-theme="dark"] {
                     &:hover,
                     &:focus-visible {
                         color: var(--clr-neutral-400);
-                    }
-
-                    &:focus-visible {
-                        outline-color: color-mix(in srgb, var(--clr-white) 60%, transparent);
                     }
 
                     &[aria-haspopup="true"] {
@@ -412,10 +385,6 @@ html[data-theme="dark"] {
                                             &:focus-visible {
                                                 background-color: var(--clr-neutral-700);
                                             }
-
-                                            &:focus-visible {
-                                                outline-color: color-mix(in srgb, var(--clr-white) 60%, transparent);
-                                            }
                                         }
                                     }
                                 }
@@ -426,10 +395,6 @@ html[data-theme="dark"] {
 
                                 > a {
                                     color: var(--clr-neutral-500);
-
-                                    &:focus-visible {
-                                        outline-color: color-mix(in srgb, var(--clr-white) 60%, transparent);
-                                    }
                                 }
 
                                 > ul {
@@ -441,10 +406,6 @@ html[data-theme="dark"] {
                                                 &:focus-visible {
                                                     color: var(--clr-white);
                                                     background-color: var(--clr-neutral-700);
-                                                }
-
-                                                &:focus-visible {
-                                                    outline-color: var(--clr-neutral-400);
                                                 }
                                             }
                                         }

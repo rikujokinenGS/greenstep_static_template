@@ -123,12 +123,6 @@
                         border-color: color-mix(in srgb, var(--clr-neutral-900) 25%, var(--clr-white));
                     }
 
-                    &:focus-visible {
-                        outline: 1px solid var(--clr-neutral-900);
-                        outline-offset: 2px;
-                        border-radius: var(--br-small);
-                    }
-
                     &.in-view {
                         --_toc-border-color: var(--clr-neutral-900);
 

@@ -93,8 +93,6 @@
                     }
 
                     &:focus-visible {
-                        outline: 1px solid var(--clr-neutral-900);
-                        outline-offset: 2px;
                         border-radius: var(--br-large);
                     }
                 }
@@ -126,10 +124,6 @@ html[data-theme="dark"] {
                             background-color: var(--clr-neutral-900);
                         }
                     }
-                }
-
-                &:focus-visible {
-                    outline-color: color-mix(in srgb, var(--clr-white) 60%, transparent);
                 }
             }
         }

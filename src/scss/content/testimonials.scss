@@ -150,11 +150,6 @@
             }
         }
 
-        &:focus-visible {
-            outline: 1px solid var(--clr-neutral-900);
-            outline-offset: 2px;
-        }
-
         &__logo {
             max-width: 6.5rem;
             width: auto;
@@ -255,10 +250,6 @@ html[data-theme="dark"] {
                         }
                     }
                 }
-            }
-
-            &:focus-visible {
-                outline-color: color-mix(in srgb, var(--clr-white) 60%, transparent);
             }
         }
     }

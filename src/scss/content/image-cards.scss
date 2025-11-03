@@ -106,11 +106,6 @@
                     }
                 }
             }
-
-            &:focus-visible {
-                outline: 1px solid var(--clr-neutral-900);
-                outline-offset: 2px;
-            }
         }
     }
 }
@@ -120,10 +115,6 @@ html[data-theme="dark"] {
         &__items {
             .image-card {
                 color: inherit;
-                
-                &:focus-visible {
-                    outline-color: color-mix(in srgb, var(--clr-white) 60%, transparent);
-                }
             }
         }
     }
