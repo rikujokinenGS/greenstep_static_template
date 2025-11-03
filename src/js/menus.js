@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
             mainMenuToggle.addEventListener('click', () => {
                 let expanded = mainMenuToggle.getAttribute('aria-expanded') === 'true' || false;
                 
-                document.body.classList.toggle('main-menu-open');
+                document.body.classList.toggle('mobile-menu-open');
                 document.body.classList.toggle('no-scroll');
                 mainMenuToggle.setAttribute('aria-expanded', !expanded);
                 mainMenuToggle.setAttribute('aria-label', !expanded ? mainMenuToggle.getAttribute('data-label-open') : mainMenuToggle.getAttribute('data-label-closed'));

@@ -383,8 +383,9 @@
         if (subMenu && subMenu.getAttribute('role') === 'menu') {
             menuItem.setAttribute('aria-expanded', true);
             subMenu.setAttribute('aria-hidden', false);
-
+            
             if (!isMobileMenu) {
+                document.body.classList.add('sub-menu-open');
                 _window.removeEventListener("mousedown", _.outsideClickListener);
                 _window.addEventListener("mousedown", _.outsideClickListener);
             }
@@ -402,8 +403,9 @@
         if (subMenu && subMenu.getAttribute('role') === 'menu' && menuItem.getAttribute('aria-haspopup') == 'true') {
             menuItem.setAttribute('aria-expanded', false);
             subMenu.setAttribute('aria-hidden', true);
-
+            
             if (!isMobileMenu) {
+                document.body.classList.remove('sub-menu-open');
                 _window.removeEventListener("mousedown", _.outsideClickListener);
             }
         }
