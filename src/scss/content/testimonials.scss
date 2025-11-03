@@ -8,8 +8,6 @@
         margin-bottom: clamp(2rem, 4vw, 4rem);
 
         :is(h1, h2, h3) {
-            font-size: var(--fs-heading-4);
-            line-height: 140%;
             margin-bottom: 0;
         }
     }

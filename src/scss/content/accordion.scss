@@ -1,14 +1,6 @@
 .accordion {
     &__header {
         text-align: center;
-
-        :is(h1, h2, h3, h4, h5, h6) {
-            font-size: var(--fs-heading-3);
-            font-weight: 500;
-            line-height: 120%;
-            letter-spacing: 0.02em;
-            margin-bottom: 0.75em;
-        }
     }
 
     &__items {

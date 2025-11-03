@@ -106,7 +106,7 @@
 <section class="text-media section-bg--white section-padding">
     <div class="wrap" data-animation="bottom">       
         <div class="text-media__content">
-            <h3>Your financial backbone</h3>
+            <h2>Your financial backbone</h2>
             <p>From accounting and payroll to CFO support and strategic financial planning, we provide world-class financial services to help your business thrive.</p>
             <ul>
                 <li>Accounting services</li>

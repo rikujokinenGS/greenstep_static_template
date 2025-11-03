@@ -19,8 +19,8 @@
 h1 {
     font-size: var(--fs-heading-1);
     font-weight: 500;
-    line-height: 120%;
-    letter-spacing: 0.022em;
+    line-height: 110%;
+    letter-spacing: -0.02em;
     margin-bottom: 0.5em;
 }
 
@@ -28,7 +28,7 @@ h2 {
     font-size: var(--fs-heading-2);
     font-weight: 500;
     line-height: 120%;
-    letter-spacing: 0.02em;
+    letter-spacing: -0.01em;
     margin-bottom: 0.5em;
 }
 
@@ -36,7 +36,7 @@ h3 {
     font-size: var(--fs-heading-3);
     font-weight: 500;
     line-height: 120%;
-    letter-spacing: 0.02em;
+    letter-spacing: -0.01em;
     margin-bottom: 0.75em;
 }
 
@@ -193,7 +193,7 @@ kbd {
 
 blockquote {
     margin: 3rem 0 2rem 0;
-    padding: 0 4rem 0 1.875rem;
+    padding: 0 4rem 0 clamp(1.25rem, 2vw, 1.875rem);
     border-left: 0.25rem solid var(--clr-accent-400);
     font-size: var(--fs-large);
     font-weight: 500;

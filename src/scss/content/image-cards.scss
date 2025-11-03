@@ -4,8 +4,6 @@
         margin-bottom: clamp(3rem, 5vw, 5rem);
 
         :is(h1, h2, h3) {
-            font-size: var(--fs-heading-2);
-            margin-bottom: 0.5em;
             max-width: 20ch;
             margin-left: auto;
             margin-right: auto;

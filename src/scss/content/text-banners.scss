@@ -8,10 +8,6 @@
         flex: 2;
 
         :is(h1, h2, h3, h4) {
-            font-size: var(--fs-heading-4);
-            font-weight: 500;
-            line-height: 130%;
-            margin-bottom: 0.75em;
             max-width: 30ch;
         }
 
