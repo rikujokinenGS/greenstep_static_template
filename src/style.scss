@@ -84,7 +84,6 @@ body {
     > main {
         flex-grow: 1;
         margin-top: calc(var(--header-main-height) + var(--header-eyebrow-height));
-        scroll-margin-block: var(--section-spacing);
     }
 }
 

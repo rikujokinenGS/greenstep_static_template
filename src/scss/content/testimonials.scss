@@ -256,7 +256,7 @@ html[data-theme="dark"] {
 @media only screen and (max-width: 992px) {
     .testimonials {
         &__items {
-            scroll-padding-top: calc(var(--header-main-height) + 1rem);
+            scroll-padding-top: 1rem;
         }
     }
 }
