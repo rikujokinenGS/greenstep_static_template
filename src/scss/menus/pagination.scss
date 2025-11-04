@@ -23,14 +23,14 @@
             color: var(--clr-neutral-600);
 
             &::before,
-            &::after {
+            &::before {
                 background-color: var(--clr-neutral-600);
             }
         }
     }
 
     .previous::before,
-    .next::after {
+    .next::before {
         content: "";
         width: 1rem;
         height: 0.875rem;
@@ -59,12 +59,13 @@
     .next {
         right: 0;
 
-        &::after {
+        &::before {
             transform: rotate(180deg);
+            order: 2;
         }
 
         &:hover {
-            &::after {
+            &::before {
                 transform: rotate(180deg) translateX(-0.25rem);
             }
         }
