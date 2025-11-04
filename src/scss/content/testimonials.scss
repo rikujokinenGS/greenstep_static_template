@@ -256,6 +256,7 @@ html[data-theme="dark"] {
 @media only screen and (max-width: 992px) {
     .testimonials {
         &__items {
+            scroll-margin-block: 0;
             scroll-padding-top: 1rem;
         }
     }
