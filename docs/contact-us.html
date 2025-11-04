@@ -32,8 +32,42 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
 
+    <!-- Preload fonts -->
     <link rel="preload" href="assets/fonts/dm-sans-normal-latin.woff2" as="font" type="font/woff2" crossorigin async>
     <link rel="preload" href="assets/fonts/dm-sans-italic-latin.woff2" as="font" type="font/woff2" crossorigin async>
+
+    <!-- Preload menu icons -->
+    <link rel="preload" href="assets/images/icon-accounting-reporting.svg" as="image" type="image/svg+xml" fetchpriority="low">
+    <link rel="preload" href="assets/images/icon-cfo-as-a-service.svg" as="image" type="image/svg+xml" fetchpriority="low">
+    <link rel="preload" href="assets/images/icon-group-consolidation.svg" as="image" type="image/svg+xml" fetchpriority="low">
+    <link rel="preload" href="assets/images/icon-financial-advisory.svg" as="image" type="image/svg+xml" fetchpriority="low">
+    <link rel="preload" href="assets/images/icon-international-payroll.svg" as="image" type="image/svg+xml" fetchpriority="low">
+    <link rel="preload" href="assets/images/icon-hr-services.svg" as="image" type="image/svg+xml" fetchpriority="low">
+    <link rel="preload" href="assets/images/icon-learning-development.svg" as="image" type="image/svg+xml" fetchpriority="low">
+    <link rel="preload" href="assets/images/icon-payroll-quality-assurance.svg" as="image" type="image/svg+xml" fetchpriority="low">
+    <link rel="preload" href="assets/images/icon-netsuite.svg" as="image" type="image/svg+xml" fetchpriority="low">
+    <link rel="preload" href="assets/images/icon-salesforce.svg" as="image" type="image/svg+xml" fetchpriority="low">
+    <link rel="preload" href="assets/images/icon-bi-analytics.svg" as="image" type="image/svg+xml" fetchpriority="low">
+    <link rel="preload" href="assets/images/icon-ai-automation.svg" as="image" type="image/svg+xml" fetchpriority="low">
+    <link rel="preload" href="assets/images/icon-esg-strategy.svg" as="image" type="image/svg+xml" fetchpriority="low">
+    <link rel="preload" href="assets/images/icon-regulatory-reporting.svg" as="image" type="image/svg+xml" fetchpriority="low">
+    <link rel="preload" href="assets/images/icon-carbon-footprint-calculations.svg" as="image" type="image/svg+xml" fetchpriority="low">
+    <link rel="preload" href="assets/images/icon-startups-scaleups.svg" as="image" type="image/svg+xml" fetchpriority="low">
+    <link rel="preload" href="assets/images/icon-saas-tech-companies.svg" as="image" type="image/svg+xml" fetchpriority="low">
+    <link rel="preload" href="assets/images/icon-listed-pre-ipo-companies.svg" as="image" type="image/svg+xml" fetchpriority="low">
+    <link rel="preload" href="assets/images/icon-international-companies.svg" as="image" type="image/svg+xml" fetchpriority="low">
+    <link rel="preload" href="assets/images/icon-investors-private-equity.svg" as="image" type="image/svg+xml" fetchpriority="low">
+    <link rel="preload" href="assets/images/icon-expert-organizations.svg" as="image" type="image/svg+xml" fetchpriority="low">
+    <link rel="preload" href="assets/images/icon-interim-cfo-controller.svg" as="image" type="image/svg+xml" fetchpriority="low">
+    <link rel="preload" href="assets/images/icon-interim-hr-ld.svg" as="image" type="image/svg+xml" fetchpriority="low">
+    <link rel="preload" href="assets/images/icon-interim-cio-cdo.svg" as="image" type="image/svg+xml" fetchpriority="low">
+    <link rel="preload" href="assets/images/icon-interim-sustainability-expert.svg" as="image" type="image/svg+xml" fetchpriority="low">
+    <link rel="preload" href="assets/images/icon-blog.svg" as="image" type="image/svg+xml" fetchpriority="low">
+    <link rel="preload" href="assets/images/icon-customer-stories.svg" as="image" type="image/svg+xml" fetchpriority="low">
+    <link rel="preload" href="assets/images/icon-events-webinars.svg" as="image" type="image/svg+xml" fetchpriority="low">
+    <link rel="preload" href="assets/images/icon-news-announcements.svg" as="image" type="image/svg+xml" fetchpriority="low">
+    <link rel="preload" href="assets/images/icon-guides-whitepapers.svg" as="image" type="image/svg+xml" fetchpriority="low">
+    <link rel="preload" href="assets/images/icon-press.svg" as="image" type="image/svg+xml" fetchpriority="low">
 
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js" defer></script>
